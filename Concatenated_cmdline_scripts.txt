@@ -1,0 +1,27 @@
+##cutadapt (double check if you need this based on your data QC)
+##If yes, fill in your own adapter sequences
+##these are the sequences I used for both Bomberger and Clinical samples.
+###single strand
+mpirun -np 8 cutadapt -m 22 -j 24 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC -o ~/LewinFiles/Episcfm1_trimmed.fastq.gz ~/LewinFiles/Rn_PAO1_epiSCFM2_Combined_1.fastq.gz
+
+
+##the Hunter data did not require cutadapt based on QC, however I am including a paired end example for reference.
+##again alter adapter sequences as necessary
+##paired
+mpirun -np 8 cutadapt -g "GTGCCAGCMGCCGCGGTAA" -a "ATTAGAWACCCBDGTAGTCC" -G "GGACTACHVGGGTWTCTAAT" -A "TTACCGCGGCKGCTGGCAC" -m 22 -o "ana_4h_1_S13_R1_001_cut.fastq.gz" -p "ana_4h_1_S13_R2_001_cut.fastq.gz" "ana_4h_1_S13_R1_001.fastq.gz" "ana_4h_1_S13_R2_001.fastq.gz"
+
+
+###bowtie to remove decoy pangenome
+##paired
+bowtie2 -p 8 -x ~/LewinFiles/LewinPangenome -1 ana_4h_1_S13_R1_001.fastq.gz -2 ana_4h_1_S13_R2_001.fastq.gz --un-conc-gz ana_4h_1_S13_host_removed  > ana_4h_1_S13_mapped_and_unmapped.sam 
+
+#singlestrand
+bowtie2 -p 24 -x LewinPangenome -U ~/LewinFiles/AEC2_trimmed.fastq.gz -S ~/LewinFiles/AEC2_mapped_to_otherbugs.sam.gz --un-gz ~/LewinFiles/AEC2unmapped_to_otherbugs.fastq.gz
+
+###bowtie to map to PAO1
+
+#Paired
+bowtie2 -p 24 -x PAO1Lewin -1 ~/LewinFiles/Hunter_Project_032/ana_4h_1_S13_hostremoved_R1.fastq.gz -2 ~/LewinFiles/Hunter_Project_032/ana_4h_1_S13_hostremoved_R2.fastq.gz -S ~/LewinFiles/ana4h1_mapped_to_PAO1.sam.gz 
+
+##single strand
+bowtie2 -p 24 -x PAO1Lewin -U ~/LewinFiles/AEC2unmapped_to_otherbugs.fastq.gz -S ~/LewinFiles/AEC2_mapped_to_PAO1.sam.gz 
