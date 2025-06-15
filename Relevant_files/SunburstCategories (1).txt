@@ -1,0 +1,3926 @@
+parent	node
+	Cellular processes
+	Envelope
+	Genetic Info processing
+	Metabolism
+	Regulation
+Cellular processes	Cellular processes 2
+Cellular processes 2	Adaptations to atypical conditions
+Adaptations to atypical conditions	PA0139
+Adaptations to atypical conditions	PA0140
+Adaptations to atypical conditions	PA0172
+Adaptations to atypical conditions	PA0376
+Adaptations to atypical conditions	PA0456
+Adaptations to atypical conditions	PA0590
+Adaptations to atypical conditions	PA0848
+Adaptations to atypical conditions	PA0857
+Adaptations to atypical conditions	PA0934
+Adaptations to atypical conditions	PA0961
+Adaptations to atypical conditions	PA1159
+Adaptations to atypical conditions	PA1789
+Adaptations to atypical conditions	PA2124
+Adaptations to atypical conditions	PA2622
+Adaptations to atypical conditions	PA2827
+Adaptations to atypical conditions	PA2830
+Adaptations to atypical conditions	PA3017
+Adaptations to atypical conditions	PA3126
+Adaptations to atypical conditions	PA3266
+Adaptations to atypical conditions	PA3529
+Adaptations to atypical conditions	PA3622
+Adaptations to atypical conditions	PA3625
+Adaptations to atypical conditions	PA3710
+Adaptations to atypical conditions	PA4100
+Adaptations to atypical conditions	PA4328
+Adaptations to atypical conditions	PA4352
+Adaptations to atypical conditions	PA4427
+Adaptations to atypical conditions	PA4428
+Adaptations to atypical conditions	PA4614
+Adaptations to atypical conditions	PA4760
+Adaptations to atypical conditions	PA5018
+Adaptations to atypical conditions	PA5077
+Adaptations to atypical conditions	PA5078
+Adaptations to atypical conditions	PA5117
+Adaptations to atypical conditions	PA5285
+Adaptations to atypical conditions	PA5338
+Adaptations to atypical conditions	PA5344
+Adaptations to atypical conditions	PA5372
+Adaptations to atypical conditions	PA5373
+Cellular processes 2	Cell division
+Cell division	PA0374
+Cell division	PA0375
+Cell division	PA1413
+Cell division	PA1527
+Cell division	PA1528
+Cell division	PA2353
+Cell division	PA2615
+Cell division	PA2972
+Cell division	PA3008
+Cell division	PA3197
+Cell division	PA3201
+Cell division	PA3243
+Cell division	PA3244
+Cell division	PA3245
+Cell division	PA3634
+Cell division	PA4002
+Cell division	PA4407
+Cell division	PA4408
+Cell division	PA4409
+Cell division	PA4413
+Cell division	PA4419
+Cell division	PA4421
+Cell division	PA4438
+Cell division	PA4478
+Cell division	PA4751
+Cell division	PA4752
+Cell division	PA5226
+Cell division	PA5227
+Cell division	PA5406
+Cell division	PA5407
+Cellular processes 2	Chemotaxis and motility
+Chemotaxis and motility	PA0026
+Chemotaxis and motility	PA0173
+Chemotaxis and motility	PA0174
+Chemotaxis and motility	PA0175
+Chemotaxis and motility	PA0176
+Chemotaxis and motility	PA0177
+Chemotaxis and motility	PA0178
+Chemotaxis and motility	PA0179
+Chemotaxis and motility	PA0180
+Chemotaxis and motility	PA0395
+Chemotaxis and motility	PA0396
+Chemotaxis and motility	PA0408
+Chemotaxis and motility	PA0409
+Chemotaxis and motility	PA0410
+Chemotaxis and motility	PA0411
+Chemotaxis and motility	PA1077
+Chemotaxis and motility	PA1078
+Chemotaxis and motility	PA1079
+Chemotaxis and motility	PA1080
+Chemotaxis and motility	PA1081
+Chemotaxis and motility	PA1082
+Chemotaxis and motility	PA1083
+Chemotaxis and motility	PA1084
+Chemotaxis and motility	PA1085
+Chemotaxis and motility	PA1086
+Chemotaxis and motility	PA1100
+Chemotaxis and motility	PA1101
+Chemotaxis and motility	PA1102
+Chemotaxis and motility	PA1103
+Chemotaxis and motility	PA1104
+Chemotaxis and motility	PA1105
+Chemotaxis and motility	PA1242
+Chemotaxis and motility	PA1251
+Chemotaxis and motility	PA1441
+Chemotaxis and motility	PA1442
+Chemotaxis and motility	PA1443
+Chemotaxis and motility	PA1444
+Chemotaxis and motility	PA1445
+Chemotaxis and motility	PA1446
+Chemotaxis and motility	PA1447
+Chemotaxis and motility	PA1448
+Chemotaxis and motility	PA1449
+Chemotaxis and motility	PA1452
+Chemotaxis and motility	PA1453
+Chemotaxis and motility	PA1454
+Chemotaxis and motility	PA1457
+Chemotaxis and motility	PA1458
+Chemotaxis and motility	PA1459
+Chemotaxis and motility	PA1460
+Chemotaxis and motility	PA1461
+Chemotaxis and motility	PA1464
+Chemotaxis and motility	PA1473
+Chemotaxis and motility	PA1608
+Chemotaxis and motility	PA1646
+Chemotaxis and motility	PA1853
+Chemotaxis and motility	PA2561
+Chemotaxis and motility	PA2573
+Chemotaxis and motility	PA2652
+Chemotaxis and motility	PA2654
+Chemotaxis and motility	PA2780
+Chemotaxis and motility	PA2788
+Chemotaxis and motility	PA2867
+Chemotaxis and motility	PA2895
+Chemotaxis and motility	PA2896
+Chemotaxis and motility	PA2920
+Chemotaxis and motility	PA3348
+Chemotaxis and motility	PA3349
+Chemotaxis and motility	PA3350
+Chemotaxis and motility	PA3351
+Chemotaxis and motility	PA3352
+Chemotaxis and motility	PA3353
+Chemotaxis and motility	PA3526
+Chemotaxis and motility	PA3670
+Chemotaxis and motility	PA3671
+Chemotaxis and motility	PA3672
+Chemotaxis and motility	PA3703
+Chemotaxis and motility	PA3704
+Chemotaxis and motility	PA3705
+Chemotaxis and motility	PA3706
+Chemotaxis and motility	PA3707
+Chemotaxis and motility	PA3708
+Chemotaxis and motility	PA4037
+Chemotaxis and motility	PA4038
+Chemotaxis and motility	PA4039
+Chemotaxis and motility	PA4117
+Chemotaxis and motility	PA4290
+Chemotaxis and motility	PA4307
+Chemotaxis and motility	PA4309
+Chemotaxis and motility	PA4310
+Chemotaxis and motility	PA4520
+Chemotaxis and motility	PA4608
+Chemotaxis and motility	PA4633
+Chemotaxis and motility	PA4844
+Chemotaxis and motility	PA4915
+Chemotaxis and motility	PA4953
+Chemotaxis and motility	PA4954
+Chemotaxis and motility	PA5072
+Chemotaxis and motility	PA5159
+Chemotaxis and motility	PA5233
+Cellular processes 2	Detoxification
+Detoxification	PA0058
+Detoxification	PA0059
+Detoxification	PA0139
+Detoxification	PA0140
+Detoxification	PA0156
+Detoxification	PA0157
+Detoxification	PA0158
+Detoxification	PA0305
+Detoxification	PA0320
+Detoxification	PA0427
+Detoxification	PA0706
+Detoxification	PA0778
+Detoxification	PA0838
+Detoxification	PA0848
+Detoxification	PA0867
+Detoxification	PA0950
+Detoxification	PA1163
+Detoxification	PA1178
+Detoxification	PA1813
+Detoxification	PA1875
+Detoxification	PA2052
+Detoxification	PA2064
+Detoxification	PA2065
+Detoxification	PA2140
+Detoxification	PA2147
+Detoxification	PA2272
+Detoxification	PA2273
+Detoxification	PA2277
+Detoxification	PA2278
+Detoxification	PA2279
+Detoxification	PA2280
+Detoxification	PA2391
+Detoxification	PA2495
+Detoxification	PA2520
+Detoxification	PA2522
+Detoxification	PA2525
+Detoxification	PA2825
+Detoxification	PA2826
+Detoxification	PA2837
+Detoxification	PA2850
+Detoxification	PA3521
+Detoxification	PA3529
+Detoxification	PA3628
+Detoxification	PA3629
+Detoxification	PA3894
+Detoxification	PA4003
+Detoxification	PA4119
+Detoxification	PA4204
+Detoxification	PA4208
+Detoxification	PA4236
+Detoxification	PA4366
+Detoxification	PA4418
+Detoxification	PA4468
+Detoxification	PA4489
+Detoxification	PA4597
+Detoxification	PA4613
+Detoxification	PA4700
+Detoxification	PA5045
+Detoxification	PA5158
+Detoxification	PA5514
+Detoxification	PA5542
+Cellular processes 2	DNA transformation
+DNA transformation	PA0021
+DNA transformation	PA0489
+DNA transformation	PA2984
+DNA transformation	PA3140
+Cellular processes 2	Other@Cellular processes 2
+Other@Cellular processes 2	PA3123
+Other@Cellular processes 2	PA4356
+Other@Cellular processes 2	PA5339
+Cellular processes 2	Pathogenesis
+Pathogenesis	PA0040
+Pathogenesis	PA0044
+Pathogenesis	PA0070
+Pathogenesis	PA0071
+Pathogenesis	PA0072
+Pathogenesis	PA0073
+Pathogenesis	PA0074
+Pathogenesis	PA0075
+Pathogenesis	PA0082
+Pathogenesis	PA0094
+Pathogenesis	PA0122
+Pathogenesis	PA0243
+Pathogenesis	PA0327
+Pathogenesis	PA0328
+Pathogenesis	PA0423
+Pathogenesis	PA0674
+Pathogenesis	PA0678
+Pathogenesis	PA0681
+Pathogenesis	PA0686
+Pathogenesis	PA0745
+Pathogenesis	PA0844
+Pathogenesis	PA0906
+Pathogenesis	PA0907
+Pathogenesis	PA0908
+Pathogenesis	PA0909
+Pathogenesis	PA0911
+Pathogenesis	PA0969
+Pathogenesis	PA0970
+Pathogenesis	PA0971
+Pathogenesis	PA0972
+Pathogenesis	PA1121
+Pathogenesis	PA1136
+Pathogenesis	PA1244
+Pathogenesis	PA1414
+Pathogenesis	PA1430
+Pathogenesis	PA1432
+Pathogenesis	PA1690
+Pathogenesis	PA1691
+Pathogenesis	PA1692
+Pathogenesis	PA1693
+Pathogenesis	PA1694
+Pathogenesis	PA1696
+Pathogenesis	PA1697
+Pathogenesis	PA1698
+Pathogenesis	PA1699
+Pathogenesis	PA1700
+Pathogenesis	PA1701
+Pathogenesis	PA1703
+Pathogenesis	PA1710
+Pathogenesis	PA1711
+Pathogenesis	PA1712
+Pathogenesis	PA1714
+Pathogenesis	PA1715
+Pathogenesis	PA1716
+Pathogenesis	PA1717
+Pathogenesis	PA1718
+Pathogenesis	PA1719
+Pathogenesis	PA1720
+Pathogenesis	PA1721
+Pathogenesis	PA1722
+Pathogenesis	PA1723
+Pathogenesis	PA1724
+Pathogenesis	PA1725
+Pathogenesis	PA1726
+Pathogenesis	PA1759
+Pathogenesis	PA1760
+Pathogenesis	PA1775
+Pathogenesis	PA1814
+Pathogenesis	PA1871
+Pathogenesis	PA1876
+Pathogenesis	PA1898
+Pathogenesis	PA1899
+Pathogenesis	PA1900
+Pathogenesis	PA1901
+Pathogenesis	PA2133
+Pathogenesis	PA2193
+Pathogenesis	PA2194
+Pathogenesis	PA2195
+Pathogenesis	PA2200
+Pathogenesis	PA2463
+Pathogenesis	PA2570
+Pathogenesis	PA2572
+Pathogenesis	PA2591
+Pathogenesis	PA2593
+Pathogenesis	PA2675
+Pathogenesis	PA2755
+Pathogenesis	PA2760
+Pathogenesis	PA2800
+Pathogenesis	PA3077
+Pathogenesis	PA3078
+Pathogenesis	PA3100
+Pathogenesis	PA3101
+Pathogenesis	PA3103
+Pathogenesis	PA3191
+Pathogenesis	PA3319
+Pathogenesis	PA3346
+Pathogenesis	PA3347
+Pathogenesis	PA3361
+Pathogenesis	PA3387
+Pathogenesis	PA3420
+Pathogenesis	PA3476
+Pathogenesis	PA3477
+Pathogenesis	PA3535
+Pathogenesis	PA3552
+Pathogenesis	PA3553
+Pathogenesis	PA3554
+Pathogenesis	PA3555
+Pathogenesis	PA3556
+Pathogenesis	PA3557
+Pathogenesis	PA3558
+Pathogenesis	PA3724
+Pathogenesis	PA3841
+Pathogenesis	PA3910
+Pathogenesis	PA3921
+Pathogenesis	PA3983
+Pathogenesis	PA4108
+Pathogenesis	PA4132
+Pathogenesis	PA4178
+Pathogenesis	PA4209
+Pathogenesis	PA4210
+Pathogenesis	PA4211
+Pathogenesis	PA4212
+Pathogenesis	PA4217
+Pathogenesis	PA4378
+Pathogenesis	PA4379
+Pathogenesis	PA4487
+Pathogenesis	PA4488
+Pathogenesis	PA4489
+Pathogenesis	PA4490
+Pathogenesis	PA4491
+Pathogenesis	PA4492
+Pathogenesis	PA4541
+Pathogenesis	PA4781
+Pathogenesis	PA4833
+Pathogenesis	PA4853
+Pathogenesis	PA4969
+Pathogenesis	PA5002
+Pathogenesis	PA5003
+Pathogenesis	PA5346
+Cellular processes 2	Toxin production and resistance
+Toxin production and resistance	PA0076
+Toxin production and resistance	PA0077
+Toxin production and resistance	PA0078
+Toxin production and resistance	PA0079
+Toxin production and resistance	PA0080
+Toxin production and resistance	PA0081
+Toxin production and resistance	PA0083
+Toxin production and resistance	PA0084
+Toxin production and resistance	PA0085
+Toxin production and resistance	PA0086
+Toxin production and resistance	PA0087
+Toxin production and resistance	PA0088
+Toxin production and resistance	PA0089
+Toxin production and resistance	PA0090
+Toxin production and resistance	PA0091
+Toxin production and resistance	PA0093
+Toxin production and resistance	PA0095
+Toxin production and resistance	PA0124
+Toxin production and resistance	PA0125
+Toxin production and resistance	PA0246
+Toxin production and resistance	PA0262
+Toxin production and resistance	PA0426
+Toxin production and resistance	PA0458
+Toxin production and resistance	PA0610
+Toxin production and resistance	PA0611
+Toxin production and resistance	PA0690
+Toxin production and resistance	PA0807
+Toxin production and resistance	PA0996
+Toxin production and resistance	PA0997
+Toxin production and resistance	PA0998
+Toxin production and resistance	PA0999
+Toxin production and resistance	PA1000
+Toxin production and resistance	PA1003
+Toxin production and resistance	PA1148
+Toxin production and resistance	PA1236
+Toxin production and resistance	PA1249
+Toxin production and resistance	PA1250
+Toxin production and resistance	PA1367
+Toxin production and resistance	PA1509
+Toxin production and resistance	PA1510
+Toxin production and resistance	PA1511
+Toxin production and resistance	PA1656
+Toxin production and resistance	PA1657
+Toxin production and resistance	PA1658
+Toxin production and resistance	PA1659
+Toxin production and resistance	PA1660
+Toxin production and resistance	PA1661
+Toxin production and resistance	PA1662
+Toxin production and resistance	PA1664
+Toxin production and resistance	PA1665
+Toxin production and resistance	PA1666
+Toxin production and resistance	PA1667
+Toxin production and resistance	PA1668
+Toxin production and resistance	PA1669
+Toxin production and resistance	PA1844
+Toxin production and resistance	PA1845
+Toxin production and resistance	PA1858
+Toxin production and resistance	PA1899
+Toxin production and resistance	PA1900
+Toxin production and resistance	PA1904
+Toxin production and resistance	PA2018
+Toxin production and resistance	PA2258
+Toxin production and resistance	PA2259
+Toxin production and resistance	PA2302
+Toxin production and resistance	PA2303
+Toxin production and resistance	PA2304
+Toxin production and resistance	PA2360
+Toxin production and resistance	PA2361
+Toxin production and resistance	PA2362
+Toxin production and resistance	PA2363
+Toxin production and resistance	PA2364
+Toxin production and resistance	PA2365
+Toxin production and resistance	PA2366
+Toxin production and resistance	PA2367
+Toxin production and resistance	PA2368
+Toxin production and resistance	PA2369
+Toxin production and resistance	PA2370
+Toxin production and resistance	PA2371
+Toxin production and resistance	PA2374
+Toxin production and resistance	PA2494
+Toxin production and resistance	PA2587
+Toxin production and resistance	PA2684
+Toxin production and resistance	PA2685
+Toxin production and resistance	PA2702
+Toxin production and resistance	PA2703
+Toxin production and resistance	PA2770
+Toxin production and resistance	PA2774
+Toxin production and resistance	PA2775
+Toxin production and resistance	PA2782
+Toxin production and resistance	PA2934
+Toxin production and resistance	PA3137
+Toxin production and resistance	PA3290
+Toxin production and resistance	PA3294
+Toxin production and resistance	PA3339
+Toxin production and resistance	PA3402
+Toxin production and resistance	PA3484
+Toxin production and resistance	PA3485
+Toxin production and resistance	PA3522
+Toxin production and resistance	PA3578
+Toxin production and resistance	PA3904
+Toxin production and resistance	PA3905
+Toxin production and resistance	PA3906
+Toxin production and resistance	PA3907
+Toxin production and resistance	PA3908
+Toxin production and resistance	PA4109
+Toxin production and resistance	PA4110
+Toxin production and resistance	PA4190
+Toxin production and resistance	PA4209
+Toxin production and resistance	PA4210
+Toxin production and resistance	PA4211
+Toxin production and resistance	PA4219
+Toxin production and resistance	PA4363
+Toxin production and resistance	PA4375
+Toxin production and resistance	PA4393
+Toxin production and resistance	PA4521
+Toxin production and resistance	PA4522
+Toxin production and resistance	PA4591
+Toxin production and resistance	PA4598
+Toxin production and resistance	PA4674.1
+Toxin production and resistance	PA4716
+Toxin production and resistance	PA5086
+Toxin production and resistance	PA5090
+Toxin production and resistance	PA5160
+Toxin production and resistance	PA5200
+Toxin production and resistance	PA5232
+Toxin production and resistance	PA5485
+Envelope	Cell envelope
+Cell envelope	Biosynthesis and degradation of murein sacculus and peptidoglycan
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA0378
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA0597
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA0667
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA0869
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA1171
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA1222
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA1812
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA1959
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA2022
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA2272
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA2854
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA2865
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA2977
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA3020
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA3047
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA3472
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA3559
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA3666
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA3992
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA3999
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4001
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4002
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4003
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4020
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4201
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4410
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4411
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4412
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4413
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4414
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4415
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4416
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4417
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4418
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4444
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4450
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4479
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4480
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4481
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4562
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4662
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4700
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4749
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4930
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA4947
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA5045
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA5198
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA5302
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA5538
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA5549
+Biosynthesis and degradation of murein sacculus and peptidoglycan	PA5552
+Cell envelope	Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0011
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0405
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0595
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0705
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0730
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0762
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0764
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0936
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA0938
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA1130
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA1178
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA1494
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA1726
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA1792
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2023
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2155
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2231
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2232
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2233
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2235
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2236
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2237
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2238
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2239
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2240
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2241
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2663
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2979
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA2981
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3058
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3059
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3060
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3061
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3062
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3064
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3141
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3242
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3337
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3385
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3478
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3479
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3540
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3541
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3542
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3543
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3544
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3545
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3546
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3547
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3548
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3549
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3550
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3551
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3556
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3636
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3643
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3644
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3646
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3652
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3827
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3828
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA3988
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4033
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4068
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4339
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4406
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4425
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4446
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4458
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4459
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4460
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4461
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4512
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4661
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4819
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4988
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4996
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4997
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA4999
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5000
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5001
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5002
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5004
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5006
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5007
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5008
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5009
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5010
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5011
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5012
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5161
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5162
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5163
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5164
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5238
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5253
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5255
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5261
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5322
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5394
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5447
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5448
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5449
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5450
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5451
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5452
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5453
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5454
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5455
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5456
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5457
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5458
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5459
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5483
+Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides	PA5552
+Cell envelope	Other@Cell envelope
+Other@Cell envelope	PA0454
+Other@Cell envelope	PA3257
+Other@Cell envelope	PA4000
+Other@Cell envelope	PA4485
+Other@Cell envelope	PA4624
+Other@Cell envelope	PA4625
+Other@Cell envelope	PA4667
+Other@Cell envelope	PA5077
+Other@Cell envelope	PA5078
+Other@Cell envelope	PA5505
+Cell envelope	Surface structures
+Surface structures	PA0020
+Surface structures	PA0041
+Surface structures	PA0395
+Surface structures	PA0396
+Surface structures	PA0408
+Surface structures	PA0409
+Surface structures	PA0410
+Surface structures	PA0411
+Surface structures	PA0412
+Surface structures	PA0413
+Surface structures	PA0414
+Surface structures	PA0415
+Surface structures	PA0417
+Surface structures	PA0677
+Surface structures	PA0678
+Surface structures	PA0680
+Surface structures	PA0681
+Surface structures	PA0682
+Surface structures	PA0683
+Surface structures	PA0684
+Surface structures	PA0765
+Surface structures	PA0994
+Surface structures	PA1163
+Surface structures	PA1702
+Surface structures	PA1708
+Surface structures	PA1709
+Surface structures	PA1951
+Surface structures	PA1952
+Surface structures	PA1953
+Surface structures	PA1954
+Surface structures	PA1955
+Surface structures	PA1956
+Surface structures	PA2126
+Surface structures	PA2127
+Surface structures	PA2129
+Surface structures	PA2131
+Surface structures	PA2132
+Surface structures	PA2672
+Surface structures	PA2673
+Surface structures	PA2674
+Surface structures	PA2675
+Surface structures	PA2676
+Surface structures	PA2677
+Surface structures	PA2960
+Surface structures	PA3045
+Surface structures	PA3098
+Surface structures	PA3099
+Surface structures	PA3100
+Surface structures	PA3101
+Surface structures	PA3115
+Surface structures	PA3340
+Surface structures	PA3552
+Surface structures	PA3553
+Surface structures	PA3554
+Surface structures	PA3555
+Surface structures	PA3557
+Surface structures	PA3558
+Surface structures	PA3585
+Surface structures	PA3805
+Surface structures	PA3947
+Surface structures	PA3948
+Surface structures	PA4082
+Surface structures	PA4083
+Surface structures	PA4084
+Surface structures	PA4086
+Surface structures	PA4142
+Surface structures	PA4295
+Surface structures	PA4297
+Surface structures	PA4299
+Surface structures	PA4300
+Surface structures	PA4301
+Surface structures	PA4302
+Surface structures	PA4303
+Surface structures	PA4304
+Surface structures	PA4305
+Surface structures	PA4306
+Surface structures	PA4526
+Surface structures	PA4528
+Surface structures	PA4648
+Surface structures	PA4649
+Surface structures	PA4650
+Surface structures	PA4651
+Surface structures	PA4652
+Surface structures	PA4653
+Surface structures	PA4958
+Surface structures	PA5040
+Surface structures	PA5041
+Surface structures	PA5042
+Surface structures	PA5043
+Surface structures	PA5044
+Surface structures	PA5262
+Surface structures	PA5284
+Genetic Info processing	DNA metabolism
+DNA metabolism	Chromosome-associated proteins
+Chromosome-associated proteins	PA1527
+Chromosome-associated proteins	PA1804
+Chromosome-associated proteins	PA3197
+DNA metabolism	Degradation of DNA
+Degradation of DNA	PA1816
+Degradation of DNA	PA2749
+Degradation of DNA	PA3777
+Degradation of DNA	PA3909
+Degradation of DNA	PA3910
+Degradation of DNA	PA4042
+Degradation of DNA	PA5048
+DNA metabolism	"DNA replication, recombination, and repair"
+"DNA replication, recombination, and repair"	PA0001
+"DNA replication, recombination, and repair"	PA0002
+"DNA replication, recombination, and repair"	PA0003
+"DNA replication, recombination, and repair"	PA0004
+"DNA replication, recombination, and repair"	PA0010
+"DNA replication, recombination, and repair"	PA0357
+"DNA replication, recombination, and repair"	PA0387
+"DNA replication, recombination, and repair"	PA0577
+"DNA replication, recombination, and repair"	PA0669
+"DNA replication, recombination, and repair"	PA0750
+"DNA replication, recombination, and repair"	PA0772
+"DNA replication, recombination, and repair"	PA0923
+"DNA replication, recombination, and repair"	PA0947
+"DNA replication, recombination, and repair"	PA0965
+"DNA replication, recombination, and repair"	PA0966
+"DNA replication, recombination, and repair"	PA0967
+"DNA replication, recombination, and repair"	PA0995
+"DNA replication, recombination, and repair"	PA1031
+"DNA replication, recombination, and repair"	PA1045
+"DNA replication, recombination, and repair"	PA1462
+"DNA replication, recombination, and repair"	PA1529
+"DNA replication, recombination, and repair"	PA1532
+"DNA replication, recombination, and repair"	PA1534
+"DNA replication, recombination, and repair"	PA1686
+"DNA replication, recombination, and repair"	PA1816
+"DNA replication, recombination, and repair"	PA1866
+"DNA replication, recombination, and repair"	PA1886
+"DNA replication, recombination, and repair"	PA2118
+"DNA replication, recombination, and repair"	PA2138
+"DNA replication, recombination, and repair"	PA2150
+"DNA replication, recombination, and repair"	PA2545
+"DNA replication, recombination, and repair"	PA2585
+"DNA replication, recombination, and repair"	PA2622
+"DNA replication, recombination, and repair"	PA2738
+"DNA replication, recombination, and repair"	PA2961
+"DNA replication, recombination, and repair"	PA3002
+"DNA replication, recombination, and repair"	PA3007
+"DNA replication, recombination, and repair"	PA3011
+"DNA replication, recombination, and repair"	PA3138
+"DNA replication, recombination, and repair"	PA3161
+"DNA replication, recombination, and repair"	PA3168
+"DNA replication, recombination, and repair"	PA3232
+"DNA replication, recombination, and repair"	PA3272
+"DNA replication, recombination, and repair"	PA3344
+"DNA replication, recombination, and repair"	PA3495
+"DNA replication, recombination, and repair"	PA3567
+"DNA replication, recombination, and repair"	PA3596
+"DNA replication, recombination, and repair"	PA3617
+"DNA replication, recombination, and repair"	PA3618
+"DNA replication, recombination, and repair"	PA3620
+"DNA replication, recombination, and repair"	PA3640
+"DNA replication, recombination, and repair"	PA3725
+"DNA replication, recombination, and repair"	PA3738
+"DNA replication, recombination, and repair"	PA3832
+"DNA replication, recombination, and repair"	PA3989
+"DNA replication, recombination, and repair"	PA4172
+"DNA replication, recombination, and repair"	PA4232
+"DNA replication, recombination, and repair"	PA4234
+"DNA replication, recombination, and repair"	PA4281
+"DNA replication, recombination, and repair"	PA4282
+"DNA replication, recombination, and repair"	PA4283
+"DNA replication, recombination, and repair"	PA4284
+"DNA replication, recombination, and repair"	PA4285
+"DNA replication, recombination, and repair"	PA4316
+"DNA replication, recombination, and repair"	PA4363
+"DNA replication, recombination, and repair"	PA4400
+"DNA replication, recombination, and repair"	PA4472
+"DNA replication, recombination, and repair"	PA4609
+"DNA replication, recombination, and repair"	PA4660
+"DNA replication, recombination, and repair"	PA4763
+"DNA replication, recombination, and repair"	PA4931
+"DNA replication, recombination, and repair"	PA4946
+"DNA replication, recombination, and repair"	PA4964
+"DNA replication, recombination, and repair"	PA4967
+"DNA replication, recombination, and repair"	PA5028
+"DNA replication, recombination, and repair"	PA5050
+"DNA replication, recombination, and repair"	PA5147
+"DNA replication, recombination, and repair"	PA5280
+"DNA replication, recombination, and repair"	PA5296
+"DNA replication, recombination, and repair"	PA5319
+"DNA replication, recombination, and repair"	PA5332
+"DNA replication, recombination, and repair"	PA5345
+"DNA replication, recombination, and repair"	PA5348
+"DNA replication, recombination, and repair"	PA5443
+"DNA replication, recombination, and repair"	PA5493
+"DNA replication, recombination, and repair"	PA5562
+"DNA replication, recombination, and repair"	PA5563
+Genetic Info processing	Mobile and extrachromosomal element functions
+Mobile and extrachromosomal element functions	Other@Mobile and extrachromosomal element functions
+Other@Mobile and extrachromosomal element functions	PA4674
+Mobile and extrachromosomal element functions	Prophage functions
+Prophage functions	PA0612
+Prophage functions	PA4870
+Genetic Info processing	Protein fate
+Protein fate	"Degradation of proteins, peptides, and glycopeptides"
+"Degradation of proteins, peptides, and glycopeptides"	PA0277
+"Degradation of proteins, peptides, and glycopeptides"	PA0355
+"Degradation of proteins, peptides, and glycopeptides"	PA0371
+"Degradation of proteins, peptides, and glycopeptides"	PA0372
+"Degradation of proteins, peptides, and glycopeptides"	PA0423
+"Degradation of proteins, peptides, and glycopeptides"	PA0459
+"Degradation of proteins, peptides, and glycopeptides"	PA0580
+"Degradation of proteins, peptides, and glycopeptides"	PA0766
+"Degradation of proteins, peptides, and glycopeptides"	PA0779
+"Degradation of proteins, peptides, and glycopeptides"	PA1242
+"Degradation of proteins, peptides, and glycopeptides"	PA1249
+"Degradation of proteins, peptides, and glycopeptides"	PA1304
+"Degradation of proteins, peptides, and glycopeptides"	PA1486
+"Degradation of proteins, peptides, and glycopeptides"	PA1801
+"Degradation of proteins, peptides, and glycopeptides"	PA1802
+"Degradation of proteins, peptides, and glycopeptides"	PA1803
+"Degradation of proteins, peptides, and glycopeptides"	PA1871
+"Degradation of proteins, peptides, and glycopeptides"	PA2189
+"Degradation of proteins, peptides, and glycopeptides"	PA2253
+"Degradation of proteins, peptides, and glycopeptides"	PA2393
+"Degradation of proteins, peptides, and glycopeptides"	PA2617
+"Degradation of proteins, peptides, and glycopeptides"	PA2620
+"Degradation of proteins, peptides, and glycopeptides"	PA2621
+"Degradation of proteins, peptides, and glycopeptides"	PA2922
+"Degradation of proteins, peptides, and glycopeptides"	PA2939
+"Degradation of proteins, peptides, and glycopeptides"	PA2973
+"Degradation of proteins, peptides, and glycopeptides"	PA3083
+"Degradation of proteins, peptides, and glycopeptides"	PA3257
+"Degradation of proteins, peptides, and glycopeptides"	PA3326
+"Degradation of proteins, peptides, and glycopeptides"	PA3649
+"Degradation of proteins, peptides, and glycopeptides"	PA3724
+"Degradation of proteins, peptides, and glycopeptides"	PA3831
+"Degradation of proteins, peptides, and glycopeptides"	PA4048
+"Degradation of proteins, peptides, and glycopeptides"	PA4171
+"Degradation of proteins, peptides, and glycopeptides"	PA4175
+"Degradation of proteins, peptides, and glycopeptides"	PA4336
+"Degradation of proteins, peptides, and glycopeptides"	PA4344
+"Degradation of proteins, peptides, and glycopeptides"	PA4370
+"Degradation of proteins, peptides, and glycopeptides"	PA4498
+"Degradation of proteins, peptides, and glycopeptides"	PA4541
+"Degradation of proteins, peptides, and glycopeptides"	PA4751
+"Degradation of proteins, peptides, and glycopeptides"	PA4941
+"Degradation of proteins, peptides, and glycopeptides"	PA4965
+"Degradation of proteins, peptides, and glycopeptides"	PA5053
+"Degradation of proteins, peptides, and glycopeptides"	PA5080
+"Degradation of proteins, peptides, and glycopeptides"	PA5134
+"Degradation of proteins, peptides, and glycopeptides"	PA5224
+"Degradation of proteins, peptides, and glycopeptides"	PA5440
+Protein fate	Protein and peptide secretion and trafficking
+Protein and peptide secretion and trafficking	PA0067
+Protein and peptide secretion and trafficking	PA0076
+Protein and peptide secretion and trafficking	PA0077
+Protein and peptide secretion and trafficking	PA0078
+Protein and peptide secretion and trafficking	PA0079
+Protein and peptide secretion and trafficking	PA0080
+Protein and peptide secretion and trafficking	PA0081
+Protein and peptide secretion and trafficking	PA0082
+Protein and peptide secretion and trafficking	PA0083
+Protein and peptide secretion and trafficking	PA0084
+Protein and peptide secretion and trafficking	PA0086
+Protein and peptide secretion and trafficking	PA0087
+Protein and peptide secretion and trafficking	PA0088
+Protein and peptide secretion and trafficking	PA0089
+Protein and peptide secretion and trafficking	PA0090
+Protein and peptide secretion and trafficking	PA0328
+Protein and peptide secretion and trafficking	PA0373
+Protein and peptide secretion and trafficking	PA0677
+Protein and peptide secretion and trafficking	PA0678
+Protein and peptide secretion and trafficking	PA0679
+Protein and peptide secretion and trafficking	PA0680
+Protein and peptide secretion and trafficking	PA0681
+Protein and peptide secretion and trafficking	PA0685
+Protein and peptide secretion and trafficking	PA0686
+Protein and peptide secretion and trafficking	PA0687
+Protein and peptide secretion and trafficking	PA0768
+Protein and peptide secretion and trafficking	PA1011
+Protein and peptide secretion and trafficking	PA1246
+Protein and peptide secretion and trafficking	PA1247
+Protein and peptide secretion and trafficking	PA1248
+Protein and peptide secretion and trafficking	PA1303
+Protein and peptide secretion and trafficking	PA1475
+Protein and peptide secretion and trafficking	PA1476
+Protein and peptide secretion and trafficking	PA1477
+Protein and peptide secretion and trafficking	PA1656
+Protein and peptide secretion and trafficking	PA1657
+Protein and peptide secretion and trafficking	PA1658
+Protein and peptide secretion and trafficking	PA1659
+Protein and peptide secretion and trafficking	PA1660
+Protein and peptide secretion and trafficking	PA1661
+Protein and peptide secretion and trafficking	PA1662
+Protein and peptide secretion and trafficking	PA1665
+Protein and peptide secretion and trafficking	PA1666
+Protein and peptide secretion and trafficking	PA1667
+Protein and peptide secretion and trafficking	PA1668
+Protein and peptide secretion and trafficking	PA1669
+Protein and peptide secretion and trafficking	PA1670
+Protein and peptide secretion and trafficking	PA1671
+Protein and peptide secretion and trafficking	PA1690
+Protein and peptide secretion and trafficking	PA1691
+Protein and peptide secretion and trafficking	PA1692
+Protein and peptide secretion and trafficking	PA1693
+Protein and peptide secretion and trafficking	PA1694
+Protein and peptide secretion and trafficking	PA1696
+Protein and peptide secretion and trafficking	PA1697
+Protein and peptide secretion and trafficking	PA1698
+Protein and peptide secretion and trafficking	PA1701
+Protein and peptide secretion and trafficking	PA1703
+Protein and peptide secretion and trafficking	PA1704
+Protein and peptide secretion and trafficking	PA1705
+Protein and peptide secretion and trafficking	PA1706
+Protein and peptide secretion and trafficking	PA1707
+Protein and peptide secretion and trafficking	PA1708
+Protein and peptide secretion and trafficking	PA1709
+Protein and peptide secretion and trafficking	PA1715
+Protein and peptide secretion and trafficking	PA1716
+Protein and peptide secretion and trafficking	PA1717
+Protein and peptide secretion and trafficking	PA1719
+Protein and peptide secretion and trafficking	PA1720
+Protein and peptide secretion and trafficking	PA1722
+Protein and peptide secretion and trafficking	PA1723
+Protein and peptide secretion and trafficking	PA1725
+Protein and peptide secretion and trafficking	PA1867
+Protein and peptide secretion and trafficking	PA1868
+Protein and peptide secretion and trafficking	PA1876
+Protein and peptide secretion and trafficking	PA2065
+Protein and peptide secretion and trafficking	PA2360
+Protein and peptide secretion and trafficking	PA2361
+Protein and peptide secretion and trafficking	PA2362
+Protein and peptide secretion and trafficking	PA2363
+Protein and peptide secretion and trafficking	PA2364
+Protein and peptide secretion and trafficking	PA2365
+Protein and peptide secretion and trafficking	PA2366
+Protein and peptide secretion and trafficking	PA2368
+Protein and peptide secretion and trafficking	PA2369
+Protein and peptide secretion and trafficking	PA2370
+Protein and peptide secretion and trafficking	PA2371
+Protein and peptide secretion and trafficking	PA2378
+Protein and peptide secretion and trafficking	PA2392
+Protein and peptide secretion and trafficking	PA2470
+Protein and peptide secretion and trafficking	PA2614
+Protein and peptide secretion and trafficking	PA2672
+Protein and peptide secretion and trafficking	PA2673
+Protein and peptide secretion and trafficking	PA2674
+Protein and peptide secretion and trafficking	PA2675
+Protein and peptide secretion and trafficking	PA2676
+Protein and peptide secretion and trafficking	PA2677
+Protein and peptide secretion and trafficking	PA2862
+Protein and peptide secretion and trafficking	PA2863
+Protein and peptide secretion and trafficking	PA2866
+Protein and peptide secretion and trafficking	PA2986
+Protein and peptide secretion and trafficking	PA2987
+Protein and peptide secretion and trafficking	PA2988
+Protein and peptide secretion and trafficking	PA3006
+Protein and peptide secretion and trafficking	PA3095
+Protein and peptide secretion and trafficking	PA3096
+Protein and peptide secretion and trafficking	PA3097
+Protein and peptide secretion and trafficking	PA3098
+Protein and peptide secretion and trafficking	PA3099
+Protein and peptide secretion and trafficking	PA3100
+Protein and peptide secretion and trafficking	PA3101
+Protein and peptide secretion and trafficking	PA3102
+Protein and peptide secretion and trafficking	PA3103
+Protein and peptide secretion and trafficking	PA3104
+Protein and peptide secretion and trafficking	PA3105
+Protein and peptide secretion and trafficking	PA3221
+Protein and peptide secretion and trafficking	PA3392
+Protein and peptide secretion and trafficking	PA3404
+Protein and peptide secretion and trafficking	PA3535
+Protein and peptide secretion and trafficking	PA3648
+Protein and peptide secretion and trafficking	PA3746
+Protein and peptide secretion and trafficking	PA3800
+Protein and peptide secretion and trafficking	PA3820
+Protein and peptide secretion and trafficking	PA3821
+Protein and peptide secretion and trafficking	PA3822
+Protein and peptide secretion and trafficking	PA3842
+Protein and peptide secretion and trafficking	PA3904
+Protein and peptide secretion and trafficking	PA3906
+Protein and peptide secretion and trafficking	PA4140
+Protein and peptide secretion and trafficking	PA4243
+Protein and peptide secretion and trafficking	PA4276
+Protein and peptide secretion and trafficking	PA4403
+Protein and peptide secretion and trafficking	PA4526
+Protein and peptide secretion and trafficking	PA4545
+Protein and peptide secretion and trafficking	PA4559
+Protein and peptide secretion and trafficking	PA4668
+Protein and peptide secretion and trafficking	PA4747
+Protein and peptide secretion and trafficking	PA4765
+Protein and peptide secretion and trafficking	PA4804
+Protein and peptide secretion and trafficking	PA4813
+Protein and peptide secretion and trafficking	PA4942
+Protein and peptide secretion and trafficking	PA4974
+Protein and peptide secretion and trafficking	PA5068
+Protein and peptide secretion and trafficking	PA5069
+Protein and peptide secretion and trafficking	PA5070
+Protein and peptide secretion and trafficking	PA5128
+Protein and peptide secretion and trafficking	PA5210
+Protein and peptide secretion and trafficking	PA5568
+Protein fate	Protein folding and stabilization
+Protein folding and stabilization	PA0459
+Protein folding and stabilization	PA0538
+Protein folding and stabilization	PA0594
+Protein folding and stabilization	PA0766
+Protein folding and stabilization	PA0837
+Protein folding and stabilization	PA1005
+Protein folding and stabilization	PA1068
+Protein folding and stabilization	PA1483
+Protein folding and stabilization	PA1522
+Protein folding and stabilization	PA1596
+Protein folding and stabilization	PA1699
+Protein folding and stabilization	PA1700
+Protein folding and stabilization	PA1720
+Protein folding and stabilization	PA1793
+Protein folding and stabilization	PA1800
+Protein folding and stabilization	PA1802
+Protein folding and stabilization	PA1805
+Protein folding and stabilization	PA1996
+Protein folding and stabilization	PA2476
+Protein folding and stabilization	PA2621
+Protein folding and stabilization	PA2830
+Protein folding and stabilization	PA3126
+Protein folding and stabilization	PA3221
+Protein folding and stabilization	PA3227
+Protein folding and stabilization	PA3262
+Protein folding and stabilization	PA3737
+Protein folding and stabilization	PA3810
+Protein folding and stabilization	PA3811
+Protein folding and stabilization	PA3873
+Protein folding and stabilization	PA4176
+Protein folding and stabilization	PA4385
+Protein folding and stabilization	PA4386
+Protein folding and stabilization	PA4542
+Protein folding and stabilization	PA4572
+Protein folding and stabilization	PA4760
+Protein folding and stabilization	PA4761
+Protein folding and stabilization	PA4762
+Protein folding and stabilization	PA4873
+Protein folding and stabilization	PA5054
+Protein folding and stabilization	PA5193
+Protein folding and stabilization	PA5256
+Protein fate	Protein modification and repair
+Protein modification and repair	PA0019
+Protein modification and repair	PA0341
+Protein modification and repair	PA1122
+Protein modification and repair	PA1548
+Protein modification and repair	PA1678
+Protein modification and repair	PA1832
+Protein modification and repair	PA1919
+Protein modification and repair	PA2748
+Protein modification and repair	PA2783
+Protein modification and repair	PA2827
+Protein modification and repair	PA2853
+Protein modification and repair	PA2978
+Protein modification and repair	PA3257
+Protein modification and repair	PA3624
+Protein modification and repair	PA3657
+Protein modification and repair	PA3984
+Protein modification and repair	PA3997
+Protein modification and repair	PA4280
+Protein modification and repair	PA4558
+Protein modification and repair	PA4664
+Protein modification and repair	PA5018
+Protein modification and repair	PA5134
+Genetic Info processing	Protein synthesis
+Protein synthesis	Other@Protein synthesis
+Other@Protein synthesis	PA0771
+Other@Protein synthesis	PA3327
+Other@Protein synthesis	PA3460
+Other@Protein synthesis	PA3799
+Other@Protein synthesis	PA3982
+Other@Protein synthesis	PA4566
+Other@Protein synthesis	PA4672
+Other@Protein synthesis	PA4768
+Other@Protein synthesis	PA5471
+Other@Protein synthesis	PA5492
+Protein synthesis	Ribosomal proteins: synthesis and modification
+Ribosomal proteins: synthesis and modification	PA0579
+Ribosomal proteins: synthesis and modification	PA0916
+Ribosomal proteins: synthesis and modification	PA1678
+Ribosomal proteins: synthesis and modification	PA1769
+Ribosomal proteins: synthesis and modification	PA1928
+Ribosomal proteins: synthesis and modification	PA1943
+Ribosomal proteins: synthesis and modification	PA2741
+Ribosomal proteins: synthesis and modification	PA2742
+Ribosomal proteins: synthesis and modification	PA2970
+Ribosomal proteins: synthesis and modification	PA3049
+Ribosomal proteins: synthesis and modification	PA3162
+Ribosomal proteins: synthesis and modification	PA3600
+Ribosomal proteins: synthesis and modification	PA3601
+Ribosomal proteins: synthesis and modification	PA3656
+Ribosomal proteins: synthesis and modification	PA3742
+Ribosomal proteins: synthesis and modification	PA3745
+Ribosomal proteins: synthesis and modification	PA3944
+Ribosomal proteins: synthesis and modification	PA3945
+Ribosomal proteins: synthesis and modification	PA4237
+Ribosomal proteins: synthesis and modification	PA4239
+Ribosomal proteins: synthesis and modification	PA4240
+Ribosomal proteins: synthesis and modification	PA4241
+Ribosomal proteins: synthesis and modification	PA4242
+Ribosomal proteins: synthesis and modification	PA4244
+Ribosomal proteins: synthesis and modification	PA4245
+Ribosomal proteins: synthesis and modification	PA4246
+Ribosomal proteins: synthesis and modification	PA4247
+Ribosomal proteins: synthesis and modification	PA4248
+Ribosomal proteins: synthesis and modification	PA4249
+Ribosomal proteins: synthesis and modification	PA4250
+Ribosomal proteins: synthesis and modification	PA4251
+Ribosomal proteins: synthesis and modification	PA4252
+Ribosomal proteins: synthesis and modification	PA4253
+Ribosomal proteins: synthesis and modification	PA4254
+Ribosomal proteins: synthesis and modification	PA4255
+Ribosomal proteins: synthesis and modification	PA4256
+Ribosomal proteins: synthesis and modification	PA4257
+Ribosomal proteins: synthesis and modification	PA4258
+Ribosomal proteins: synthesis and modification	PA4259
+Ribosomal proteins: synthesis and modification	PA4260
+Ribosomal proteins: synthesis and modification	PA4261
+Ribosomal proteins: synthesis and modification	PA4262
+Ribosomal proteins: synthesis and modification	PA4263
+Ribosomal proteins: synthesis and modification	PA4264
+Ribosomal proteins: synthesis and modification	PA4267
+Ribosomal proteins: synthesis and modification	PA4268
+Ribosomal proteins: synthesis and modification	PA4271
+Ribosomal proteins: synthesis and modification	PA4272
+Ribosomal proteins: synthesis and modification	PA4273
+Ribosomal proteins: synthesis and modification	PA4274
+Ribosomal proteins: synthesis and modification	PA4432
+Ribosomal proteins: synthesis and modification	PA4433
+Ribosomal proteins: synthesis and modification	PA4563
+Ribosomal proteins: synthesis and modification	PA4567
+Ribosomal proteins: synthesis and modification	PA4568
+Ribosomal proteins: synthesis and modification	PA4671
+Ribosomal proteins: synthesis and modification	PA4678
+Ribosomal proteins: synthesis and modification	PA4741
+Ribosomal proteins: synthesis and modification	PA4850
+Ribosomal proteins: synthesis and modification	PA4932
+Ribosomal proteins: synthesis and modification	PA4934
+Ribosomal proteins: synthesis and modification	PA4935
+Ribosomal proteins: synthesis and modification	PA5049
+Ribosomal proteins: synthesis and modification	PA5197
+Ribosomal proteins: synthesis and modification	PA5315
+Ribosomal proteins: synthesis and modification	PA5316
+Ribosomal proteins: synthesis and modification	PA5570
+Protein synthesis	Translation factors
+Translation factors	PA2071
+Translation factors	PA2619
+Translation factors	PA2743
+Translation factors	PA2851
+Translation factors	PA3653
+Translation factors	PA3655
+Translation factors	PA3757
+Translation factors	PA3903
+Translation factors	PA4005
+Translation factors	PA4265
+Translation factors	PA4266
+Translation factors	PA4277
+Translation factors	PA4463
+Translation factors	PA4665
+Translation factors	PA4744
+Translation factors	PA4807
+Translation factors	PA4840
+Translation factors	PA4952
+Translation factors	PA5117
+Translation factors	PA5195
+Translation factors	PA5470
+Translation factors	PA5471.1
+Protein synthesis	tRNA aminoacylation
+tRNA aminoacylation	PA0008
+tRNA aminoacylation	PA0009
+tRNA aminoacylation	PA0018
+tRNA aminoacylation	PA0668
+tRNA aminoacylation	PA0903
+tRNA aminoacylation	PA0956
+tRNA aminoacylation	PA0963
+tRNA aminoacylation	PA1794
+tRNA aminoacylation	PA1795
+tRNA aminoacylation	PA2612
+tRNA aminoacylation	PA2739
+tRNA aminoacylation	PA2740
+tRNA aminoacylation	PA2744
+tRNA aminoacylation	PA3134
+tRNA aminoacylation	PA3482
+tRNA aminoacylation	PA3580
+tRNA aminoacylation	PA3700
+tRNA aminoacylation	PA3802
+tRNA aminoacylation	PA3834
+tRNA aminoacylation	PA3987
+tRNA aminoacylation	PA4138
+tRNA aminoacylation	PA4439
+tRNA aminoacylation	PA4482
+tRNA aminoacylation	PA4483
+tRNA aminoacylation	PA4484
+tRNA aminoacylation	PA4560
+tRNA aminoacylation	PA4808
+tRNA aminoacylation	PA5051
+tRNA aminoacylation	PA5079
+Protein synthesis	tRNA and rRNA base modification
+tRNA and rRNA base modification	PA0017
+tRNA and rRNA base modification	PA0354
+tRNA and rRNA base modification	PA0370
+tRNA and rRNA base modification	PA0382
+tRNA and rRNA base modification	PA0419
+tRNA and rRNA base modification	PA0580
+tRNA and rRNA base modification	PA0584
+tRNA and rRNA base modification	PA0592
+tRNA and rRNA base modification	PA0733
+tRNA and rRNA base modification	PA0933
+tRNA and rRNA base modification	PA0975
+tRNA and rRNA base modification	PA1006
+tRNA and rRNA base modification	PA1110
+tRNA and rRNA base modification	PA1161
+tRNA and rRNA base modification	PA1164
+tRNA and rRNA base modification	PA1192
+tRNA and rRNA base modification	PA1407
+tRNA and rRNA base modification	PA1424
+tRNA and rRNA base modification	PA1563
+tRNA and rRNA base modification	PA1564
+tRNA and rRNA base modification	PA1643
+tRNA and rRNA base modification	PA1839
+tRNA and rRNA base modification	PA2043
+tRNA and rRNA base modification	PA2605
+tRNA and rRNA base modification	PA2606
+tRNA and rRNA base modification	PA2607
+tRNA and rRNA base modification	PA2608
+tRNA and rRNA base modification	PA2626
+tRNA and rRNA base modification	PA2666
+tRNA and rRNA base modification	PA2795
+tRNA and rRNA base modification	PA2975
+tRNA and rRNA base modification	PA3048
+tRNA and rRNA base modification	PA3114
+tRNA and rRNA base modification	PA3129
+tRNA and rRNA base modification	PA3179
+tRNA and rRNA base modification	PA3199
+tRNA and rRNA base modification	PA3246
+tRNA and rRNA base modification	PA3456
+tRNA and rRNA base modification	PA3606
+tRNA and rRNA base modification	PA3626
+tRNA and rRNA base modification	PA3632
+tRNA and rRNA base modification	PA3638
+tRNA and rRNA base modification	PA3680
+tRNA and rRNA base modification	PA3685
+tRNA and rRNA base modification	PA3743
+tRNA and rRNA base modification	PA3767
+tRNA and rRNA base modification	PA3806
+tRNA and rRNA base modification	PA3814
+tRNA and rRNA base modification	PA3817
+tRNA and rRNA base modification	PA3823
+tRNA and rRNA base modification	PA3824
+tRNA and rRNA base modification	PA3840
+tRNA and rRNA base modification	PA3968
+tRNA and rRNA base modification	PA3980
+tRNA and rRNA base modification	PA4004
+tRNA and rRNA base modification	PA4420
+tRNA and rRNA base modification	PA4422
+tRNA and rRNA base modification	PA4544
+tRNA and rRNA base modification	PA4583
+tRNA and rRNA base modification	PA4617
+tRNA and rRNA base modification	PA4627
+tRNA and rRNA base modification	PA4720
+tRNA and rRNA base modification	PA4724
+tRNA and rRNA base modification	PA4742
+tRNA and rRNA base modification	PA4790
+tRNA and rRNA base modification	PA4936
+tRNA and rRNA base modification	PA4945
+tRNA and rRNA base modification	PA4948
+tRNA and rRNA base modification	PA4950
+tRNA and rRNA base modification	PA5019
+tRNA and rRNA base modification	PA5071
+tRNA and rRNA base modification	PA5118
+tRNA and rRNA base modification	PA5127
+tRNA and rRNA base modification	PA5564
+tRNA and rRNA base modification	PA5565
+tRNA and rRNA base modification	PA5567
+Genetic Info processing	Transcription
+Transcription	Degradation of RNA
+Degradation of RNA	PA0336
+Degradation of RNA	PA2976
+Degradation of RNA	PA4477
+Degradation of RNA	PA4740
+Degradation of RNA	PA4937
+Transcription	DNA-dependent RNA polymerase
+DNA-dependent RNA polymerase	PA4238
+DNA-dependent RNA polymerase	PA4269
+DNA-dependent RNA polymerase	PA4270
+DNA-dependent RNA polymerase	PA5337
+Transcription	RNA processing
+RNA processing	PA0428
+RNA processing	PA0455
+RNA processing	PA0770
+RNA processing	PA1294
+RNA processing	PA1815
+RNA processing	PA2806
+RNA processing	PA2840
+RNA processing	PA2861
+RNA processing	PA3308
+RNA processing	PA3466
+RNA processing	PA3528
+RNA processing	PA3642
+RNA processing	PA3744
+RNA processing	PA3861
+RNA processing	PA3950
+RNA processing	PA4585
+RNA processing	PA4727
+RNA processing	PA4743
+RNA processing	PA5334
+RNA processing	PA5569
+Transcription	Transcription factors
+Transcription factors	PA0032
+Transcription factors	PA0037
+Transcription factors	PA0048
+Transcription factors	PA0056
+Transcription factors	PA0120
+Transcription factors	PA0123
+Transcription factors	PA0133
+Transcription factors	PA0149
+Transcription factors	PA0150
+Transcription factors	PA0152
+Transcription factors	PA0155
+Transcription factors	PA0159
+Transcription factors	PA0163
+Transcription factors	PA0167
+Transcription factors	PA0181
+Transcription factors	PA0191
+Transcription factors	PA0217
+Transcription factors	PA0218
+Transcription factors	PA0225
+Transcription factors	PA0233
+Transcription factors	PA0236
+Transcription factors	PA0243
+Transcription factors	PA0248
+Transcription factors	PA0253
+Transcription factors	PA0268
+Transcription factors	PA0272
+Transcription factors	PA0275
+Transcription factors	PA0279
+Transcription factors	PA0289
+Transcription factors	PA0294
+Transcription factors	PA0306
+Transcription factors	PA0367
+Transcription factors	PA0376
+Transcription factors	PA0403
+Transcription factors	PA0416
+Transcription factors	PA0424
+Transcription factors	PA0436
+Transcription factors	PA0448
+Transcription factors	PA0471
+Transcription factors	PA0472
+Transcription factors	PA0475
+Transcription factors	PA0477
+Transcription factors	PA0479
+Transcription factors	PA0491
+Transcription factors	PA0515
+Transcription factors	PA0527
+Transcription factors	PA0528
+Transcription factors	PA0533
+Transcription factors	PA0535
+Transcription factors	PA0547
+Transcription factors	PA0564
+Transcription factors	PA0576
+Transcription factors	PA0610
+Transcription factors	PA0611
+Transcription factors	PA0652
+Transcription factors	PA0675
+Transcription factors	PA0676
+Transcription factors	PA0701
+Transcription factors	PA0707
+Transcription factors	PA0708
+Transcription factors	PA0739
+Transcription factors	PA0762
+Transcription factors	PA0763
+Transcription factors	PA0764
+Transcription factors	PA0765
+Transcription factors	PA0780
+Transcription factors	PA0784
+Transcription factors	PA0791
+Transcription factors	PA0797
+Transcription factors	PA0815
+Transcription factors	PA0816
+Transcription factors	PA0828
+Transcription factors	PA0831
+Transcription factors	PA0839
+Transcription factors	PA0864
+Transcription factors	PA0873
+Transcription factors	PA0876
+Transcription factors	PA0877
+Transcription factors	PA0893
+Transcription factors	PA0907
+Transcription factors	PA0942
+Transcription factors	PA0964
+Transcription factors	PA1015
+Transcription factors	PA1067
+Transcription factors	PA1097
+Transcription factors	PA1109
+Transcription factors	PA1128
+Transcription factors	PA1136
+Transcription factors	PA1138
+Transcription factors	PA1141
+Transcription factors	PA1142
+Transcription factors	PA1145
+Transcription factors	PA1182
+Transcription factors	PA1184
+Transcription factors	PA1196
+Transcription factors	PA1201
+Transcription factors	PA1223
+Transcription factors	PA1226
+Transcription factors	PA1229
+Transcription factors	PA1235
+Transcription factors	PA1261
+Transcription factors	PA1264
+Transcription factors	PA1269
+Transcription factors	PA1283
+Transcription factors	PA1285
+Transcription factors	PA1290
+Transcription factors	PA1300
+Transcription factors	PA1301
+Transcription factors	PA1309
+Transcription factors	PA1312
+Transcription factors	PA1315
+Transcription factors	PA1328
+Transcription factors	PA1351
+Transcription factors	PA1359
+Transcription factors	PA1363
+Transcription factors	PA1399
+Transcription factors	PA1403
+Transcription factors	PA1413
+Transcription factors	PA1422
+Transcription factors	PA1430
+Transcription factors	PA1455
+Transcription factors	PA1484
+Transcription factors	PA1490
+Transcription factors	PA1504
+Transcription factors	PA1520
+Transcription factors	PA1526
+Transcription factors	PA1539
+Transcription factors	PA1544
+Transcription factors	PA1570
+Transcription factors	PA1599
+Transcription factors	PA1603
+Transcription factors	PA1619
+Transcription factors	PA1627
+Transcription factors	PA1630
+Transcription factors	PA1653
+Transcription factors	PA1663
+Transcription factors	PA1713
+Transcription factors	PA1738
+Transcription factors	PA1754
+Transcription factors	PA1759
+Transcription factors	PA1760
+Transcription factors	PA1776
+Transcription factors	PA1826
+Transcription factors	PA1836
+Transcription factors	PA1850
+Transcription factors	PA1853
+Transcription factors	PA1859
+Transcription factors	PA1864
+Transcription factors	PA1884
+Transcription factors	PA1898
+Transcription factors	PA1911
+Transcription factors	PA1912
+Transcription factors	PA1945
+Transcription factors	PA1961
+Transcription factors	PA1998
+Transcription factors	PA2005
+Transcription factors	PA2010
+Transcription factors	PA2016
+Transcription factors	PA2020
+Transcription factors	PA2028
+Transcription factors	PA2032
+Transcription factors	PA2047
+Transcription factors	PA2050
+Transcription factors	PA2054
+Transcription factors	PA2056
+Transcription factors	PA2076
+Transcription factors	PA2082
+Transcription factors	PA2093
+Transcription factors	PA2096
+Transcription factors	PA2115
+Transcription factors	PA2121
+Transcription factors	PA2123
+Transcription factors	PA2126
+Transcription factors	PA2196
+Transcription factors	PA2206
+Transcription factors	PA2246
+Transcription factors	PA2258
+Transcription factors	PA2259
+Transcription factors	PA2267
+Transcription factors	PA2270
+Transcription factors	PA2276
+Transcription factors	PA2281
+Transcription factors	PA2299
+Transcription factors	PA2312
+Transcription factors	PA2316
+Transcription factors	PA2320
+Transcription factors	PA2332
+Transcription factors	PA2334
+Transcription factors	PA2337
+Transcription factors	PA2354
+Transcription factors	PA2359
+Transcription factors	PA2376
+Transcription factors	PA2383
+Transcription factors	PA2388
+Transcription factors	PA2417
+Transcription factors	PA2426
+Transcription factors	PA2447
+Transcription factors	PA2449
+Transcription factors	PA2467
+Transcription factors	PA2468
+Transcription factors	PA2469
+Transcription factors	PA2484
+Transcription factors	PA2488
+Transcription factors	PA2489
+Transcription factors	PA2492
+Transcription factors	PA2497
+Transcription factors	PA2510
+Transcription factors	PA2511
+Transcription factors	PA2519
+Transcription factors	PA2534
+Transcription factors	PA2547
+Transcription factors	PA2551
+Transcription factors	PA2556
+Transcription factors	PA2577
+Transcription factors	PA2588
+Transcription factors	PA2591
+Transcription factors	PA2601
+Transcription factors	PA2663
+Transcription factors	PA2665
+Transcription factors	PA2667
+Transcription factors	PA2681
+Transcription factors	PA2692
+Transcription factors	PA2696
+Transcription factors	PA2704
+Transcription factors	PA2718
+Transcription factors	PA2758
+Transcription factors	PA2766
+Transcription factors	PA2780
+Transcription factors	PA2802
+Transcription factors	PA2808
+Transcription factors	PA2825
+Transcription factors	PA2834
+Transcription factors	PA2838
+Transcription factors	PA2846
+Transcription factors	PA2848
+Transcription factors	PA2849
+Transcription factors	PA2859
+Transcription factors	PA2877
+Transcription factors	PA2879
+Transcription factors	PA2885
+Transcription factors	PA2895
+Transcription factors	PA2896
+Transcription factors	PA2897
+Transcription factors	PA2917
+Transcription factors	PA2921
+Transcription factors	PA2930
+Transcription factors	PA2931
+Transcription factors	PA2957
+Transcription factors	PA3006
+Transcription factors	PA3027
+Transcription factors	PA3034
+Transcription factors	PA3067
+Transcription factors	PA3094
+Transcription factors	PA3122
+Transcription factors	PA3124
+Transcription factors	PA3133
+Transcription factors	PA3135
+Transcription factors	PA3174
+Transcription factors	PA3184
+Transcription factors	PA3215
+Transcription factors	PA3220
+Transcription factors	PA3225
+Transcription factors	PA3249
+Transcription factors	PA3260
+Transcription factors	PA3269
+Transcription factors	PA3285
+Transcription factors	PA3321
+Transcription factors	PA3341
+Transcription factors	PA3346
+Transcription factors	PA3347
+Transcription factors	PA3391
+Transcription factors	PA3398
+Transcription factors	PA3410
+Transcription factors	PA3420
+Transcription factors	PA3423
+Transcription factors	PA3433
+Transcription factors	PA3458
+Transcription factors	PA3477
+Transcription factors	PA3565
+Transcription factors	PA3571
+Transcription factors	PA3574
+Transcription factors	PA3583
+Transcription factors	PA3587
+Transcription factors	PA3594
+Transcription factors	PA3599
+Transcription factors	PA3622
+Transcription factors	PA3630
+Transcription factors	PA3678
+Transcription factors	PA3689
+Transcription factors	PA3699
+Transcription factors	PA3711
+Transcription factors	PA3721
+Transcription factors	PA3771
+Transcription factors	PA3776
+Transcription factors	PA3778
+Transcription factors	PA3782
+Transcription factors	PA3830
+Transcription factors	PA3845
+Transcription factors	PA3864
+Transcription factors	PA3895
+Transcription factors	PA3898
+Transcription factors	PA3899
+Transcription factors	PA3921
+Transcription factors	PA3927
+Transcription factors	PA3932
+Transcription factors	PA3965
+Transcription factors	PA3973
+Transcription factors	PA3995
+Transcription factors	PA4021
+Transcription factors	PA4052
+Transcription factors	PA4057
+Transcription factors	PA4070
+Transcription factors	PA4077
+Transcription factors	PA4094
+Transcription factors	PA4109
+Transcription factors	PA4120
+Transcription factors	PA4132
+Transcription factors	PA4135
+Transcription factors	PA4145
+Transcription factors	PA4147
+Transcription factors	PA4157
+Transcription factors	PA4165
+Transcription factors	PA4174
+Transcription factors	PA4182
+Transcription factors	PA4184
+Transcription factors	PA4185
+Transcription factors	PA4203
+Transcription factors	PA4227
+Transcription factors	PA4275
+Transcription factors	PA4288
+Transcription factors	PA4315
+Transcription factors	PA4341
+Transcription factors	PA4427
+Transcription factors	PA4428
+Transcription factors	PA4436
+Transcription factors	PA4462
+Transcription factors	PA4499
+Transcription factors	PA4508
+Transcription factors	PA4581
+Transcription factors	PA4596
+Transcription factors	PA4600
+Transcription factors	PA4659
+Transcription factors	PA4723
+Transcription factors	PA4745
+Transcription factors	PA4755
+Transcription factors	PA4764
+Transcription factors	PA4769
+Transcription factors	PA4784
+Transcription factors	PA4787
+Transcription factors	PA4806
+Transcription factors	PA4831
+Transcription factors	PA4853
+Transcription factors	PA4878
+Transcription factors	PA4890
+Transcription factors	PA4896
+Transcription factors	PA4902
+Transcription factors	PA4906
+Transcription factors	PA4914
+Transcription factors	PA4916
+Transcription factors	PA4984
+Transcription factors	PA4987
+Transcription factors	PA4989
+Transcription factors	PA5029
+Transcription factors	PA5032
+Transcription factors	PA5059
+Transcription factors	PA5085
+Transcription factors	PA5116
+Transcription factors	PA5157
+Transcription factors	PA5179
+Transcription factors	PA5189
+Transcription factors	PA5218
+Transcription factors	PA5239
+Transcription factors	PA5255
+Transcription factors	PA5274
+Transcription factors	PA5283
+Transcription factors	PA5285
+Transcription factors	PA5293
+Transcription factors	PA5301
+Transcription factors	PA5308
+Transcription factors	PA5342
+Transcription factors	PA5344
+Transcription factors	PA5356
+Transcription factors	PA5374
+Transcription factors	PA5380
+Transcription factors	PA5382
+Transcription factors	PA5389
+Transcription factors	PA5403
+Transcription factors	PA5428
+Transcription factors	PA5431
+Transcription factors	PA5437
+Transcription factors	PA5438
+Transcription factors	PA5499
+Transcription factors	PA5525
+Transcription factors	PA5536
+Transcription factors	PA5550
+Metabolism	Amino acid biosynthesis
+Amino acid biosynthesis	Aromatic amino acid family
+Aromatic amino acid family	PA0025
+Aromatic amino acid family	PA0035
+Aromatic amino acid family	PA0036
+Aromatic amino acid family	PA0244
+Aromatic amino acid family	PA0245
+Aromatic amino acid family	PA0609
+Aromatic amino acid family	PA0649
+Aromatic amino acid family	PA0650
+Aromatic amino acid family	PA0651
+Aromatic amino acid family	PA1001
+Aromatic amino acid family	PA1002
+Aromatic amino acid family	PA1681
+Aromatic amino acid family	PA1750
+Aromatic amino acid family	PA2843
+Aromatic amino acid family	PA2943
+Aromatic amino acid family	PA3113
+Aromatic amino acid family	PA3166
+Aromatic amino acid family	PA4846
+Aromatic amino acid family	PA5038
+Aromatic amino acid family	PA5039
+Aromatic amino acid family	PA5184
+Amino acid biosynthesis	Aspartate family
+Aspartate family	PA0051
+Aspartate family	PA0223
+Aspartate family	PA0389
+Aspartate family	PA0390
+Aspartate family	PA0430
+Aspartate family	PA0904
+Aspartate family	PA1010
+Aspartate family	PA1162
+Aspartate family	PA1654
+Aspartate family	PA1683
+Aspartate family	PA1684
+Aspartate family	PA1796
+Aspartate family	PA1843
+Aspartate family	PA1927
+Aspartate family	PA2083
+Aspartate family	PA2084
+Aspartate family	PA3107
+Aspartate family	PA3117
+Aspartate family	PA3169
+Aspartate family	PA3459
+Aspartate family	PA3659
+Aspartate family	PA3735
+Aspartate family	PA3736
+Aspartate family	PA4759
+Aspartate family	PA5025
+Aspartate family	PA5277
+Aspartate family	PA5278
+Aspartate family	PA5495
+Amino acid biosynthesis	Glutamate family
+Glutamate family	PA0296
+Glutamate family	PA0298
+Glutamate family	PA0393
+Glutamate family	PA0662
+Glutamate family	PA1566
+Glutamate family	PA2040
+Glutamate family	PA2828
+Glutamate family	PA3068
+Glutamate family	PA3131
+Glutamate family	PA3181
+Glutamate family	PA3356
+Glutamate family	PA3525
+Glutamate family	PA3537
+Glutamate family	PA4007
+Glutamate family	PA4402
+Glutamate family	PA4565
+Glutamate family	PA4588
+Glutamate family	PA5014
+Glutamate family	PA5035
+Glutamate family	PA5036
+Glutamate family	PA5119
+Glutamate family	PA5172
+Glutamate family	PA5204
+Glutamate family	PA5206
+Glutamate family	PA5263
+Glutamate family	PA5323
+Glutamate family	PA5390
+Glutamate family	PA5508
+Glutamate family	PA5522
+Amino acid biosynthesis	Histidine family
+Histidine family	PA2531
+Histidine family	PA3165
+Histidine family	PA4447
+Histidine family	PA4448
+Histidine family	PA4449
+Histidine family	PA4939
+Histidine family	PA5066
+Histidine family	PA5067
+Histidine family	PA5140
+Histidine family	PA5141
+Histidine family	PA5142
+Histidine family	PA5143
+Amino acid biosynthesis	Pyruvate family
+Pyruvate family	PA0331
+Pyruvate family	PA0353
+Pyruvate family	PA0851
+Pyruvate family	PA1326
+Pyruvate family	PA3118
+Pyruvate family	PA3120
+Pyruvate family	PA3121
+Pyruvate family	PA3792
+Pyruvate family	PA4694
+Pyruvate family	PA4695
+Pyruvate family	PA4696
+Pyruvate family	PA5013
+Amino acid biosynthesis	Serine family
+Serine family	PA0316
+Serine family	PA0317
+Serine family	PA0399
+Serine family	PA0400
+Serine family	PA0932
+Serine family	PA1642
+Serine family	PA1757
+Serine family	PA2444
+Serine family	PA2709
+Serine family	PA3167
+Serine family	PA3816
+Serine family	PA4602
+Serine family	PA4907
+Serine family	PA4960
+Serine family	PA5025
+Serine family	PA5415
+Metabolism	"Biosynthesis of cofactors, prosthetic groups, and carriers"
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Biotin
+Biotin	PA0420
+Biotin	PA0500
+Biotin	PA0501
+Biotin	PA0502
+Biotin	PA0503
+Biotin	PA0504
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Folic acid
+Folic acid	PA0350
+Folic acid	PA0582
+Folic acid	PA0583
+Folic acid	PA1674
+Folic acid	PA1758
+Folic acid	PA2964
+Folic acid	PA3111
+Folic acid	PA3296
+Folic acid	PA3437
+Folic acid	PA3438
+Folic acid	PA3439
+Folic acid	PA4728
+Folic acid	PA4750
+Folic acid	PA5539
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Glutathione and analogs
+Glutathione and analogs	PA0164
+Glutathione and analogs	PA0361
+Glutathione and analogs	PA0407
+Glutathione and analogs	PA1338
+Glutathione and analogs	PA2025
+Glutathione and analogs	PA5203
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	"Heme, porphyrin, and cobalamin"
+"Heme, porphyrin, and cobalamin"	PA0024
+"Heme, porphyrin, and cobalamin"	PA0112
+"Heme, porphyrin, and cobalamin"	PA0113
+"Heme, porphyrin, and cobalamin"	PA0114
+"Heme, porphyrin, and cobalamin"	PA0386
+"Heme, porphyrin, and cobalamin"	PA0509
+"Heme, porphyrin, and cobalamin"	PA0510
+"Heme, porphyrin, and cobalamin"	PA0511
+"Heme, porphyrin, and cobalamin"	PA0512
+"Heme, porphyrin, and cobalamin"	PA0513
+"Heme, porphyrin, and cobalamin"	PA0514
+"Heme, porphyrin, and cobalamin"	PA0516
+"Heme, porphyrin, and cobalamin"	PA0517
+"Heme, porphyrin, and cobalamin"	PA1272
+"Heme, porphyrin, and cobalamin"	PA1273
+"Heme, porphyrin, and cobalamin"	PA1274
+"Heme, porphyrin, and cobalamin"	PA1275
+"Heme, porphyrin, and cobalamin"	PA1276
+"Heme, porphyrin, and cobalamin"	PA1277
+"Heme, porphyrin, and cobalamin"	PA1278
+"Heme, porphyrin, and cobalamin"	PA1279
+"Heme, porphyrin, and cobalamin"	PA1281
+"Heme, porphyrin, and cobalamin"	PA1321
+"Heme, porphyrin, and cobalamin"	PA1546
+"Heme, porphyrin, and cobalamin"	PA1778
+"Heme, porphyrin, and cobalamin"	PA2611
+"Heme, porphyrin, and cobalamin"	PA2903
+"Heme, porphyrin, and cobalamin"	PA2904
+"Heme, porphyrin, and cobalamin"	PA2905
+"Heme, porphyrin, and cobalamin"	PA2906
+"Heme, porphyrin, and cobalamin"	PA2907
+"Heme, porphyrin, and cobalamin"	PA2908
+"Heme, porphyrin, and cobalamin"	PA2944
+"Heme, porphyrin, and cobalamin"	PA2945
+"Heme, porphyrin, and cobalamin"	PA2947
+"Heme, porphyrin, and cobalamin"	PA2948
+"Heme, porphyrin, and cobalamin"	PA3977
+"Heme, porphyrin, and cobalamin"	PA4088
+"Heme, porphyrin, and cobalamin"	PA4399
+"Heme, porphyrin, and cobalamin"	PA4655
+"Heme, porphyrin, and cobalamin"	PA4666
+"Heme, porphyrin, and cobalamin"	PA5034
+"Heme, porphyrin, and cobalamin"	PA5243
+"Heme, porphyrin, and cobalamin"	PA5259
+"Heme, porphyrin, and cobalamin"	PA5260
+"Heme, porphyrin, and cobalamin"	PA5523
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Lipoate
+Lipoate	PA3996
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Menaquinone and ubiquinone
+Menaquinone and ubiquinone	PA3171
+Menaquinone and ubiquinone	PA3911
+Menaquinone and ubiquinone	PA3912
+Menaquinone and ubiquinone	PA3913
+Menaquinone and ubiquinone	PA4043
+Menaquinone and ubiquinone	PA4231
+Menaquinone and ubiquinone	PA4569
+Menaquinone and ubiquinone	PA5063
+Menaquinone and ubiquinone	PA5065
+Menaquinone and ubiquinone	PA5221
+Menaquinone and ubiquinone	PA5223
+Menaquinone and ubiquinone	PA5358
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Molybdopterin
+Molybdopterin	PA1505
+Molybdopterin	PA3028
+Molybdopterin	PA3029
+Molybdopterin	PA3030
+Molybdopterin	PA3870
+Molybdopterin	PA3914
+Molybdopterin	PA3915
+Molybdopterin	PA3916
+Molybdopterin	PA3917
+Molybdopterin	PA3918
+Molybdopterin	PA4663
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA0209
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA0665
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA0759
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA0853
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA1847
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA1985
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA1986
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA1987
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA1988
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA1989
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA1990
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3627
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3633
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3650
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3803
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3808
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3809
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3812
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3813
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3814
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA3815
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA4044
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA4557
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA4669
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA4835
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA4836
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA4975
+"Other@Biosynthesis of cofactors, prosthetic groups, and carriers"	PA5275
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Pantothenate and coenzyme A
+Pantothenate and coenzyme A	PA0363
+Pantothenate and coenzyme A	PA1598
+Pantothenate and coenzyme A	PA1752
+Pantothenate and coenzyme A	PA4279
+Pantothenate and coenzyme A	PA4397
+Pantothenate and coenzyme A	PA4529
+Pantothenate and coenzyme A	PA4729
+Pantothenate and coenzyme A	PA4730
+Pantothenate and coenzyme A	PA4731
+Pantothenate and coenzyme A	PA5320
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Pyridine nucleotides
+Pyridine nucleotides	PA0195
+Pyridine nucleotides	PA0195.1
+Pyridine nucleotides	PA0196
+Pyridine nucleotides	PA0761
+Pyridine nucleotides	PA1004
+Pyridine nucleotides	PA1125
+Pyridine nucleotides	PA1958
+Pyridine nucleotides	PA2991
+Pyridine nucleotides	PA4006
+Pyridine nucleotides	PA4376
+Pyridine nucleotides	PA4524
+Pyridine nucleotides	PA4916
+Pyridine nucleotides	PA4917
+Pyridine nucleotides	PA4918
+Pyridine nucleotides	PA4919
+Pyridine nucleotides	PA4920
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Pyridoxine
+Pyridoxine	PA0551
+Pyridoxine	PA0593
+Pyridoxine	PA0773
+Pyridoxine	PA1049
+Pyridoxine	PA1375
+Pyridoxine	PA4044
+Pyridoxine	PA4216
+Pyridoxine	PA5516
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	"Riboflavin, FMN, and FAD"
+"Riboflavin, FMN, and FAD"	PA4047
+"Riboflavin, FMN, and FAD"	PA4053
+"Riboflavin, FMN, and FAD"	PA4054
+"Riboflavin, FMN, and FAD"	PA4055
+"Riboflavin, FMN, and FAD"	PA4056
+"Riboflavin, FMN, and FAD"	PA4561
+"Biosynthesis of cofactors, prosthetic groups, and carriers"	Thiamine
+Thiamine	PA0380
+Thiamine	PA0381
+Thiamine	PA3975
+Thiamine	PA3976
+Thiamine	PA4044
+Thiamine	PA4051
+Thiamine	PA4548
+Thiamine	PA4973
+Thiamine	PA5118
+Metabolism	Central intermediary metabolism
+Central intermediary metabolism	Amino sugars
+Amino sugars	PA0710
+Amino sugars	PA3524
+Amino sugars	PA3758
+Amino sugars	PA3759
+Amino sugars	PA4749
+Amino sugars	PA5111
+Amino sugars	PA5549
+Amino sugars	PA5552
+Central intermediary metabolism	Nitrogen metabolism
+Nitrogen metabolism	PA0102
+Nitrogen metabolism	PA0478
+Nitrogen metabolism	PA0660
+Nitrogen metabolism	PA0785
+Nitrogen metabolism	PA1174
+Nitrogen metabolism	PA1779
+Nitrogen metabolism	PA1780
+Nitrogen metabolism	PA1781
+Nitrogen metabolism	PA1962
+Nitrogen metabolism	PA3223
+Nitrogen metabolism	PA3658
+Nitrogen metabolism	PA4202
+Nitrogen metabolism	PA4203
+Nitrogen metabolism	PA4864
+Nitrogen metabolism	PA4865
+Nitrogen metabolism	PA4867
+Nitrogen metabolism	PA4868
+Nitrogen metabolism	PA4891
+Nitrogen metabolism	PA4892
+Nitrogen metabolism	PA4893
+Nitrogen metabolism	PA4894
+Nitrogen metabolism	PA5125
+Nitrogen metabolism	PA5288
+Central intermediary metabolism	One-carbon metabolism
+One-carbon metabolism	PA0473
+One-carbon metabolism	PA0798
+One-carbon metabolism	PA1655
+One-carbon metabolism	PA1890
+One-carbon metabolism	PA2813
+One-carbon metabolism	PA2821
+One-carbon metabolism	PA2832
+One-carbon metabolism	PA3035
+One-carbon metabolism	PA4401
+One-carbon metabolism	PA5228
+One-carbon metabolism	PA5421
+Central intermediary metabolism	Other@Central intermediary metabolism
+Other@Central intermediary metabolism	PA0031
+Other@Central intermediary metabolism	PA0265
+Other@Central intermediary metabolism	PA0266
+Other@Central intermediary metabolism	PA0447
+Other@Central intermediary metabolism	PA0448
+Other@Central intermediary metabolism	PA0493
+Other@Central intermediary metabolism	PA0546
+Other@Central intermediary metabolism	PA0792
+Other@Central intermediary metabolism	PA0796
+Other@Central intermediary metabolism	PA0814
+Other@Central intermediary metabolism	PA0835
+Other@Central intermediary metabolism	PA1311
+Other@Central intermediary metabolism	PA1502
+Other@Central intermediary metabolism	PA1601
+Other@Central intermediary metabolism	PA1602
+Other@Central intermediary metabolism	PA1628
+Other@Central intermediary metabolism	PA1997
+Other@Central intermediary metabolism	PA2003
+Other@Central intermediary metabolism	PA2053
+Other@Central intermediary metabolism	PA2215
+Other@Central intermediary metabolism	PA2413
+Other@Central intermediary metabolism	PA3004
+Other@Central intermediary metabolism	PA3330
+Other@Central intermediary metabolism	PA3590
+Central intermediary metabolism	Phosphorus compounds
+Phosphorus compounds	PA0141
+Phosphorus compounds	PA0843
+Phosphorus compounds	PA1310
+Phosphorus compounds	PA2428
+Phosphorus compounds	PA3373
+Phosphorus compounds	PA3376
+Phosphorus compounds	PA3455
+Phosphorus compounds	PA4031
+Phosphorus compounds	PA5241
+Phosphorus compounds	PA5242
+Central intermediary metabolism	Polyamine biosynthesis
+Polyamine biosynthesis	PA0292
+Polyamine biosynthesis	PA0293
+Polyamine biosynthesis	PA0294
+Polyamine biosynthesis	PA0321
+Polyamine biosynthesis	PA0654
+Polyamine biosynthesis	PA1687
+Polyamine biosynthesis	PA3713
+Polyamine biosynthesis	PA4519
+Polyamine biosynthesis	PA4773
+Polyamine biosynthesis	PA4774
+Polyamine biosynthesis	PA4839
+Central intermediary metabolism	Sulfur metabolism
+Sulfur metabolism	PA0183
+Sulfur metabolism	PA0506
+Sulfur metabolism	PA0507
+Sulfur metabolism	PA0508
+Sulfur metabolism	PA0740
+Sulfur metabolism	PA1284
+Sulfur metabolism	PA1292
+Sulfur metabolism	PA1685
+Sulfur metabolism	PA1756
+Sulfur metabolism	PA2062
+Sulfur metabolism	PA2346
+Sulfur metabolism	PA2347
+Sulfur metabolism	PA2356
+Sulfur metabolism	PA2357
+Sulfur metabolism	PA2602
+Sulfur metabolism	PA2603
+Sulfur metabolism	PA3444
+Sulfur metabolism	PA3446
+Sulfur metabolism	PA3954
+Sulfur metabolism	PA4198
+Sulfur metabolism	PA4199
+Sulfur metabolism	PA4442
+Sulfur metabolism	PA4443
+Sulfur metabolism	PA4956
+Sulfur metabolism	PA5175
+Sulfur metabolism	PA5187
+Metabolism	Energy metabolism
+Energy metabolism	Aerobic
+Aerobic	PA1174
+Aerobic	PA1583
+Aerobic	PA1584
+Energy metabolism	Amino acids and amines
+Amino acids and amines	PA0130
+Amino acids and amines	PA0131
+Amino acids and amines	PA0132
+Amino acids and amines	PA0133
+Amino acids and amines	PA0219
+Amino acids and amines	PA0221
+Amino acids and amines	PA0297
+Amino acids and amines	PA0299
+Amino acids and amines	PA0432
+Amino acids and amines	PA0534
+Amino acids and amines	PA0743
+Amino acids and amines	PA0747
+Amino acids and amines	PA0782
+Amino acids and amines	PA0831
+Amino acids and amines	PA0865
+Amino acids and amines	PA0870
+Amino acids and amines	PA0871
+Amino acids and amines	PA0872
+Amino acids and amines	PA0895
+Amino acids and amines	PA0896
+Amino acids and amines	PA0897
+Amino acids and amines	PA0898
+Amino acids and amines	PA0899
+Amino acids and amines	PA0901
+Amino acids and amines	PA1027
+Amino acids and amines	PA1028
+Amino acids and amines	PA1195
+Amino acids and amines	PA1196
+Amino acids and amines	PA1252
+Amino acids and amines	PA1253
+Amino acids and amines	PA1254
+Amino acids and amines	PA1255
+Amino acids and amines	PA1259
+Amino acids and amines	PA1261
+Amino acids and amines	PA1266
+Amino acids and amines	PA1267
+Amino acids and amines	PA1268
+Amino acids and amines	PA1337
+Amino acids and amines	PA1409
+Amino acids and amines	PA1565
+Amino acids and amines	PA1566
+Amino acids and amines	PA1638
+Amino acids and amines	PA1742
+Amino acids and amines	PA1818
+Amino acids and amines	PA1998
+Amino acids and amines	PA1999
+Amino acids and amines	PA2000
+Amino acids and amines	PA2007
+Amino acids and amines	PA2008
+Amino acids and amines	PA2009
+Amino acids and amines	PA2010
+Amino acids and amines	PA2011
+Amino acids and amines	PA2012
+Amino acids and amines	PA2013
+Amino acids and amines	PA2014
+Amino acids and amines	PA2015
+Amino acids and amines	PA2016
+Amino acids and amines	PA2040
+Amino acids and amines	PA2080
+Amino acids and amines	PA2081
+Amino acids and amines	PA2247
+Amino acids and amines	PA2248
+Amino acids and amines	PA2317
+Amino acids and amines	PA2442
+Amino acids and amines	PA2443
+Amino acids and amines	PA2445
+Amino acids and amines	PA2446
+Amino acids and amines	PA2473
+Amino acids and amines	PA2511
+Amino acids and amines	PA2512
+Amino acids and amines	PA2513
+Amino acids and amines	PA2514
+Amino acids and amines	PA2579
+Amino acids and amines	PA2683
+Amino acids and amines	PA2776
+Amino acids and amines	PA3116
+Amino acids and amines	PA3139
+Amino acids and amines	PA3356
+Amino acids and amines	PA3357
+Amino acids and amines	PA3418
+Amino acids and amines	PA3569
+Amino acids and amines	PA3570
+Amino acids and amines	PA3862
+Amino acids and amines	PA3863
+Amino acids and amines	PA3864
+Amino acids and amines	PA4024
+Amino acids and amines	PA4025
+Amino acids and amines	PA4091
+Amino acids and amines	PA4092
+Amino acids and amines	PA4123
+Amino acids and amines	PA4124
+Amino acids and amines	PA4125
+Amino acids and amines	PA4127
+Amino acids and amines	PA4914
+Amino acids and amines	PA4976
+Amino acids and amines	PA4977
+Amino acids and amines	PA5082
+Amino acids and amines	PA5083
+Amino acids and amines	PA5084
+Amino acids and amines	PA5085
+Amino acids and amines	PA5091
+Amino acids and amines	PA5092
+Amino acids and amines	PA5093
+Amino acids and amines	PA5098
+Amino acids and amines	PA5100
+Amino acids and amines	PA5105
+Amino acids and amines	PA5106
+Amino acids and amines	PA5171
+Amino acids and amines	PA5173
+Amino acids and amines	PA5213
+Amino acids and amines	PA5214
+Amino acids and amines	PA5215
+Amino acids and amines	PA5301
+Amino acids and amines	PA5304
+Amino acids and amines	PA5309
+Amino acids and amines	PA5312
+Amino acids and amines	PA5313
+Amino acids and amines	PA5379
+Amino acids and amines	PA5413
+Amino acids and amines	PA5416
+Amino acids and amines	PA5417
+Amino acids and amines	PA5418
+Amino acids and amines	PA5419
+Amino acids and amines	PA5429
+Amino acids and amines	PA5508
+Amino acids and amines	PA5522
+Energy metabolism	Anaerobic
+Anaerobic	PA1175
+Anaerobic	PA1177
+Anaerobic	PA1583
+Anaerobic	PA1584
+Anaerobic	PA1838
+Anaerobic	PA2345
+Anaerobic	PA2899
+Anaerobic	PA3871
+Anaerobic	PA3872
+Anaerobic	PA3874
+Anaerobic	PA3875
+Anaerobic	PA4130
+Anaerobic	PA4513
+Anaerobic	PA4809
+Anaerobic	PA4810
+Anaerobic	PA4811
+Anaerobic	PA4812
+Anaerobic	PA5180
+Energy metabolism	ATP-proton motive force interconversion
+ATP-proton motive force interconversion	PA1104
+ATP-proton motive force interconversion	PA1697
+ATP-proton motive force interconversion	PA5553
+ATP-proton motive force interconversion	PA5554
+ATP-proton motive force interconversion	PA5555
+ATP-proton motive force interconversion	PA5556
+ATP-proton motive force interconversion	PA5557
+ATP-proton motive force interconversion	PA5558
+ATP-proton motive force interconversion	PA5559
+ATP-proton motive force interconversion	PA5560
+ATP-proton motive force interconversion	PA5561
+Energy metabolism	Biosynthesis and degradation of polysaccharides
+Biosynthesis and degradation of polysaccharides	PA0852
+Biosynthesis and degradation of polysaccharides	PA1046
+Biosynthesis and degradation of polysaccharides	PA2144
+Biosynthesis and degradation of polysaccharides	PA2152
+Biosynthesis and degradation of polysaccharides	PA2153
+Biosynthesis and degradation of polysaccharides	PA2160
+Biosynthesis and degradation of polysaccharides	PA2162
+Biosynthesis and degradation of polysaccharides	PA2163
+Biosynthesis and degradation of polysaccharides	PA2164
+Biosynthesis and degradation of polysaccharides	PA2165
+Biosynthesis and degradation of polysaccharides	PA2300
+Energy metabolism	Electron transport
+Electron transport	PA0105
+Electron transport	PA0106
+Electron transport	PA0107
+Electron transport	PA0108
+Electron transport	PA0362
+Electron transport	PA0518
+Electron transport	PA0519
+Electron transport	PA0520
+Electron transport	PA0521
+Electron transport	PA0523
+Electron transport	PA0524
+Electron transport	PA0525
+Electron transport	PA0849
+Electron transport	PA0918
+Electron transport	PA0949
+Electron transport	PA0953
+Electron transport	PA1008
+Electron transport	PA1024
+Electron transport	PA1172
+Electron transport	PA1173
+Electron transport	PA1174
+Electron transport	PA1175
+Electron transport	PA1176
+Electron transport	PA1177
+Electron transport	PA1224
+Electron transport	PA1225
+Electron transport	PA1317
+Electron transport	PA1318
+Electron transport	PA1319
+Electron transport	PA1320
+Electron transport	PA1479
+Electron transport	PA1480
+Electron transport	PA1481
+Electron transport	PA1482
+Electron transport	PA1483
+Electron transport	PA1548
+Electron transport	PA1551
+Electron transport	PA1552
+Electron transport	PA1552.1
+Electron transport	PA1553
+Electron transport	PA1554
+Electron transport	PA1555
+Electron transport	PA1555.1
+Electron transport	PA1556
+Electron transport	PA1557
+Electron transport	PA1600
+Electron transport	PA1838
+Electron transport	PA1856
+Electron transport	PA1883
+Electron transport	PA1983
+Electron transport	PA2266
+Electron transport	PA2297
+Electron transport	PA2345
+Electron transport	PA2475
+Electron transport	PA2477
+Electron transport	PA2478
+Electron transport	PA2482
+Electron transport	PA2532
+Electron transport	PA2616
+Electron transport	PA2637
+Electron transport	PA2638
+Electron transport	PA2639
+Electron transport	PA2640
+Electron transport	PA2641
+Electron transport	PA2642
+Electron transport	PA2643
+Electron transport	PA2644
+Electron transport	PA2645
+Electron transport	PA2646
+Electron transport	PA2647
+Electron transport	PA2648
+Electron transport	PA2649
+Electron transport	PA2691
+Electron transport	PA2694
+Electron transport	PA2715
+Electron transport	PA2951
+Electron transport	PA2952
+Electron transport	PA2953
+Electron transport	PA3032
+Electron transport	PA3331
+Electron transport	PA3391
+Electron transport	PA3393
+Electron transport	PA3394
+Electron transport	PA3395
+Electron transport	PA3396
+Electron transport	PA3450
+Electron transport	PA3489
+Electron transport	PA3490
+Electron transport	PA3491
+Electron transport	PA3492
+Electron transport	PA3493
+Electron transport	PA3494
+Electron transport	PA3533
+Electron transport	PA3621
+Electron transport	PA3929
+Electron transport	PA3930
+Electron transport	PA4061
+Electron transport	PA4130
+Electron transport	PA4133
+Electron transport	PA4134
+Electron transport	PA4331
+Electron transport	PA4429
+Electron transport	PA4430
+Electron transport	PA4431
+Electron transport	PA4513
+Electron transport	PA4538
+Electron transport	PA4571
+Electron transport	PA4587
+Electron transport	PA4619
+Electron transport	PA4772
+Electron transport	PA4809
+Electron transport	PA4810
+Electron transport	PA4811
+Electron transport	PA4812
+Electron transport	PA4845
+Electron transport	PA4922
+Electron transport	PA5129
+Electron transport	PA5180
+Electron transport	PA5240
+Electron transport	PA5300
+Electron transport	PA5349
+Electron transport	PA5350
+Electron transport	PA5351
+Electron transport	PA5400
+Electron transport	PA5490
+Electron transport	PA5491
+Energy metabolism	Entner-Doudoroff
+Entner-Doudoroff	PA3131
+Entner-Doudoroff	PA3181
+Entner-Doudoroff	PA3194
+Energy metabolism	Glycolysis/gluconeogenesis
+Glycolysis/gluconeogenesis	PA0552
+Glycolysis/gluconeogenesis	PA0555
+Glycolysis/gluconeogenesis	PA0905
+Glycolysis/gluconeogenesis	PA1498
+Glycolysis/gluconeogenesis	PA1770
+Glycolysis/gluconeogenesis	PA2323
+Glycolysis/gluconeogenesis	PA2443
+Glycolysis/gluconeogenesis	PA3001
+Glycolysis/gluconeogenesis	PA3193
+Glycolysis/gluconeogenesis	PA3195
+Glycolysis/gluconeogenesis	PA3430
+Glycolysis/gluconeogenesis	PA3635
+Glycolysis/gluconeogenesis	PA4329
+Glycolysis/gluconeogenesis	PA4732
+Glycolysis/gluconeogenesis	PA4748
+Glycolysis/gluconeogenesis	PA5110
+Glycolysis/gluconeogenesis	PA5131
+Glycolysis/gluconeogenesis	PA5183.1
+Glycolysis/gluconeogenesis	PA5192
+Glycolysis/gluconeogenesis	PA5379
+Energy metabolism	Other@Energy metabolism
+Other@Energy metabolism	PA0023
+Other@Energy metabolism	PA0152
+Other@Energy metabolism	PA0153
+Other@Energy metabolism	PA0154
+Other@Energy metabolism	PA0208
+Other@Energy metabolism	PA0210
+Other@Energy metabolism	PA0211
+Other@Energy metabolism	PA0212
+Other@Energy metabolism	PA0213
+Other@Energy metabolism	PA0214
+Other@Energy metabolism	PA0226
+Other@Energy metabolism	PA0227
+Other@Energy metabolism	PA0230
+Other@Energy metabolism	PA0231
+Other@Energy metabolism	PA0232
+Other@Energy metabolism	PA0247
+Other@Energy metabolism	PA0288
+Other@Energy metabolism	PA0364
+Other@Energy metabolism	PA0365
+Other@Energy metabolism	PA0366
+Other@Energy metabolism	PA0367
+Other@Energy metabolism	PA0480
+Other@Energy metabolism	PA0704
+Other@Energy metabolism	PA0710
+Other@Energy metabolism	PA0810
+Other@Energy metabolism	PA0836
+Other@Energy metabolism	PA0883
+Other@Energy metabolism	PA0887
+Other@Energy metabolism	PA0927
+Other@Energy metabolism	PA0954
+Other@Energy metabolism	PA1052
+Other@Energy metabolism	PA1187
+Other@Energy metabolism	PA1376
+Other@Energy metabolism	PA1421
+Other@Energy metabolism	PA1500
+Other@Energy metabolism	PA1515
+Other@Energy metabolism	PA1535
+Other@Energy metabolism	PA1576
+Other@Energy metabolism	PA1587
+Other@Energy metabolism	PA1982
+Other@Energy metabolism	PA1984
+Other@Energy metabolism	PA2005
+Other@Energy metabolism	PA2085
+Other@Energy metabolism	PA2086
+Other@Energy metabolism	PA2098
+Other@Energy metabolism	PA2250
+Other@Energy metabolism	PA2275
+Other@Energy metabolism	PA2382
+Other@Energy metabolism	PA2507
+Other@Energy metabolism	PA2508
+Other@Energy metabolism	PA2509
+Other@Energy metabolism	PA2515
+Other@Energy metabolism	PA2516
+Other@Energy metabolism	PA2517
+Other@Energy metabolism	PA2518
+Other@Energy metabolism	PA2550
+Other@Energy metabolism	PA2552
+Other@Energy metabolism	PA2787
+Other@Energy metabolism	PA2885
+Other@Energy metabolism	PA2886
+Other@Energy metabolism	PA2887
+Other@Energy metabolism	PA2888
+Other@Energy metabolism	PA2889
+Other@Energy metabolism	PA2890
+Other@Energy metabolism	PA2891
+Other@Energy metabolism	PA2892
+Other@Energy metabolism	PA2893
+Other@Energy metabolism	PA2932
+Other@Energy metabolism	PA3082
+Other@Energy metabolism	PA3226
+Other@Energy metabolism	PA3312
+Other@Energy metabolism	PA3374
+Other@Energy metabolism	PA3516
+Other@Energy metabolism	PA3524
+Other@Energy metabolism	PA3568
+Other@Energy metabolism	PA3579
+Other@Energy metabolism	PA3582
+Other@Energy metabolism	PA3757
+Other@Energy metabolism	PA3896
+Other@Energy metabolism	PA3935
+Other@Energy metabolism	PA4022
+Other@Energy metabolism	PA4073
+Other@Energy metabolism	PA4097
+Other@Energy metabolism	PA4149
+Other@Energy metabolism	PA4150
+Other@Energy metabolism	PA4152
+Other@Energy metabolism	PA4153
+Other@Energy metabolism	PA4184
+Other@Energy metabolism	PA4342
+Other@Energy metabolism	PA4626
+Other@Energy metabolism	PA4733
+Other@Energy metabolism	PA4771
+Other@Energy metabolism	PA4827
+Other@Energy metabolism	PA4829
+Other@Energy metabolism	PA4901
+Other@Energy metabolism	PA4904
+Other@Energy metabolism	PA4905
+Other@Energy metabolism	PA4921
+Other@Energy metabolism	PA4979
+Other@Energy metabolism	PA5057
+Other@Energy metabolism	PA5111
+Other@Energy metabolism	PA5186
+Other@Energy metabolism	PA5292
+Other@Energy metabolism	PA5353
+Other@Energy metabolism	PA5354
+Other@Energy metabolism	PA5355
+Other@Energy metabolism	PA5356
+Other@Energy metabolism	PA5384
+Other@Energy metabolism	PA5385
+Other@Energy metabolism	PA5386
+Other@Energy metabolism	PA5387
+Other@Energy metabolism	PA5389
+Other@Energy metabolism	PA5398
+Other@Energy metabolism	PA5399
+Other@Energy metabolism	PA5410
+Other@Energy metabolism	PA5411
+Other@Energy metabolism	PA5427
+Other@Energy metabolism	PA5435
+Energy metabolism	Pentose phosphate pathway
+Pentose phosphate pathway	PA0330
+Pentose phosphate pathway	PA0548
+Pentose phosphate pathway	PA0607
+Pentose phosphate pathway	PA2261
+Pentose phosphate pathway	PA2263
+Pentose phosphate pathway	PA2265
+Pentose phosphate pathway	PA2290
+Pentose phosphate pathway	PA2320
+Pentose phosphate pathway	PA2321
+Pentose phosphate pathway	PA2796
+Pentose phosphate pathway	PA3182
+Pentose phosphate pathway	PA3183
+Pentose phosphate pathway	PA5439
+Energy metabolism	Pyruvate dehydrogenase
+Pyruvate dehydrogenase	PA2108
+Pyruvate dehydrogenase	PA3416
+Pyruvate dehydrogenase	PA3417
+Pyruvate dehydrogenase	PA5015
+Pyruvate dehydrogenase	PA5016
+Pyruvate dehydrogenase	PA5297
+Energy metabolism	Sugars
+Sugars	PA0608
+Sugars	PA1950
+Sugars	PA2337
+Sugars	PA2342
+Sugars	PA2343
+Sugars	PA2344
+Sugars	PA2414
+Sugars	PA3005
+Sugars	PA3172
+Sugars	PA3561
+Sugars	PA4204
+Sugars	PA4457
+Sugars	PA4721
+Energy metabolism	TCA cycle
+TCA cycle	PA0482
+TCA cycle	PA0794
+TCA cycle	PA0795
+TCA cycle	PA0854
+TCA cycle	PA1562
+TCA cycle	PA1580
+TCA cycle	PA1581
+TCA cycle	PA1582
+TCA cycle	PA1583
+TCA cycle	PA1584
+TCA cycle	PA1585
+TCA cycle	PA1586
+TCA cycle	PA1588
+TCA cycle	PA1589
+TCA cycle	PA1787
+TCA cycle	PA2623
+TCA cycle	PA2624
+TCA cycle	PA2634
+TCA cycle	PA3452
+TCA cycle	PA3471
+TCA cycle	PA3687
+TCA cycle	PA4333
+TCA cycle	PA4470
+TCA cycle	PA4640
+TCA cycle	PA5046
+TCA cycle	PA5445
+Metabolism	Fatty acid and phospholipid metabolism
+Fatty acid and phospholipid metabolism	Biosynthesis
+Biosynthesis	PA0005
+Biosynthesis	PA0182
+Biosynthesis	PA0286
+Biosynthesis	PA0581
+Biosynthesis	PA0919
+Biosynthesis	PA0920
+Biosynthesis	PA1288
+Biosynthesis	PA1373
+Biosynthesis	PA1470
+Biosynthesis	PA1539
+Biosynthesis	PA1609
+Biosynthesis	PA1610
+Biosynthesis	PA1614
+Biosynthesis	PA1617
+Biosynthesis	PA1649
+Biosynthesis	PA1806
+Biosynthesis	PA1827
+Biosynthesis	PA1869
+Biosynthesis	PA2142
+Biosynthesis	PA2536
+Biosynthesis	PA2541
+Biosynthesis	PA2557
+Biosynthesis	PA2584
+Biosynthesis	PA2856
+Biosynthesis	PA2950
+Biosynthesis	PA2965
+Biosynthesis	PA2966
+Biosynthesis	PA2967
+Biosynthesis	PA2968
+Biosynthesis	PA2969
+Biosynthesis	PA2990
+Biosynthesis	PA3025
+Biosynthesis	PA3112
+Biosynthesis	PA3125
+Biosynthesis	PA3128
+Biosynthesis	PA3286
+Biosynthesis	PA3299
+Biosynthesis	PA3300
+Biosynthesis	PA3333
+Biosynthesis	PA3334
+Biosynthesis	PA3584
+Biosynthesis	PA3603
+Biosynthesis	PA3639
+Biosynthesis	PA3645
+Biosynthesis	PA3651
+Biosynthesis	PA3673
+Biosynthesis	PA3818
+Biosynthesis	PA3857
+Biosynthesis	PA3883
+Biosynthesis	PA3942
+Biosynthesis	PA4050
+Biosynthesis	PA4089
+Biosynthesis	PA4350
+Biosynthesis	PA4351
+Biosynthesis	PA4389
+Biosynthesis	PA4453
+Biosynthesis	PA4589
+Biosynthesis	PA4693
+Biosynthesis	PA4786
+Biosynthesis	PA4847
+Biosynthesis	PA4848
+Biosynthesis	PA4888
+Biosynthesis	PA4889
+Biosynthesis	PA4890
+Biosynthesis	PA4957
+Biosynthesis	PA5056
+Biosynthesis	PA5058
+Biosynthesis	PA5060
+Biosynthesis	PA5061
+Biosynthesis	PA5112
+Biosynthesis	PA5174
+Biosynthesis	PA5436
+Biosynthesis	PA5524
+Fatty acid and phospholipid metabolism	Degradation
+Degradation	PA0347
+Degradation	PA0845
+Degradation	PA1525
+Degradation	PA2574
+Degradation	PA3013
+Degradation	PA3014
+Degradation	PA3092
+Degradation	PA4435
+Degradation	PA4814
+Fatty acid and phospholipid metabolism	Other@Fatty acid and phospholipid metabolism
+Other@Fatty acid and phospholipid metabolism	PA0228
+Other@Fatty acid and phospholipid metabolism	PA1736
+Other@Fatty acid and phospholipid metabolism	PA2001
+Other@Fatty acid and phospholipid metabolism	PA2352
+Other@Fatty acid and phospholipid metabolism	PA2553
+Other@Fatty acid and phospholipid metabolism	PA2940
+Other@Fatty acid and phospholipid metabolism	PA3013
+Other@Fatty acid and phospholipid metabolism	PA3454
+Other@Fatty acid and phospholipid metabolism	PA3589
+Other@Fatty acid and phospholipid metabolism	PA3925
+Other@Fatty acid and phospholipid metabolism	PA4785
+Metabolism	"Purines, pyrimidines, nucleosides, and nucleotides"
+"Purines, pyrimidines, nucleosides, and nucleotides"	2'-Deoxyribonucleotide metabolism
+2'-Deoxyribonucleotide metabolism	PA0342
+2'-Deoxyribonucleotide metabolism	PA1155
+2'-Deoxyribonucleotide metabolism	PA1156
+2'-Deoxyribonucleotide metabolism	PA1919
+2'-Deoxyribonucleotide metabolism	PA1920
+2'-Deoxyribonucleotide metabolism	PA2726
+2'-Deoxyribonucleotide metabolism	PA3480
+2'-Deoxyribonucleotide metabolism	PA5321
+2'-Deoxyribonucleotide metabolism	PA5496
+2'-Deoxyribonucleotide metabolism	PA5497
+"Purines, pyrimidines, nucleosides, and nucleotides"	Nucleotide and nucleoside interconversions
+Nucleotide and nucleoside interconversions	PA1124
+Nucleotide and nucleoside interconversions	PA2962
+Nucleotide and nucleoside interconversions	PA3043
+Nucleotide and nucleoside interconversions	PA3163
+Nucleotide and nucleoside interconversions	PA3654
+Nucleotide and nucleoside interconversions	PA3686
+Nucleotide and nucleoside interconversions	PA5336
+"Purines, pyrimidines, nucleosides, and nucleotides"	"Other@Purines, pyrimidines, nucleosides, and nucleotides"
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA0134
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA0148
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA1515
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA1518
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA1521
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA1522
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA1523
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA1524
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA3217
+"Other@Purines, pyrimidines, nucleosides, and nucleotides"	PA5272
+"Purines, pyrimidines, nucleosides, and nucleotides"	Purine ribonucleotide biosynthesis
+Purine ribonucleotide biosynthesis	PA0944
+Purine ribonucleotide biosynthesis	PA0945
+Purine ribonucleotide biosynthesis	PA1013
+Purine ribonucleotide biosynthesis	PA2629
+Purine ribonucleotide biosynthesis	PA3108
+Purine ribonucleotide biosynthesis	PA3517
+Purine ribonucleotide biosynthesis	PA3751
+Purine ribonucleotide biosynthesis	PA3763
+Purine ribonucleotide biosynthesis	PA3769
+Purine ribonucleotide biosynthesis	PA3770
+Purine ribonucleotide biosynthesis	PA4314
+Purine ribonucleotide biosynthesis	PA4645
+Purine ribonucleotide biosynthesis	PA4670
+Purine ribonucleotide biosynthesis	PA4854
+Purine ribonucleotide biosynthesis	PA4855
+Purine ribonucleotide biosynthesis	PA4938
+Purine ribonucleotide biosynthesis	PA5420
+Purine ribonucleotide biosynthesis	PA5425
+Purine ribonucleotide biosynthesis	PA5426
+"Purines, pyrimidines, nucleosides, and nucleotides"	Pyrimidine ribonucleotide biosynthesis
+Pyrimidine ribonucleotide biosynthesis	PA0401
+Pyrimidine ribonucleotide biosynthesis	PA0402
+Pyrimidine ribonucleotide biosynthesis	PA0437
+Pyrimidine ribonucleotide biosynthesis	PA2876
+Pyrimidine ribonucleotide biosynthesis	PA3050
+Pyrimidine ribonucleotide biosynthesis	PA3527
+Pyrimidine ribonucleotide biosynthesis	PA3637
+Pyrimidine ribonucleotide biosynthesis	PA3970
+Pyrimidine ribonucleotide biosynthesis	PA4756
+Pyrimidine ribonucleotide biosynthesis	PA4758
+Pyrimidine ribonucleotide biosynthesis	PA5331
+Pyrimidine ribonucleotide biosynthesis	PA5541
+"Purines, pyrimidines, nucleosides, and nucleotides"	Salvage of nucleosides and nucleotides
+Salvage of nucleosides and nucleotides	PA0143
+Salvage of nucleosides and nucleotides	PA0403
+Salvage of nucleosides and nucleotides	PA0439
+Salvage of nucleosides and nucleotides	PA0440
+Salvage of nucleosides and nucleotides	PA0441
+Salvage of nucleosides and nucleotides	PA0444
+Salvage of nucleosides and nucleotides	PA1514
+Salvage of nucleosides and nucleotides	PA1543
+Salvage of nucleosides and nucleotides	PA1823
+Salvage of nucleosides and nucleotides	PA3004
+Salvage of nucleosides and nucleotides	PA3328
+Salvage of nucleosides and nucleotides	PA4646
+Salvage of nucleosides and nucleotides	PA5298
+Metabolism	Transport and binding proteins
+Transport and binding proteins	"Amino acids, peptides and amines"
+"Amino acids, peptides and amines"	PA0030
+"Amino acids, peptides and amines"	PA0129
+"Amino acids, peptides and amines"	PA0162
+"Amino acids, peptides and amines"	PA0220
+"Amino acids, peptides and amines"	PA0222
+"Amino acids, peptides and amines"	PA0295
+"Amino acids, peptides and amines"	PA0300
+"Amino acids, peptides and amines"	PA0301
+"Amino acids, peptides and amines"	PA0302
+"Amino acids, peptides and amines"	PA0303
+"Amino acids, peptides and amines"	PA0304
+"Amino acids, peptides and amines"	PA0313
+"Amino acids, peptides and amines"	PA0314
+"Amino acids, peptides and amines"	PA0322
+"Amino acids, peptides and amines"	PA0324
+"Amino acids, peptides and amines"	PA0325
+"Amino acids, peptides and amines"	PA0326
+"Amino acids, peptides and amines"	PA0602
+"Amino acids, peptides and amines"	PA0603
+"Amino acids, peptides and amines"	PA0604
+"Amino acids, peptides and amines"	PA0605
+"Amino acids, peptides and amines"	PA0606
+"Amino acids, peptides and amines"	PA0783
+"Amino acids, peptides and amines"	PA0789
+"Amino acids, peptides and amines"	PA0866
+"Amino acids, peptides and amines"	PA0888
+"Amino acids, peptides and amines"	PA0889
+"Amino acids, peptides and amines"	PA0890
+"Amino acids, peptides and amines"	PA0892
+"Amino acids, peptides and amines"	PA1003
+"Amino acids, peptides and amines"	PA1070
+"Amino acids, peptides and amines"	PA1071
+"Amino acids, peptides and amines"	PA1072
+"Amino acids, peptides and amines"	PA1073
+"Amino acids, peptides and amines"	PA1074
+"Amino acids, peptides and amines"	PA1147
+"Amino acids, peptides and amines"	PA1194
+"Amino acids, peptides and amines"	PA1256
+"Amino acids, peptides and amines"	PA1257
+"Amino acids, peptides and amines"	PA1258
+"Amino acids, peptides and amines"	PA1260
+"Amino acids, peptides and amines"	PA1339
+"Amino acids, peptides and amines"	PA1340
+"Amino acids, peptides and amines"	PA1341
+"Amino acids, peptides and amines"	PA1342
+"Amino acids, peptides and amines"	PA1410
+"Amino acids, peptides and amines"	PA1485
+"Amino acids, peptides and amines"	PA1540
+"Amino acids, peptides and amines"	PA1541
+"Amino acids, peptides and amines"	PA1590
+"Amino acids, peptides and amines"	PA1807
+"Amino acids, peptides and amines"	PA1808
+"Amino acids, peptides and amines"	PA1809
+"Amino acids, peptides and amines"	PA1810
+"Amino acids, peptides and amines"	PA1811
+"Amino acids, peptides and amines"	PA1819
+"Amino acids, peptides and amines"	PA1916
+"Amino acids, peptides and amines"	PA1971
+"Amino acids, peptides and amines"	PA2041
+"Amino acids, peptides and amines"	PA2058
+"Amino acids, peptides and amines"	PA2079
+"Amino acids, peptides and amines"	PA2202
+"Amino acids, peptides and amines"	PA2203
+"Amino acids, peptides and amines"	PA2204
+"Amino acids, peptides and amines"	PA2249
+"Amino acids, peptides and amines"	PA2252
+"Amino acids, peptides and amines"	PA2349
+"Amino acids, peptides and amines"	PA2350
+"Amino acids, peptides and amines"	PA2432
+"Amino acids, peptides and amines"	PA2533
+"Amino acids, peptides and amines"	PA2592
+"Amino acids, peptides and amines"	PA2667
+"Amino acids, peptides and amines"	PA2711
+"Amino acids, peptides and amines"	PA2923
+"Amino acids, peptides and amines"	PA2924
+"Amino acids, peptides and amines"	PA2925
+"Amino acids, peptides and amines"	PA2926
+"Amino acids, peptides and amines"	PA3000
+"Amino acids, peptides and amines"	PA3176
+"Amino acids, peptides and amines"	PA3364
+"Amino acids, peptides and amines"	PA3474
+"Amino acids, peptides and amines"	PA3475
+"Amino acids, peptides and amines"	PA3597
+"Amino acids, peptides and amines"	PA3607
+"Amino acids, peptides and amines"	PA3608
+"Amino acids, peptides and amines"	PA3609
+"Amino acids, peptides and amines"	PA3610
+"Amino acids, peptides and amines"	PA3641
+"Amino acids, peptides and amines"	PA3766
+"Amino acids, peptides and amines"	PA3836
+"Amino acids, peptides and amines"	PA3837
+"Amino acids, peptides and amines"	PA3838
+"Amino acids, peptides and amines"	PA3858
+"Amino acids, peptides and amines"	PA3865
+"Amino acids, peptides and amines"	PA3888
+"Amino acids, peptides and amines"	PA3889
+"Amino acids, peptides and amines"	PA3890
+"Amino acids, peptides and amines"	PA3891
+"Amino acids, peptides and amines"	PA3931
+"Amino acids, peptides and amines"	PA3934
+"Amino acids, peptides and amines"	PA4023
+"Amino acids, peptides and amines"	PA4027
+"Amino acids, peptides and amines"	PA4072
+"Amino acids, peptides and amines"	PA4195
+"Amino acids, peptides and amines"	PA4365
+"Amino acids, peptides and amines"	PA4496
+"Amino acids, peptides and amines"	PA4497
+"Amino acids, peptides and amines"	PA4499
+"Amino acids, peptides and amines"	PA4502
+"Amino acids, peptides and amines"	PA4503
+"Amino acids, peptides and amines"	PA4504
+"Amino acids, peptides and amines"	PA4505
+"Amino acids, peptides and amines"	PA4506
+"Amino acids, peptides and amines"	PA4628
+"Amino acids, peptides and amines"	PA4757
+"Amino acids, peptides and amines"	PA4858
+"Amino acids, peptides and amines"	PA4859
+"Amino acids, peptides and amines"	PA4860
+"Amino acids, peptides and amines"	PA4861
+"Amino acids, peptides and amines"	PA4862
+"Amino acids, peptides and amines"	PA4898
+"Amino acids, peptides and amines"	PA4909
+"Amino acids, peptides and amines"	PA4910
+"Amino acids, peptides and amines"	PA4911
+"Amino acids, peptides and amines"	PA4912
+"Amino acids, peptides and amines"	PA4913
+"Amino acids, peptides and amines"	PA4981
+"Amino acids, peptides and amines"	PA4985
+"Amino acids, peptides and amines"	PA5074
+"Amino acids, peptides and amines"	PA5075
+"Amino acids, peptides and amines"	PA5076
+"Amino acids, peptides and amines"	PA5094
+"Amino acids, peptides and amines"	PA5096
+"Amino acids, peptides and amines"	PA5097
+"Amino acids, peptides and amines"	PA5103
+"Amino acids, peptides and amines"	PA5137
+"Amino acids, peptides and amines"	PA5138
+"Amino acids, peptides and amines"	PA5139
+"Amino acids, peptides and amines"	PA5152
+"Amino acids, peptides and amines"	PA5153
+"Amino acids, peptides and amines"	PA5154
+"Amino acids, peptides and amines"	PA5155
+"Amino acids, peptides and amines"	PA5170
+"Amino acids, peptides and amines"	PA5270
+"Amino acids, peptides and amines"	PA5317
+"Amino acids, peptides and amines"	PA5376
+"Amino acids, peptides and amines"	PA5377
+"Amino acids, peptides and amines"	PA5378
+"Amino acids, peptides and amines"	PA5388
+"Amino acids, peptides and amines"	PA5434
+"Amino acids, peptides and amines"	PA5472
+"Amino acids, peptides and amines"	PA5479
+"Amino acids, peptides and amines"	PA5503
+"Amino acids, peptides and amines"	PA5504
+"Amino acids, peptides and amines"	PA5510
+Transport and binding proteins	Anions
+Anions	PA0029
+Anions	PA0103
+Anions	PA0280
+Anions	PA0281
+Anions	PA0282
+Anions	PA0283
+Anions	PA0450
+Anions	PA0487
+Anions	PA0846
+Anions	PA1493
+Anions	PA1647
+Anions	PA1783
+Anions	PA1861
+Anions	PA1862
+Anions	PA1863
+Anions	PA2548
+Anions	PA2563
+Anions	PA3313
+Anions	PA3314
+Anions	PA3315
+Anions	PA3316
+Anions	PA3375
+Anions	PA3381
+Anions	PA3382
+Anions	PA3383
+Anions	PA3384
+Anions	PA3441
+Anions	PA3839
+Anions	PA3876
+Anions	PA3877
+Anions	PA4289
+Anions	PA4292
+Anions	PA5207
+Anions	PA5365
+Anions	PA5366
+Anions	PA5367
+Anions	PA5368
+Anions	PA5369
+Transport and binding proteins	"Carbohydrates, organic alcohols, and acids"
+"Carbohydrates, organic alcohols, and acids"	PA0119
+"Carbohydrates, organic alcohols, and acids"	PA0215
+"Carbohydrates, organic alcohols, and acids"	PA0216
+"Carbohydrates, organic alcohols, and acids"	PA0235
+"Carbohydrates, organic alcohols, and acids"	PA0755
+"Carbohydrates, organic alcohols, and acids"	PA0884
+"Carbohydrates, organic alcohols, and acids"	PA0885
+"Carbohydrates, organic alcohols, and acids"	PA0886
+"Carbohydrates, organic alcohols, and acids"	PA1183
+"Carbohydrates, organic alcohols, and acids"	PA1651
+"Carbohydrates, organic alcohols, and acids"	PA1682
+"Carbohydrates, organic alcohols, and acids"	PA1735
+"Carbohydrates, organic alcohols, and acids"	PA1946
+"Carbohydrates, organic alcohols, and acids"	PA1947
+"Carbohydrates, organic alcohols, and acids"	PA1948
+"Carbohydrates, organic alcohols, and acids"	PA2068
+"Carbohydrates, organic alcohols, and acids"	PA2214
+"Carbohydrates, organic alcohols, and acids"	PA2262
+"Carbohydrates, organic alcohols, and acids"	PA2322
+"Carbohydrates, organic alcohols, and acids"	PA2338
+"Carbohydrates, organic alcohols, and acids"	PA2339
+"Carbohydrates, organic alcohols, and acids"	PA2340
+"Carbohydrates, organic alcohols, and acids"	PA2341
+"Carbohydrates, organic alcohols, and acids"	PA3187
+"Carbohydrates, organic alcohols, and acids"	PA3188
+"Carbohydrates, organic alcohols, and acids"	PA3189
+"Carbohydrates, organic alcohols, and acids"	PA3190
+"Carbohydrates, organic alcohols, and acids"	PA3560
+"Carbohydrates, organic alcohols, and acids"	PA3760
+"Carbohydrates, organic alcohols, and acids"	PA3761
+"Carbohydrates, organic alcohols, and acids"	PA3781
+"Carbohydrates, organic alcohols, and acids"	PA4590
+"Carbohydrates, organic alcohols, and acids"	PA4616
+"Carbohydrates, organic alcohols, and acids"	PA4770
+"Carbohydrates, organic alcohols, and acids"	PA5165
+"Carbohydrates, organic alcohols, and acids"	PA5166
+"Carbohydrates, organic alcohols, and acids"	PA5167
+"Carbohydrates, organic alcohols, and acids"	PA5168
+"Carbohydrates, organic alcohols, and acids"	PA5169
+"Carbohydrates, organic alcohols, and acids"	PA5466
+"Carbohydrates, organic alcohols, and acids"	PA5468
+"Carbohydrates, organic alcohols, and acids"	PA5476
+Transport and binding proteins	Cations and iron carrying compounds
+Cations and iron carrying compounds	PA0016
+Cations and iron carrying compounds	PA0151
+Cations and iron carrying compounds	PA0192
+Cations and iron carrying compounds	PA0197
+Cations and iron carrying compounds	PA0208
+Cations and iron carrying compounds	PA0287
+Cations and iron carrying compounds	PA0320
+Cations and iron carrying compounds	PA0327
+Cations and iron carrying compounds	PA0397
+Cations and iron carrying compounds	PA0406
+Cations and iron carrying compounds	PA0434
+Cations and iron carrying compounds	PA0470
+Cations and iron carrying compounds	PA0672
+Cations and iron carrying compounds	PA0695
+Cations and iron carrying compounds	PA0781
+Cations and iron carrying compounds	PA0783
+Cations and iron carrying compounds	PA0809
+Cations and iron carrying compounds	PA0913
+Cations and iron carrying compounds	PA0917
+Cations and iron carrying compounds	PA0931
+Cations and iron carrying compounds	PA0971
+Cations and iron carrying compounds	PA1054
+Cations and iron carrying compounds	PA1055
+Cations and iron carrying compounds	PA1056
+Cations and iron carrying compounds	PA1057
+Cations and iron carrying compounds	PA1058
+Cations and iron carrying compounds	PA1059
+Cations and iron carrying compounds	PA1165
+Cations and iron carrying compounds	PA1207
+Cations and iron carrying compounds	PA1297
+Cations and iron carrying compounds	PA1300
+Cations and iron carrying compounds	PA1301
+Cations and iron carrying compounds	PA1302
+Cations and iron carrying compounds	PA1322
+Cations and iron carrying compounds	PA1365
+Cations and iron carrying compounds	PA1418
+Cations and iron carrying compounds	PA1429
+Cations and iron carrying compounds	PA1478
+Cations and iron carrying compounds	PA1496
+Cations and iron carrying compounds	PA1549
+Cations and iron carrying compounds	PA1613
+Cations and iron carrying compounds	PA1632
+Cations and iron carrying compounds	PA1633
+Cations and iron carrying compounds	PA1634
+Cations and iron carrying compounds	PA1635
+Cations and iron carrying compounds	PA1773
+Cations and iron carrying compounds	PA1820
+Cations and iron carrying compounds	PA1873
+Cations and iron carrying compounds	PA1910
+Cations and iron carrying compounds	PA2057
+Cations and iron carrying compounds	PA2058
+Cations and iron carrying compounds	PA2064
+Cations and iron carrying compounds	PA2065
+Cations and iron carrying compounds	PA2148
+Cations and iron carrying compounds	PA2252
+Cations and iron carrying compounds	PA2254
+Cations and iron carrying compounds	PA2255
+Cations and iron carrying compounds	PA2256
+Cations and iron carrying compounds	PA2257
+Cations and iron carrying compounds	PA2289
+Cations and iron carrying compounds	PA2385
+Cations and iron carrying compounds	PA2386
+Cations and iron carrying compounds	PA2388
+Cations and iron carrying compounds	PA2390
+Cations and iron carrying compounds	PA2392
+Cations and iron carrying compounds	PA2394
+Cations and iron carrying compounds	PA2395
+Cations and iron carrying compounds	PA2400
+Cations and iron carrying compounds	PA2402
+Cations and iron carrying compounds	PA2403
+Cations and iron carrying compounds	PA2404
+Cations and iron carrying compounds	PA2405
+Cations and iron carrying compounds	PA2406
+Cations and iron carrying compounds	PA2407
+Cations and iron carrying compounds	PA2408
+Cations and iron carrying compounds	PA2409
+Cations and iron carrying compounds	PA2410
+Cations and iron carrying compounds	PA2413
+Cations and iron carrying compounds	PA2424
+Cations and iron carrying compounds	PA2425
+Cations and iron carrying compounds	PA2426
+Cations and iron carrying compounds	PA2435
+Cations and iron carrying compounds	PA2466
+Cations and iron carrying compounds	PA2520
+Cations and iron carrying compounds	PA2533
+Cations and iron carrying compounds	PA2590
+Cations and iron carrying compounds	PA2688
+Cations and iron carrying compounds	PA2689
+Cations and iron carrying compounds	PA2812
+Cations and iron carrying compounds	PA2910
+Cations and iron carrying compounds	PA2911
+Cations and iron carrying compounds	PA2912
+Cations and iron carrying compounds	PA2913
+Cations and iron carrying compounds	PA2914
+Cations and iron carrying compounds	PA2941
+Cations and iron carrying compounds	PA2942
+Cations and iron carrying compounds	PA2994
+Cations and iron carrying compounds	PA2995
+Cations and iron carrying compounds	PA2996
+Cations and iron carrying compounds	PA2997
+Cations and iron carrying compounds	PA2998
+Cations and iron carrying compounds	PA2999
+Cations and iron carrying compounds	PA3210
+Cations and iron carrying compounds	PA3234
+Cations and iron carrying compounds	PA3268
+Cations and iron carrying compounds	PA3397
+Cations and iron carrying compounds	PA3407
+Cations and iron carrying compounds	PA3408
+Cations and iron carrying compounds	PA3409
+Cations and iron carrying compounds	PA3530
+Cations and iron carrying compounds	PA3531
+Cations and iron carrying compounds	PA3538
+Cations and iron carrying compounds	PA3660
+Cations and iron carrying compounds	PA3690
+Cations and iron carrying compounds	PA3739
+Cations and iron carrying compounds	PA3748
+Cations and iron carrying compounds	PA3785
+Cations and iron carrying compounds	PA3790
+Cations and iron carrying compounds	PA3839
+Cations and iron carrying compounds	PA3887
+Cations and iron carrying compounds	PA3900
+Cations and iron carrying compounds	PA3901
+Cations and iron carrying compounds	PA3920
+Cations and iron carrying compounds	PA3963
+Cations and iron carrying compounds	PA4116
+Cations and iron carrying compounds	PA4156
+Cations and iron carrying compounds	PA4158
+Cations and iron carrying compounds	PA4159
+Cations and iron carrying compounds	PA4160
+Cations and iron carrying compounds	PA4161
+Cations and iron carrying compounds	PA4168
+Cations and iron carrying compounds	PA4218
+Cations and iron carrying compounds	PA4221
+Cations and iron carrying compounds	PA4222
+Cations and iron carrying compounds	PA4223
+Cations and iron carrying compounds	PA4224
+Cations and iron carrying compounds	PA4225
+Cations and iron carrying compounds	PA4226
+Cations and iron carrying compounds	PA4228
+Cations and iron carrying compounds	PA4229
+Cations and iron carrying compounds	PA4230
+Cations and iron carrying compounds	PA4235
+Cations and iron carrying compounds	PA4334
+Cations and iron carrying compounds	PA4357
+Cations and iron carrying compounds	PA4358
+Cations and iron carrying compounds	PA4359
+Cations and iron carrying compounds	PA4467
+Cations and iron carrying compounds	PA4514
+Cations and iron carrying compounds	PA4615
+Cations and iron carrying compounds	PA4635
+Cations and iron carrying compounds	PA4675
+Cations and iron carrying compounds	PA4687
+Cations and iron carrying compounds	PA4688
+Cations and iron carrying compounds	PA4705
+Cations and iron carrying compounds	PA4706
+Cations and iron carrying compounds	PA4707
+Cations and iron carrying compounds	PA4708
+Cations and iron carrying compounds	PA4709
+Cations and iron carrying compounds	PA4710
+Cations and iron carrying compounds	PA4764
+Cations and iron carrying compounds	PA4825
+Cations and iron carrying compounds	PA4834
+Cations and iron carrying compounds	PA4835
+Cations and iron carrying compounds	PA4836
+Cations and iron carrying compounds	PA4837
+Cations and iron carrying compounds	PA4880
+Cations and iron carrying compounds	PA5021
+Cations and iron carrying compounds	PA5216
+Cations and iron carrying compounds	PA5217
+Cations and iron carrying compounds	PA5248
+Cations and iron carrying compounds	PA5268
+Cations and iron carrying compounds	PA5287
+Cations and iron carrying compounds	PA5328
+Cations and iron carrying compounds	PA5362
+Cations and iron carrying compounds	PA5435
+Cations and iron carrying compounds	PA5473
+Cations and iron carrying compounds	PA5498
+Cations and iron carrying compounds	PA5499
+Cations and iron carrying compounds	PA5500
+Cations and iron carrying compounds	PA5501
+Cations and iron carrying compounds	PA5518
+Cations and iron carrying compounds	PA5529
+Cations and iron carrying compounds	PA5531
+Transport and binding proteins	"Nucleosides, purines and pyrimidines"
+"Nucleosides, purines and pyrimidines"	PA0166
+"Nucleosides, purines and pyrimidines"	PA0352
+"Nucleosides, purines and pyrimidines"	PA0438
+"Nucleosides, purines and pyrimidines"	PA1507
+"Nucleosides, purines and pyrimidines"	PA1949
+"Nucleosides, purines and pyrimidines"	PA2938
+"Nucleosides, purines and pyrimidines"	PA4647
+Transport and binding proteins	Other@Transport and binding proteins
+Other@Transport and binding proteins	PA0156
+Other@Transport and binding proteins	PA0157
+Other@Transport and binding proteins	PA0158
+Other@Transport and binding proteins	PA0184
+Other@Transport and binding proteins	PA0185
+Other@Transport and binding proteins	PA0186
+Other@Transport and binding proteins	PA0246
+Other@Transport and binding proteins	PA0424
+Other@Transport and binding proteins	PA0458
+Other@Transport and binding proteins	PA0969
+Other@Transport and binding proteins	PA0970
+Other@Transport and binding proteins	PA0971
+Other@Transport and binding proteins	PA0972
+Other@Transport and binding proteins	PA0973
+Other@Transport and binding proteins	PA1019
+Other@Transport and binding proteins	PA1236
+Other@Transport and binding proteins	PA1271
+Other@Transport and binding proteins	PA1361
+Other@Transport and binding proteins	PA1475
+Other@Transport and binding proteins	PA1476
+Other@Transport and binding proteins	PA1477
+Other@Transport and binding proteins	PA1626
+Other@Transport and binding proteins	PA1875
+Other@Transport and binding proteins	PA1958
+Other@Transport and binding proteins	PA2047
+Other@Transport and binding proteins	PA2277
+Other@Transport and binding proteins	PA2278
+Other@Transport and binding proteins	PA2279
+Other@Transport and binding proteins	PA2306
+Other@Transport and binding proteins	PA2308
+Other@Transport and binding proteins	PA2491
+Other@Transport and binding proteins	PA2492
+Other@Transport and binding proteins	PA2594
+Other@Transport and binding proteins	PA2596
+Other@Transport and binding proteins	PA2599
+Other@Transport and binding proteins	PA3137
+Other@Transport and binding proteins	PA3204
+Other@Transport and binding proteins	PA3206
+Other@Transport and binding proteins	PA3212
+Other@Transport and binding proteins	PA3236
+Other@Transport and binding proteins	PA3442
+Other@Transport and binding proteins	PA3443
+Other@Transport and binding proteins	PA3445
+Other@Transport and binding proteins	PA3448
+Other@Transport and binding proteins	PA3449
+Other@Transport and binding proteins	PA3719
+Other@Transport and binding proteins	PA3827
+Other@Transport and binding proteins	PA3828
+Other@Transport and binding proteins	PA3933
+Other@Transport and binding proteins	PA3936
+Other@Transport and binding proteins	PA3937
+Other@Transport and binding proteins	PA3938
+Other@Transport and binding proteins	PA4045
+Other@Transport and binding proteins	PA4143
+Other@Transport and binding proteins	PA4456
+Other@Transport and binding proteins	PA4459
+Other@Transport and binding proteins	PA4460
+Other@Transport and binding proteins	PA4461
+Other@Transport and binding proteins	PA4624
+Other@Transport and binding proteins	PA4821
+Other@Transport and binding proteins	PA4878
+Other@Transport and binding proteins	PA4990
+Other@Transport and binding proteins	PA4997
+Other@Transport and binding proteins	PA5160
+Other@Transport and binding proteins	PA5235
+Other@Transport and binding proteins	PA5291
+Other@Transport and binding proteins	PA5375
+Other@Transport and binding proteins	PA5450
+Transport and binding proteins	Porins
+Porins	PA0151
+Porins	PA0162
+Porins	PA0189
+Porins	PA0192
+Porins	PA0240
+Porins	PA0291
+Porins	PA0427
+Porins	PA0434
+Porins	PA0470
+Porins	PA0755
+Porins	PA0781
+Porins	PA0833
+Porins	PA0931
+Porins	PA0958
+Porins	PA1041
+Porins	PA1119
+Porins	PA1248
+Porins	PA1271
+Porins	PA1302
+Porins	PA1322
+Porins	PA1365
+Porins	PA1613
+Porins	PA1777
+Porins	PA1910
+Porins	PA1922
+Porins	PA2057
+Porins	PA2113
+Porins	PA2289
+Porins	PA2291
+Porins	PA2391
+Porins	PA2420
+Porins	PA2466
+Porins	PA2495
+Porins	PA2505
+Porins	PA2522
+Porins	PA2525
+Porins	PA2590
+Porins	PA2688
+Porins	PA2700
+Porins	PA2760
+Porins	PA2837
+Porins	PA2900
+Porins	PA2911
+Porins	PA3038
+Porins	PA3186
+Porins	PA3268
+Porins	PA3279
+Porins	PA3280
+Porins	PA3404
+Porins	PA3408
+Porins	PA3521
+Porins	PA3588
+Porins	PA3647
+Porins	PA3692
+Porins	PA3790
+Porins	PA3894
+Porins	PA3901
+Porins	PA4067
+Porins	PA4099
+Porins	PA4137
+Porins	PA4156
+Porins	PA4168
+Porins	PA4179
+Porins	PA4208
+Porins	PA4221
+Porins	PA4501
+Porins	PA4514
+Porins	PA4597
+Porins	PA4675
+Porins	PA4710
+Porins	PA4837
+Porins	PA4898
+Porins	PA4974
+Porins	PA5158
+Transport and binding proteins	Unknown substrate
+Unknown substrate	PA0136
+Unknown substrate	PA0137
+Unknown substrate	PA0138
+Unknown substrate	PA0198
+Unknown substrate	PA0199
+Unknown substrate	PA0229
+Unknown substrate	PA0241
+Unknown substrate	PA0273
+Unknown substrate	PA0323
+Unknown substrate	PA0334
+Unknown substrate	PA0425
+Unknown substrate	PA0426
+Unknown substrate	PA0443
+Unknown substrate	PA0476
+Unknown substrate	PA0485
+Unknown substrate	PA0693
+Unknown substrate	PA0694
+Unknown substrate	PA0703
+Unknown substrate	PA0786
+Unknown substrate	PA0811
+Unknown substrate	PA0860
+Unknown substrate	PA1051
+Unknown substrate	PA1108
+Unknown substrate	PA1113
+Unknown substrate	PA1131
+Unknown substrate	PA1144
+Unknown substrate	PA1212
+Unknown substrate	PA1231
+Unknown substrate	PA1237
+Unknown substrate	PA1282
+Unknown substrate	PA1286
+Unknown substrate	PA1316
+Unknown substrate	PA1419
+Unknown substrate	PA1425
+Unknown substrate	PA1435
+Unknown substrate	PA1436
+Unknown substrate	PA1491
+Unknown substrate	PA1497
+Unknown substrate	PA1519
+Unknown substrate	PA1569
+Unknown substrate	PA1650
+Unknown substrate	PA1848
+Unknown substrate	PA1877
+Unknown substrate	PA1882
+Unknown substrate	PA1908
+Unknown substrate	PA1964
+Unknown substrate	PA1993
+Unknown substrate	PA2006
+Unknown substrate	PA2018
+Unknown substrate	PA2019
+Unknown substrate	PA2042
+Unknown substrate	PA2114
+Unknown substrate	PA2135
+Unknown substrate	PA2210
+Unknown substrate	PA2307
+Unknown substrate	PA2314
+Unknown substrate	PA2327
+Unknown substrate	PA2329
+Unknown substrate	PA2351
+Unknown substrate	PA2389
+Unknown substrate	PA2472
+Unknown substrate	PA2493
+Unknown substrate	PA2494
+Unknown substrate	PA2500
+Unknown substrate	PA2526
+Unknown substrate	PA2527
+Unknown substrate	PA2528
+Unknown substrate	PA2558
+Unknown substrate	PA2653
+Unknown substrate	PA2678
+Unknown substrate	PA2701
+Unknown substrate	PA2811
+Unknown substrate	PA2835
+Unknown substrate	PA2836
+Unknown substrate	PA2857
+Unknown substrate	PA2858
+Unknown substrate	PA2933
+Unknown substrate	PA2983
+Unknown substrate	PA3019
+Unknown substrate	PA3039
+Unknown substrate	PA3136
+Unknown substrate	PA3228
+Unknown substrate	PA3252
+Unknown substrate	PA3253
+Unknown substrate	PA3254
+Unknown substrate	PA3264
+Unknown substrate	PA3265
+Unknown substrate	PA3303
+Unknown substrate	PA3304
+Unknown substrate	PA3336
+Unknown substrate	PA3447
+Unknown substrate	PA3467
+Unknown substrate	PA3473
+Unknown substrate	PA3520
+Unknown substrate	PA3522
+Unknown substrate	PA3523
+Unknown substrate	PA3573
+Unknown substrate	PA3581
+Unknown substrate	PA3595
+Unknown substrate	PA3676
+Unknown substrate	PA3677
+Unknown substrate	PA3709
+Unknown substrate	PA3718
+Unknown substrate	PA3749
+Unknown substrate	PA3779
+Unknown substrate	PA3780
+Unknown substrate	PA3892
+Unknown substrate	PA3926
+Unknown substrate	PA4034
+Unknown substrate	PA4064
+Unknown substrate	PA4065
+Unknown substrate	PA4096
+Unknown substrate	PA4113
+Unknown substrate	PA4126
+Unknown substrate	PA4136
+Unknown substrate	PA4187
+Unknown substrate	PA4206
+Unknown substrate	PA4207
+Unknown substrate	PA4233
+Unknown substrate	PA4343
+Unknown substrate	PA4355
+Unknown substrate	PA4374
+Unknown substrate	PA4375
+Unknown substrate	PA4500
+Unknown substrate	PA4593
+Unknown substrate	PA4594
+Unknown substrate	PA4598
+Unknown substrate	PA4599
+Unknown substrate	PA4622
+Unknown substrate	PA4654
+Unknown substrate	PA4719
+Unknown substrate	PA4887
+Unknown substrate	PA4897
+Unknown substrate	PA4900
+Unknown substrate	PA4903
+Unknown substrate	PA5030
+Unknown substrate	PA5095
+Unknown substrate	PA5099
+Unknown substrate	PA5230
+Unknown substrate	PA5231
+Unknown substrate	PA5252
+Unknown substrate	PA5282
+Unknown substrate	PA5311
+Unknown substrate	PA5370
+Unknown substrate	PA5530
+Unknown substrate	PA5544
+Unknown substrate	PA5545
+Unknown substrate	PA5548
+Regulation	Regulatory functions
+Regulatory functions	DNA interactions
+DNA interactions	PA0962
+DNA interactions	PA2273
+DNA interactions	PA3007
+DNA interactions	PA3381
+DNA interactions	PA3563
+DNA interactions	PA3664
+DNA interactions	PA3815
+DNA interactions	PA4363
+DNA interactions	PA4421
+DNA interactions	PA4674
+DNA interactions	PA4778
+DNA interactions	PA5105
+DNA interactions	PA5125
+DNA interactions	PA5360
+Regulatory functions	Other@Regulatory functions
+Other@Regulatory functions	PA0487
+Other@Regulatory functions	PA0674
+Other@Regulatory functions	PA1364
+Other@Regulatory functions	PA1494
+Other@Regulatory functions	PA2051
+Other@Regulatory functions	PA2094
+Other@Regulatory functions	PA2491
+Other@Regulatory functions	PA2559.1
+Other@Regulatory functions	PA3385
+Other@Regulatory functions	PA4033
+Other@Regulatory functions	PA4378
+Other@Regulatory functions	PA4379
+Other@Regulatory functions	PA4446
+Other@Regulatory functions	PA4721
+Other@Regulatory functions	PA4895
+Other@Regulatory functions	PA4944
+Other@Regulatory functions	PA5117
+Other@Regulatory functions	PA5288
+Other@Regulatory functions	PA5365
+Regulatory functions	Protein interactions
+Protein interactions	PA0906
+Protein interactions	PA1121
+Protein interactions	PA1244
+Protein interactions	PA1616
+Protein interactions	PA1705
+Protein interactions	PA1706
+Protein interactions	PA1710
+Protein interactions	PA1711
+Protein interactions	PA1714
+Protein interactions	PA2127
+Protein interactions	PA2486
+Protein interactions	PA3658
+Protein interactions	PA3719
+Protein interactions	PA3900
+Protein interactions	PA4178
+Protein interactions	PA4608
+Protein interactions	PA4674
+Protein interactions	PA4941
+Regulatory functions	RNA interactions
+RNA interactions	PA0905
+RNA interactions	PA1414
+RNA interactions	PA4951
+RNA interactions	PA5183.1
+Regulatory functions	Small molecule interactions
+Small molecule interactions	PA0169
+Small molecule interactions	PA0285
+Small molecule interactions	PA0290
+Small molecule interactions	PA0338
+Small molecule interactions	PA0575
+Small molecule interactions	PA0600
+Small molecule interactions	PA0745
+Small molecule interactions	PA0847
+Small molecule interactions	PA0861
+Small molecule interactions	PA1032
+Small molecule interactions	PA1107
+Small molecule interactions	PA1120
+Small molecule interactions	PA1130
+Small molecule interactions	PA1181
+Small molecule interactions	PA1423
+Small molecule interactions	PA1432
+Small molecule interactions	PA1433
+Small molecule interactions	PA1561
+Small molecule interactions	PA1727
+Small molecule interactions	PA1775
+Small molecule interactions	PA1851
+Small molecule interactions	PA1930
+Small molecule interactions	PA2072
+Small molecule interactions	PA2567
+Small molecule interactions	PA2593
+Small molecule interactions	PA2771
+Small molecule interactions	PA2870
+Small molecule interactions	PA3177
+Small molecule interactions	PA3217
+Small molecule interactions	PA3258
+Small molecule interactions	PA3311
+Small molecule interactions	PA3343
+Small molecule interactions	PA3387
+Small molecule interactions	PA3476
+Small molecule interactions	PA3478
+Small molecule interactions	PA3479
+Small molecule interactions	PA3825
+Small molecule interactions	PA4108
+Small molecule interactions	PA4196
+Small molecule interactions	PA4293
+Small molecule interactions	PA4332
+Small molecule interactions	PA4367
+Small molecule interactions	PA4601
+Small molecule interactions	PA4723
+Small molecule interactions	PA4725
+Small molecule interactions	PA4781
+Small molecule interactions	PA4959
+Small molecule interactions	PA4969
+Small molecule interactions	PA5017
+Small molecule interactions	PA5272
+Small molecule interactions	PA5295
+Small molecule interactions	PA5324
+Small molecule interactions	PA5325
+Small molecule interactions	PA5326
+Small molecule interactions	PA5327
+Small molecule interactions	PA5328
+Small molecule interactions	PA5442
+Small molecule interactions	PA5487
+Small molecule interactions	PA5536
+Regulation	Signal transduction
+Signal transduction	Other@Signal transduction
+Other@Signal transduction	PA0169
+Other@Signal transduction	PA0285
+Other@Signal transduction	PA0290
+Other@Signal transduction	PA0338
+Other@Signal transduction	PA0413
+Other@Signal transduction	PA0414
+Other@Signal transduction	PA0415
+Other@Signal transduction	PA0417
+Other@Signal transduction	PA0575
+Other@Signal transduction	PA0656
+Other@Signal transduction	PA0847
+Other@Signal transduction	PA0861
+Other@Signal transduction	PA1107
+Other@Signal transduction	PA1120
+Other@Signal transduction	PA1181
+Other@Signal transduction	PA1306
+Other@Signal transduction	PA1433
+Other@Signal transduction	PA1727
+Other@Signal transduction	PA1851
+Other@Signal transduction	PA2072
+Other@Signal transduction	PA2567
+Other@Signal transduction	PA2771
+Other@Signal transduction	PA2870
+Other@Signal transduction	PA3177
+Other@Signal transduction	PA3258
+Other@Signal transduction	PA3295
+Other@Signal transduction	PA3311
+Other@Signal transduction	PA3343
+Other@Signal transduction	PA3409
+Other@Signal transduction	PA3807
+Other@Signal transduction	PA3947
+Other@Signal transduction	PA4332
+Other@Signal transduction	PA4367
+Other@Signal transduction	PA4601
+Other@Signal transduction	PA4959
+Other@Signal transduction	PA5017
+Other@Signal transduction	PA5295
+Other@Signal transduction	PA5442
+Other@Signal transduction	PA5487
+Signal transduction	PTS
+PTS	PA0337
+PTS	PA3560
+PTS	PA3562
+PTS	PA3760
+PTS	PA3761
+PTS	PA3885
+PTS	PA4464
+PTS	PA4466
+Signal transduction	Two-component systems
+Two-component systems	PA0033
+Two-component systems	PA0034
+Two-component systems	PA0178
+Two-component systems	PA0179
+Two-component systems	PA0463
+Two-component systems	PA0464
+Two-component systems	PA0601
+Two-component systems	PA0756
+Two-component systems	PA0757
+Two-component systems	PA0928
+Two-component systems	PA0929
+Two-component systems	PA0930
+Two-component systems	PA1098
+Two-component systems	PA1099
+Two-component systems	PA1157
+Two-component systems	PA1158
+Two-component systems	PA1179
+Two-component systems	PA1180
+Two-component systems	PA1243
+Two-component systems	PA1335
+Two-component systems	PA1336
+Two-component systems	PA1396
+Two-component systems	PA1397
+Two-component systems	PA1437
+Two-component systems	PA1438
+Two-component systems	PA1456
+Two-component systems	PA1458
+Two-component systems	PA1611
+Two-component systems	PA1636
+Two-component systems	PA1637
+Two-component systems	PA1785
+Two-component systems	PA1786
+Two-component systems	PA1798
+Two-component systems	PA1799
+Two-component systems	PA1976
+Two-component systems	PA1978
+Two-component systems	PA1979
+Two-component systems	PA1980
+Two-component systems	PA1992
+Two-component systems	PA2177
+Two-component systems	PA2479
+Two-component systems	PA2480
+Two-component systems	PA2523
+Two-component systems	PA2524
+Two-component systems	PA2571
+Two-component systems	PA2572
+Two-component systems	PA2583
+Two-component systems	PA2586
+Two-component systems	PA2656
+Two-component systems	PA2657
+Two-component systems	PA2686
+Two-component systems	PA2687
+Two-component systems	PA2798
+Two-component systems	PA2809
+Two-component systems	PA2810
+Two-component systems	PA2824
+Two-component systems	PA2881
+Two-component systems	PA2882
+Two-component systems	PA2899
+Two-component systems	PA3044
+Two-component systems	PA3045
+Two-component systems	PA3077
+Two-component systems	PA3078
+Two-component systems	PA3191
+Two-component systems	PA3192
+Two-component systems	PA3204
+Two-component systems	PA3206
+Two-component systems	PA3271
+Two-component systems	PA3345
+Two-component systems	PA3349
+Two-component systems	PA3462
+Two-component systems	PA3604
+Two-component systems	PA3702
+Two-component systems	PA3703
+Two-component systems	PA3704
+Two-component systems	PA3714
+Two-component systems	PA3878
+Two-component systems	PA3879
+Two-component systems	PA3946
+Two-component systems	PA3948
+Two-component systems	PA3974
+Two-component systems	PA4032
+Two-component systems	PA4036
+Two-component systems	PA4080
+Two-component systems	PA4112
+Two-component systems	PA4117
+Two-component systems	PA4197
+Two-component systems	PA4296
+Two-component systems	PA4380
+Two-component systems	PA4381
+Two-component systems	PA4396
+Two-component systems	PA4398
+Two-component systems	PA4493
+Two-component systems	PA4494
+Two-component systems	PA4546
+Two-component systems	PA4547
+Two-component systems	PA4726
+Two-component systems	PA4776
+Two-component systems	PA4777
+Two-component systems	PA4843
+Two-component systems	PA4856
+Two-component systems	PA4885
+Two-component systems	PA4886
+Two-component systems	PA4982
+Two-component systems	PA4983
+Two-component systems	PA5124
+Two-component systems	PA5125
+Two-component systems	PA5199
+Two-component systems	PA5200
+Two-component systems	PA5360
+Two-component systems	PA5361
+Two-component systems	PA5364
+Two-component systems	PA5483
+Two-component systems	PA5484
+Two-component systems	PA5511
+Two-component systems	PA5512
