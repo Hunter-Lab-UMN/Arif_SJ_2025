@@ -1,0 +1,274 @@
+---
+title: "Functional Analysis"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(clusterProfiler)
+library(ggplot2)
+library(AnnotationForge)
+library(DOSE)
+library(enrichplot)
+```
+
+We are going to use AnnotationForge to create a database package that can be used with clusterProfiler. We will be using the makeOrgPackage() function. For this, we'll three dataframes:
+gene_info - a df with gene ID (label as "GID") in the first column, "SYMBOL" in the second column, and "GENENAME" in the third.
+chromosome - a df with "GID" in first column, "CHROMOSOME" (chromosome number) in second.
+go - a df with "GID" in first column, "GO" (go term) in second column, and "EVIDENCE" in third column. Al GO term numbers will be unique (won't be repeated within column), but gene IDs can correspond to several different GO terms. 
+
+Tutorial: https://www.bioconductor.org/packages/release/bioc/vignettes/AnnotationForge/inst/doc/MakingNewOrganismPackages.html
+
+
+```{r}
+# Load in GO annotated PA14 file, downloaded from Psuedomonas.com: https://www.pseudomonas.com/goterms/list?accession=&goterm=&goEvidenceCode=&ecoCode=&strain_id=109&term=Pseudomonas+aeruginosa+UCBPP-PA14&offset=0
+PA14file <- read.csv("../data/GO_annotations/gene_ontology_csv.csv")
+colnames(PA14file)
+
+PA14file$chrom <- '1'
+
+# Create gene_info df, remove duplicate rows
+PA14Sym <- PA14file[,c("Locus.Tag", "Gene.Name", "Product.Description")]
+PA14Sym <- PA14Sym[PA14Sym[,"Gene.Name"]!="-",]
+PA14Sym <- PA14Sym[PA14Sym[,"Product.Description"]!="-",]
+colnames(PA14Sym) <- c("GID","SYMBOL","GENENAME")
+PA14Sym <- PA14Sym[!duplicated(PA14Sym), ]
+
+# Create chromosome df, remove duplicate rows
+PA14Chr <- PA14file[,c("Locus.Tag", "chrom")]
+PA14Chr <- PA14Chr[PA14Chr[,"chrom"]!="-",]
+colnames(PA14Chr) <- c("GID","CHROMOSOME")
+PA14Chr %>% distinct(GID, .keep_all = TRUE)
+PA14Chr <- PA14Chr[!duplicated(PA14Chr), ]
+
+# Create go df
+PA14Go <- PA14file[,c("Locus.Tag", "Accession", "GO.Evidence.Code")]
+PA14Go <- PA14Go[PA14Go[,"GO.Evidence.Code"]!="",]
+colnames(PA14Go) <- c("GID","GO","EVIDENCE")
+PA14Go <- PA14Go[!duplicated(PA14Go), ]
+
+# Call the function
+makeOrgPackage(gene_info=PA14Sym, chromosome=PA14Chr, go=PA14Go,
+               version="0.1",
+               maintainer="Sabrina J Arif <sarif@umn.edu>",
+               author="Sabrina J Arif <sarif@umn.edu>",
+               outputDir = ".",
+               tax_id="208963",
+               genus="Pseudomonas",
+               species=".aer.UCBPP.PA14",
+               goTable="go")
+
+# Install package
+install.packages("./org.P.aer.UCBPP.PA14.eg.db", repos=NULL, type="source")
+```
+
+First let's prep some data for the enrichGO function. sig=genes of interest; uni=background genes.
+```{r}
+## Define genes of interest (sig)
+
+# UPREGULATED ana4h vs unt4h
+sig_upana4unt4 <- read.csv("../results/DESeq2/up_sigtab_ana4h_v_unt4h_alpha01beta1.csv")
+sig_upana4unt4 <- as.character(sig_upana4unt4$GeneID)
+
+# DOWNREGULATED ana4h vs unt4h
+sig_downana4unt4 <- read.csv("../results/DESeq2/down_sigtab_ana4h_v_unt4h_alpha01beta1.csv")
+sig_downana4unt4 <- as.character(sig_downana4unt4$GeneID)
+
+# UPREGULATED hne4h vs unt4h
+sig_uphne4unt4 <- read.csv("../results/DESeq2/up_sigtab_hne4h_v_unt4h_alpha01beta1.csv")
+sig_uphne4unt4 <- as.character(sig_uphne4unt4$GeneID)
+
+# DOWNREGULATED hne4h vs unt4h
+sig_downhne4unt4 <- read.csv("../results/DESeq2/down_sigtab_hne4h_v_unt4h_alpha01beta1.csv")
+sig_downhne4unt4 <- as.character(sig_downhne4unt4$GeneID)
+
+# UPREGULATED ana16h vs unt16h
+sig_upana16unt16 <- read.csv("../results/DESeq2/up_sigtab_ana16h_v_unt16h_alpha01beta1.csv")
+sig_upana16unt16 <- as.character(sig_upana16unt16$GeneID)
+
+# DOWNREGULATED ana16h vs unt16h
+sig_downana16unt16 <- read.csv("../results/DESeq2/down_sigtab_ana16h_v_unt16h_alpha01beta1.csv")
+sig_downana16unt16 <- as.character(sig_downana16unt16$GeneID)
+
+# UPREGULATED ana16h vs ana4h
+sig_upana16ana4 <- read.csv("../results/DESeq2/up_sigtab_ana16h_v_ana4h_alpha01beta1.csv")
+sig_upana16ana4 <- as.character(sig_upana16ana4$GeneID)
+
+# DOWNREGULATED ana16h vs unt16h
+sig_downana16ana4 <- read.csv("../results/DESeq2/down_sigtab_ana16h_v_ana4h_alpha01beta1.csv")
+sig_downana16ana4 <- as.character(sig_downana16ana4$GeneID)
+
+
+
+### Define universes
+
+## ana4h vs unt4h
+# ALL
+uni_ana4unt4 <- read.csv("../results/DESeq2/df_ana4h_v_unt4h.csv")
+uni_ana4unt4 <- as.character(uni_ana4unt4$GeneID)
+# SIG
+uni_sigana4unt4 <- read.csv("../results/DESeq2/sigtab_ana4h_v_unt4h_alpha01beta1.csv")
+uni_sigana4unt4 <- as.character(uni_sigana4unt4$GeneID)
+
+## hne4h vs unt4h
+# ALL
+uni_hne4unt4 <- read.csv("../results/DESeq2/df_hne4h_v_unt4h.csv")
+uni_hne4unt4 <- as.character(uni_hne4unt4$GeneID)
+# SIG
+uni_sighne4unt4 <- read.csv("../results/DESeq2/sigtab_hne4h_v_unt4h_alpha01beta1.csv")
+uni_sighne4unt4 <- as.character(uni_sighne4unt4$GeneID)
+
+## ana16h vs unt16h
+# ALL
+uni_ana16unt16 <- read.csv("../results/DESeq2/df_ana16h_v_unt16h.csv")
+uni_ana16unt16 <- as.character(uni_ana16unt16$GeneID)
+
+## ana16h vs ana4h
+# ALL
+uni_ana16ana4 <- read.csv("../results/DESeq2/df_ana16h_v_ana4h.csv")
+uni_ana16ana4 <- as.character(uni_ana16ana4$GeneID)
+
+# SIG
+uni_sigana16unt16 <- read.csv("../results/DESeq2/sigtab_ana16h_v_unt16h_alpha01beta1.csv")
+uni_sigana16unt16 <- as.character(uni_sigana16unt16$GeneID)
+
+uni_sigana16ana4 <- read.csv("../results/DESeq2/sigtab_ana16h_v_ana4h_alpha01beta1.csv")
+uni_sigana16ana4 <- as.character(uni_sigana16ana4$GeneID)
+
+
+```
+
+More prep for enrichment analysis
+```{r}
+# Load in the package you created
+library(org.P.aer.UCBPP.PA14.eg.db)
+
+# Create a function specified for the DESeq comparisons to reduce text
+egoBP <- function(sig, uni){
+  enrichGO(gene = sig, 
+           universe = names(uni),
+           keyType = "GID",
+           OrgDb = org.P.aer.UCBPP.PA14.eg.db, 
+           ont = "BP", 
+           pAdjustMethod = "BH", 
+           qvalueCutoff = 0.05, 
+           readable = TRUE)}
+
+# Function for converting GeneRatio to decimal and sorting in descending order
+GO_tidy <- function(df){
+  df$GeneRatioPerc <- sapply(df$GeneRatio, function(x) eval(parse(text=x))) %>%
+  df[with(df, order(-GeneRatioPerc)), ]
+}
+```
+
+Run enrichment analyses for the DESeq comparisons
+```{r}
+# UPREGULATED ana4h vs unt4h
+egoBP_upana4unt4 <- egoBP(sig_upana4unt4, uni_ana4unt4)
+resBP_upana4unt4 <- as.data.frame(egoBP_upana4unt4@result)
+resBP_upana4unt4 <- resBP_upana4unt4[with(resBP_upana4unt4, order(-Count)), ]
+#resBP_upana4unt4 <- GO_tidy(resBP_upana4unt4)
+write.csv(resBP_upana4unt4, "../results/GO_enrichment/resBP_upana4unt4.csv", row.names=FALSE)
+
+# DOWNREGULATED ana4h vs unt4h
+egoBP_downana4unt4 <- egoBP(sig_downana4unt4, uni_ana4unt4)
+resBP_downana4unt4 <- as.data.frame(egoBP_downana4unt4@result)
+resBP_downana4unt4 <- resBP_downana4unt4[with(resBP_downana4unt4, order(-Count)), ]
+write.csv(resBP_downana4unt4, "../results/GO_enrichment/resBP_downana4unt4.csv", row.names=FALSE)
+
+# UPREGULATED hne4h vs unt4h
+egoBP_uphne4unt4 <- egoBP(sig_uphne4unt4, uni_hne4unt4)
+resBP_uphne4unt4 <- as.data.frame(egoBP_uphne4unt4@result)
+write.csv(resBP_uphne4unt4, "../results/GO_enrichment/resBP_uphne4unt4.csv", row.names=FALSE)
+
+# DOWNREGULATED hne4h vs unt4h
+egoBP_downhne4unt4 <- egoBP(sig_downhne4unt4, uni_hne4unt4)
+resBP_downhne4unt4 <- as.data.frame(egoBP_downhne4unt4@result)
+write.csv(resBP_downhne4unt4, "../results/GO_enrichment/resBP_downhne4unt4.csv", row.names=FALSE)
+
+# UPREGULATED ana16h vs unt16h
+egoBP_upana16unt16 <- egoBP(sig_upana16unt16, uni_ana16unt16)
+resBP_upana16unt16 <- as.data.frame(egoBP_upana16unt16@result)
+resBP_upana16unt16 <- resBP_upana16unt16[with(resBP_upana16unt16, order(-Count)), ]
+write.csv(resBP_upana16unt16, "../results/GO_enrichment/resBP_upana16unt16.csv", row.names=FALSE)
+
+# DOWNREGULATED ana16h vs unt16h
+egoBP_downana16unt16 <- egoBP(sig_downana16unt16, uni_ana16unt16)
+resBP_downana16unt16 <- as.data.frame(egoBP_downana16unt16@result)
+resBP_downana16unt16 <- resBP_downana16unt16[with(resBP_downana16unt16, order(-Count)), ]
+write.csv(resBP_downana16unt16, "../results/GO_enrichment/resBP_downana16unt16.csv", row.names=FALSE)
+
+# UPREGULATED ana16h vs unt16h
+egoBP_upana16ana4 <- egoBP(sig_upana16ana4, uni_ana16ana4)
+resBP_upana16ana4 <- as.data.frame(egoBP_upana16ana4@result)
+resBP_upana16ana4 <- resBP_upana16ana4[with(resBP_upana16ana4, order(-Count)), ]
+write.csv(resBP_upana16ana4, "../results/GO_enrichment/resBP_upana16ana4.csv", row.names=FALSE)
+
+# DOWNREGULATED ana16h vs unt16h
+egoBP_downana16ana4 <- egoBP(sig_downana16ana4, uni_ana16ana4)
+resBP_downana16ana4 <- as.data.frame(egoBP_downana16ana4@result)
+resBP_downana16ana4 <- resBP_downana16ana4[with(resBP_downana16ana4, order(-Count)), ]
+write.csv(resBP_downana16ana4, "../results/GO_enrichment/resBP_downana16ana4.csv", row.names=FALSE)
+
+# sig ana16h vs unt16h
+egoBP_ana16ana4 <- egoBP(uni_sigana16ana4, uni_ana16ana4)
+resBP_ana16ana4 <- as.data.frame(egoBP_ana16ana4@result)
+resBP_ana16ana4 <- resBP_ana16ana4[with(resBP_ana16ana4, order(-Count)), ]
+```
+
+clusterprofiler dotplots
+```{r}
+dotplot(egoBP_upana4unt4, title="up_ana4h_v_unt4h / up_sig_n=130 / sig_n=275 / all_n=2905")
+ggsave("../figures/Dotplots/dotplot_BP_upana4unt4.pdf", width=10, height=5)
+
+dotplot(egoBP_downana4unt4, title="down_ana4h_v_unt4h / down_sig_n=145 / sig_n=275 / all_n=2905")
+ggsave("../figures/Dotplots/dotplot_BP_downana4unt4.pdf", width=10, height=5)
+
+dotplot(egoBP_uphne4unt4, title="up_hne4h_v_unt4h / up_sig_n=12 / sig_n=20 / all_n=2905")
+ggsave("../figures/Dotplots/dotplot_BP_uphne4unt4.pdf", width=10, height=5)
+
+dotplot(egoBP_downhne4unt4, title="down_hne4h_v_unt4h / down_sig_n=8 / sig_n=20 / all_n=2905")
+ggsave("../figures/Dotplots/dotplot_BP_downhne4unt4.pdf", width=10, height=5)
+
+dotplot(egoBP_upana16unt16, title="up_ana16h_v_unt16h / up_sig_n=32 / sig_n=122 / all_n=2905")
+ggsave("../figures/Dotplots/dotplot_BP_upana16unt16.pdf", width=10, height=5)
+
+dotplot(egoBP_downana16unt16, title="down_ana16h_v_unt16h / down_sig_n=90 / sig_n=122 / all_n=2905")
+ggsave("../figures/Dotplots/dotplot_BP_downana16unt16.pdf", width=10, height=5)
+
+dotplot(egoBP_upana16ana4, title="up_ana16h_v_ana4h")
+ggsave("../figures/Dotplots/dotplot_BP_upana16ana4.pdf", width=10, height=5)
+
+dotplot(egoBP_downana16ana4, title="down_ana16h_v_ana4h")
+ggsave("../figures/Dotplots/dotplot_BP_downana16ana4.pdf", width=10, height=5)
+
+```
+```{r}
+library(ggupset)
+upsetplot(egoBP_upana16ana4, showCategory=20)
+upsetplot(egoBP_downana16ana4, showCategory=20)
+
+bp2 <- simplify(egoBP_upana16ana4, cutoff=0.9, by="p.adjust", select_fun=min)
+bp3 <- simplify(egoBP_downana16ana4, cutoff=0.7, by="p.adjust", select_fun=min)
+
+upsetplot(bp2, showCategory=20)
+upsetplot(bp3, showCategory=20)
+```
+```{r}
+## convert gene ID to Symbol
+edox <- setReadable(egoBP_ana16ana4, 'org.P.aer.UCBPP.PA14.eg.db', 'GID')
+p1 <- cnetplot(edox, foldChange=geneList)
+## categorySize can be scaled by 'pvalue' or 'geneNum'
+p2 <- cnetplot(edox, categorySize="pvalue", foldChange=geneList)
+p3 <- cnetplot(edox, foldChange=geneList, circular = TRUE, colorEdge = TRUE)
+cowplot::plot_grid(p1, p2, p3, ncol=3, labels=LETTERS[1:3], rel_widths=c(.8, .8, 1.2))
+```
+```{r}
+p1 <- heatplot(edox)
+p2 <- heatplot(edox, foldChange=geneList)
+cowplot::plot_grid(p1, p2, ncol=1, labels=LETTERS[1:2])
+```
+
+
+
+

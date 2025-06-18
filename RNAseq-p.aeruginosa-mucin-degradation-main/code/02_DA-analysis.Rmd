@@ -1,0 +1,606 @@
+---
+title: "Differential gene transcript abundance using DESeq2"
+output:
+  html_notebook: 
+    theme: flatly
+    toc: yes
+    toc_float: yes
+---
+
+```{r include=FALSE}
+library(DESeq2)
+library(tidyverse)
+library(ggpubr)
+library(EnhancedVolcano)
+library(cowplot)
+library(RColorBrewer)
+library(ggplot2)
+library(pheatmap)
+```
+
+
+
+# Data Import
+## Gene Annotation
+Gene specific info from pseduomonas.com: https://pseudomonas.com/primarySequenceFeature/list?strain_ids=109&term=Pseudomonas+aeruginosa+UCBPP-PA14&c1=name&v1=&e1=1&assembly=complete
+This step imports gene annotations and compiles into a concise data frame.
+Account for discrepancy in NCBI locus tag names by adding in new column. 
+```{r}
+pacomGenes <- read_tsv("../docs/features.txt")
+pacomGenesAbbr <- select(pacomGenes, GeneID = "Locus Tag", GeneName = "Gene Name", Desc = "Product Description", FeatureType="Feature Type")
+
+fcannotation <- read.csv("../data/subread/annotation.csv")
+pacomGenesAbbr$NCBI_GeneID <- fcannotation$GeneID[match(pacomGenesAbbr$GeneID, fcannotation$Old_GeneID)] 
+```
+## RSubread Count Data
+```{r}
+counts <- readRDS("../data/subread/counts.rds")
+```
+## Filtering
+```{r}
+# Filter for protein-coding genes in pseduomonas annotations
+pacomGenesAbbr_filt <- pacomGenesAbbr %>%
+  filter(FeatureType=="CDS")
+# First filter for protein-coding genes
+counts_filt1 <- counts %>% 
+  filter(row.names(counts) %in% pacomGenesAbbr_filt$NCBI_GeneID)
+# Remove NAs
+counts_filt2 <- counts_filt1[rowSums(!is.na(counts_filt1[,-1])),]
+# Minimal filtering of low counts 
+counts_filt3 <- counts_filt2[rowSums(counts_filt2[,-1])>= 10,]
+```
+
+## Sample Data
+```{r}
+coldata <- read_csv("../data/meta/meta.csv") # Sample data
+# Subset just those corresponding to 4h
+coldata4h <- subset(coldata, time==4)
+```
+## Match Sample Data to Col Data
+```{r}
+# Sanity check that names match; they should as they are alphabetical
+id_data <- coldata %>%
+  dplyr::select(id) %>%
+  cbind(colnames(counts)) %>%
+  dplyr::rename(bam_names = 2)
+```
+
+## Data Tidying
+Make rownames in coldata and colnames in counts match. 
+```{r}
+names(counts)[match(id_data[,"bam_names"], names(counts))] = id_data[,"id"]
+# Subset just those corresponding to 4h
+counts4h <- subset(counts[ , grepl( "4h" , names(counts) ) ])
+```
+# Differential Abundance: Group
+## Run DESeq2 function on dataset using "sample" as the design factor. Sample specifies the mucin-degrader (untreated, hne, ana) AND the timepoint (4hr, 16hr)
+Format our data into a DESeqDataSet object using treatment as the design factor
+```{r}
+# make DESeq2 object
+ddsSE <- DESeqDataSetFromMatrix(
+  countData = counts,
+  colData = coldata,
+  design= ~ sample)
+class(ddsSE)
+
+ddsSE4h <- DESeqDataSetFromMatrix(
+  countData = counts4h,
+  colData = coldata4h,
+  design= ~ sample)
+class(ddsSE4h)
+```
+Minimal filtering of low counts before any analysis.
+```{r}
+keep <- rowSums(counts(ddsSE)) >= 10
+ddsSE <- ddsSE[keep,]
+
+keep <- rowSums(counts(ddsSE4h)) >= 10
+ddsSE4h <- ddsSE4h[keep,]
+```
+Run the DESeq 
+```{r}
+dds <- DESeq(ddsSE, betaPrior = FALSE)
+
+dds4h <- DESeq(ddsSE4h, betaPrior = FALSE)
+```
+List the different comparisons based on the "sample" design factor.
+```{r}
+resultsNames(dds)
+
+resultsNames(dds4h)
+```
+
+```{r Plot dispersion elements}
+# Plot dispersion elements
+plotDispEsts(dds)
+```
+Visualize transformed counts and generate preliminary plots.
+```{r Transform counts and visualize}
+
+library(ggprism)
+
+# Transform counts for data visualization 
+rld <- rlog(dds, blind=TRUE)
+rld4h <- rlog(dds4h, blind=TRUE)
+
+# Plot PCA
+plotPCA(rld, intgroup="sample") + 
+  geom_point(size=5) +
+  scale_color_manual(values=c("#648fff", "#A5CBFF","#dc267f", "#DD91AB", "grey27", "grey")) +
+  theme_prism() +
+  coord_fixed(ratio=1)
+sample_PCA
+#ggsave("../figures/PCAallsamples.pdf", width=7, height=4)
+
+plotPCA(rld4h, intgroup="sample")
+ggsave("../figures/PCAallsamples4h.pdf", width=6, height=4)
+
+# Extract the rlog matrix from the object
+rld_mat <- assay(rld)
+
+# Compute pairwise correlation values
+rld_cor <- cor(rld_mat)
+
+# Plot heatmap
+pheatmap(rld_cor)
+```
+
+
+The biggest source of variation is time. Treatment appears to be the next source.
+## Results for each condition compared to their respective timepoints or other treatments
+results column meanings (Seen in "sigtab" documents)
+[1] "mean of normalized counts for all samples"             
+[2] "log2 fold change (MLE): condition treated vs untreated"
+[3] "standard error: condition treated vs untreated"        
+[4] "Wald statistic: condition treated vs untreated"        
+[5] "Wald test p-value: condition treated vs untreated"     
+[6] "BH adjusted p-values
+```{r}
+res_hne4h_v_unt4h <- results(dds, contrast = c("sample","hne_4h","unt_4h"), alpha = 0.01, lfcThreshold = 1, altHypothesis = "greaterAbs")
+
+res_ana4h_v_unt4h <- results(dds, contrast = c("sample","ana_4h","unt_4h"), alpha = 0.01, lfcThreshold = 1, altHypothesis = "greaterAbs")
+
+res_hne16h_v_unt16h <- results(dds, contrast = c("sample","hne_16h","unt_16h"), alpha = 0.01, lfcThreshold = 1, altHypothesis = "greaterAbs")
+
+res_ana16h_v_unt16h <- results(dds, contrast = c("sample","ana_16h","unt_16h"), alpha = 0.01, lfcThreshold = 1, altHypothesis = "greaterAbs")
+
+res_ana16h_v_ana4h <- results(dds, contrast = c("sample","ana_16h","ana_4h"), alpha = 0.01, lfcThreshold = 1, altHypothesis = "greaterAbs")
+```
+
+### Function: Results to Dataframes
+This function will transform the results tables into a dataframe with added annotation information from the pseudomonas.com database.
+```{r}
+res2table <- function(res = ""){
+  data.frame(res) %>%
+    rownames_to_column("NCBI_GeneID") %>%
+    left_join(pacomGenesAbbr, by = "NCBI_GeneID")}
+
+```
+### Apply the res2table function
+```{r}
+# with beta=1, alpha=.001
+df_hne4h_v_unt4h <- res2table(res = res_hne4h_v_unt4h)
+write.csv(df_hne4h_v_unt4h, "../results/DESeq2/df_hne4h_v_unt4h.csv", row.names=FALSE)
+
+df_ana4h_v_unt4h <- res2table(res = res_ana4h_v_unt4h)
+write.csv(df_ana4h_v_unt4h, "../results/DESeq2/df_ana4h_v_unt4h.csv", row.names=FALSE)
+
+df_hne16h_v_unt16h <- res2table(res = res_hne16h_v_unt16h)
+write.csv(df_hne16h_v_unt16h, "../results/DESeq2/df_hne16h_v_unt16h.csv", row.names=FALSE)
+
+df_ana16h_v_unt16h <- res2table(res = res_ana16h_v_unt16h)
+write.csv(df_ana16h_v_unt16h, "../results/DESeq2/df_ana16h_v_unt16h.csv", row.names=FALSE)
+
+df_ana16h_v_ana4h <- res2table(res = res_ana16h_v_ana4h)
+write.csv(df_ana16h_v_ana4h, "../results/DESeq2/df_ana16h_v_ana4h.csv", row.names=FALSE)
+```
+
+### Final tables of DEGs
+Filter out everything that is not significant, so the table will only be made up of genes that have a greater than 1 log2fc and the padj is < .01 (This evaluation of significance was dictated in the original results function). Export csv files for significant DEGs
+```{r}
+sigtab_hne4h_v_unt4h_alpha01beta1 <- filter(df_hne4h_v_unt4h, padj < .01)
+write_csv(sigtab_hne4h_v_unt4h_alpha01beta1, path = "../results/DESeq2/sigtab_hne4h_v_unt4h_alpha01beta1.csv")
+
+sigtab_ana4h_v_unt4h_alpha01beta1 <- filter(df_ana4h_v_unt4h, padj < .01)
+write_csv(sigtab_ana4h_v_unt4h_alpha01beta1, path = "../results/DESeq2/sigtab_ana4h_v_unt4h_alpha01beta1.csv")
+            
+sigtab_hne16h_v_unt16h_alpha01beta1 <- filter(df_hne16h_v_unt16h, padj < .01)
+write_csv(sigtab_hne16h_v_unt16h_alpha01beta1, path = "../results/DESeq2/sigtab_hne16h_v_unt16h_alpha01beta1.csv")
+
+sigtab_ana16h_v_unt16h_alpha01beta1 <- filter(df_ana16h_v_unt16h, padj < .01)
+write_csv(sigtab_ana16h_v_unt16h_alpha01beta1, path = "../results/DESeq2/sigtab_ana16h_v_unt16h_alpha01beta1.csv")
+
+sigtab_ana16h_v_ana4h_alpha01beta1 <- filter(df_ana16h_v_ana4h, padj < .01)
+write_csv(sigtab_ana16h_v_ana4h_alpha01beta1, path = "../results/DESeq2/sigtab_ana16h_v_ana4h_alpha01beta1.csv")
+```
+
+
+### Function: Custom MA Plots
+Plot log2FC on the y axis and log2 mean normalized counts on the x-axis.  
+Color is based on the adjusted p-value
+```{r}
+makeMA <- function(x){
+  p <- ggmaplot(x, 
+                #fc of 2 corresponds to the log2fc of 1 we tested in our hyp. in the results command
+                fdr = 0.01, fc = 2, size = 1.5, 
+                palette = c("#107f80", "#64ccfc", "#a6a5a6"),
+                alpha = 0.6,
+                genenames = as.vector(x$GeneName),
+                legend = "top",
+                top = 20,
+                select.top.method	= "padj",
+                font.label = c(size=8, "italic"),
+                label.rectangle = FALSE,
+                font.legend = "bold",
+                font.main = "bold",
+                ggtheme = ggplot2::theme_minimal())
+  p
+}
+
+```
+### MA Plots
+```{r}
+maPlot_hne4h_v_unt4h <- makeMA(df_hne4h_v_unt4h) + ggtitle("NE v. Untreated(ref) - 4h") 
+maPlot_hne4h_v_unt4h
+ggsave("../figures/MAPlots/maPlot_hne4h_v_unt4h.png", width=5, height=5)
+
+maPlot_ana4h_v_unt4h <- makeMA(df_ana4h_v_unt4h) + ggtitle("CFAM v. Untreated(ref) - 4h") 
+maPlot_ana4h_v_unt4h 
+ggsave("../figures/MAPlots/maPlot_ana4h_v_unt4h.png", width=5, height=4)
+
+maPlot_hne16h_v_unt16h <- makeMA(df_hne16h_v_unt16h) + ggtitle("NE v. Untreated(ref) - 16h")
+maPlot_hne16h_v_unt16h
+ggsave("../figures/MAPlots/maPlot_hne16h_v_unt16h.png", width=5, height=5)
+
+maPlot_ana16h_v_unt16h <- makeMA(df_ana16h_v_unt16h) + ggtitle("CFAM v. Untreated(ref) - 16h")
+maPlot_ana16h_v_unt16h
+ggsave("../figures/MAPlots/maPlot_ana16h_v_unt16h.pdf", width=5, height=4)
+
+maPlot_ana16h_v_ana4h <- makeMA(df_ana16h_v_ana4h) + ggtitle("CFAM 16h v. CFAM 4h(ref)")
+maPlot_ana16h_v_ana4h
+ggsave("../figures/MAPlots/maPlot_ana16h_v_ana4h.pdf", width=5, height=4)
+
+dev.off()
+```
+
+
+We already know that the biggest source of variation can be attributed to time. However, this is probably due to the advent of cell death and other changes that happen after 12 hours. The first thing we are curious about is the difference between unt, hne and ana at 4h. I want to know: (1) How are the transcriptomes of PA14 grown on Untreated and NE-degraded mucin similar and dissimilar at the 4hr timepoint? (2) What genes are upregulated and downregulated in transcriptomes of PA14 grown on anaerobe-degraded supernatant relative to untreated/ NE-degraded supernatant? (and are these genes the same among these 2 conditions?) (3) What genes are differentially expressed by PA14 at 16hrs vs. 4hrs when grown on the anaerobe-degraded supernatant?
+
+
+```{r}
+# Populate a new column with the gene name (if it exists) OR the geneID. This makes labeling easier in the MA plot. 
+sigtab_hne4h_v_unt4h_alpha01beta1 %>% mutate(genelabs = ifelse(GeneName %in% NA, GeneID, GeneName)) -> sigtab_hne4h_v_unt4h_alpha01beta1_genelabs
+# Join to non-sig df 
+df_hne4h_v_unt4h_genelabs <- left_join(df_hne4h_v_unt4h, sigtab_hne4h_v_unt4h_alpha01beta1_genelabs, by = "GeneID")
+# Left joining adds a weird .x suffix. Remove it so ggmaplot can recognize column names.
+df_hne4h_v_unt4h_genelabs<- df_hne4h_v_unt4h_genelabs %>% 
+  rename_at(.vars = vars(ends_with(".x")),
+            .funs = funs(sub("[.]x$", "", .)))
+
+# To see GeneNames AND GeneIDs (for those without names), use df_hne4h_v_unt4h_genelabs$genelabs for genenames, with no label.select.
+maPlot_hne4h_v_unt4h <- 
+  ggmaplot(df_hne4h_v_unt4h_genelabs, main = expression("NE vs. Untreated (ref): 4hrs"),
+   fdr = 0.01, fc = 2, size = 1.5,
+   label.select = sigtab_hne4h_v_unt4h_alpha01beta1_genelabs$GeneName,
+   palette = c("#43bccd", "#662e9b", "#a6a5a6"), alpha = 0.6,
+   #genenames = as.vector(df_hne4h_v_unt4h_genelabs$genelabs),
+   genenames = as.vector(df_hne4h_v_unt4h$GeneName),
+   legend = "top", top = 20,
+   font.label = c("bold", 9),
+   font.legend = "bold",
+   font.main = "bold",
+   ggtheme = ggplot2::theme_minimal())
+maPlot_hne4h_v_unt4h
+#ggsave("../figures/MAPlots/maPlot_hne4h_v_unt4h.pdf", width=5, height=4)
+```
+
+
+```{r}
+# Subset significant upregulated genes
+up_sigtab_hne4h_v_unt4h_alpha01beta1 <- subset(sigtab_hne4h_v_unt4h_alpha01beta1, log2FoldChange >0)
+write.csv(up_sigtab_hne4h_v_unt4h_alpha01beta1, "../results/DESeq2/up_sigtab_hne4h_v_unt4h_alpha01beta1.csv", row.names=FALSE)
+
+up_sigtab_ana4h_v_unt4h_alpha01beta1 <- subset(sigtab_ana4h_v_unt4h_alpha01beta1, log2FoldChange >0)
+write.csv(up_sigtab_ana4h_v_unt4h_alpha01beta1, "../results/DESeq2/up_sigtab_ana4h_v_unt4h_alpha01beta1.csv", row.names=FALSE)
+
+up_sigtab_hne16h_v_unt16h_alpha01beta1 <- subset(sigtab_hne16h_v_unt16h_alpha01beta1, log2FoldChange >0)
+write.csv(up_sigtab_hne16h_v_unt16h_alpha01beta1, "../results/DESeq2/up_sigtab_hne16h_v_unt16h_alpha01beta1.csv", row.names=FALSE)
+
+up_sigtab_ana16h_v_unt16h_alpha01beta1 <- subset(sigtab_ana16h_v_unt16h_alpha01beta1, log2FoldChange >0)
+write.csv(up_sigtab_ana16h_v_unt16h_alpha01beta1, "../results/DESeq2/up_sigtab_ana16h_v_unt16h_alpha01beta1.csv", row.names=FALSE)
+
+up_sigtab_ana16h_v_ana4h_alpha01beta1 <- subset(sigtab_ana16h_v_ana4h_alpha01beta1, log2FoldChange >0)
+write.csv(up_sigtab_ana16h_v_ana4h_alpha01beta1, "../results/DESeq2/up_sigtab_ana16h_v_ana4h_alpha01beta1.csv", row.names=FALSE)
+
+noNA_up_sigtab_ana16h_v_ana4h_alpha01beta1 <- up_sigtab_ana16h_v_ana4h_alpha01beta1[!is.na(up_sigtab_ana16h_v_ana4h_alpha01beta1$GeneName), ]
+write.csv(noNA_up_sigtab_ana16h_v_ana4h_alpha01beta1, "../results/DESeq2/noNA_up_sigtab_ana16h_v_ana4h_alpha01beta1.csv", row.names=FALSE)
+
+
+# Subset significant downregulated genes
+down_sigtab_hne4h_v_unt4h_alpha01beta1 <- subset(sigtab_hne4h_v_unt4h_alpha01beta1, log2FoldChange <0)
+write.csv(down_sigtab_hne4h_v_unt4h_alpha01beta1, "../results/DESeq2/down_sigtab_hne4h_v_unt4h_alpha01beta1.csv", row.names=FALSE)
+
+down_sigtab_ana4h_v_unt4h_alpha01beta1 <- subset(sigtab_ana4h_v_unt4h_alpha01beta1, log2FoldChange <0)
+write.csv(down_sigtab_ana4h_v_unt4h_alpha01beta1, "../results/DESeq2/down_sigtab_ana4h_v_unt4h_alpha01beta1.csv", row.names=FALSE)
+
+down_sigtab_hne16h_v_unt16h_alpha01beta1 <- subset(sigtab_hne16h_v_unt16h_alpha01beta1, log2FoldChange <0)
+write.csv(down_sigtab_hne16h_v_unt16h_alpha01beta1, "../results/DESeq2/down_sigtab_hne16h_v_unt16h_alpha01beta1.csv", row.names=FALSE)
+
+down_sigtab_ana16h_v_unt16h_alpha01beta1 <- subset(sigtab_ana16h_v_unt16h_alpha01beta1, log2FoldChange <0)
+write.csv(down_sigtab_ana16h_v_unt16h_alpha01beta1, "../results/DESeq2/down_sigtab_ana16h_v_unt16h_alpha01beta1.csv", row.names=FALSE)
+
+down_sigtab_ana16h_v_ana4h_alpha01beta1 <- subset(sigtab_ana16h_v_ana4h_alpha01beta1, log2FoldChange <0)
+write.csv(down_sigtab_ana16h_v_ana4h_alpha01beta1, "../results/DESeq2/down_sigtab_ana16h_v_ana4h_alpha01beta1.csv", row.names=FALSE)
+
+noNA_down_sigtab_ana16h_v_ana4h_alpha01beta1 <- down_sigtab_ana16h_v_ana4h_alpha01beta1[!is.na(down_sigtab_ana16h_v_ana4h_alpha01beta1$GeneName), ]
+write.csv(noNA_down_sigtab_ana16h_v_ana4h_alpha01beta1, "../results/DESeq2/noNA_down_sigtab_ana16h_v_ana4h_alpha01beta1.csv", row.names=FALSE)
+
+```
+
+Volcano plots
+```{r}
+# Populate a new column with the gene symbol if l2fc is <-1 or >1 AND padj is <10e-10. This makes labeling easier in the volcano plot. 
+df_hne4h_v_unt4h %>% mutate(siggenes = ifelse(((log2FoldChange > 2 | log2FoldChange < -2) & padj < 10e-30), GeneName, "")) -> vol_df_hne4h_v_unt4h
+
+df_hne16h_v_unt16h %>% mutate(siggenes = ifelse(((log2FoldChange > 2 | log2FoldChange < -2) & padj < 10e-30), GeneName, "")) -> vol_df_hne16h_v_unt16h
+
+df_ana4h_v_unt4h %>% mutate(siggenes = ifelse(((log2FoldChange > 3.5 | log2FoldChange < -4) & padj < 10e-30), GeneName, "")) -> vol_df_ana4h_v_unt4h
+
+df_ana16h_v_ana4h %>% mutate(siggenes = ifelse(((log2FoldChange > 6.5 | log2FoldChange < -4.5) & padj < 10e-30), GeneName, "")) -> vol_df_ana16h_v_ana4h
+```
+
+```{r}
+# Make function for volcano
+makevol <- function(data, label, xmin, xmax, ymax){
+  EnhancedVolcano(data,
+                lab = label,
+                labSize = 3,
+                boxedLabels = FALSE,
+                drawConnectors = TRUE,
+                widthConnectors = 0.05,
+                colConnectors = "grey30",
+                typeConnectors = "closed",
+                endsConnectors = "first",
+                lengthConnectors = unit(10e-5, 'npc'),
+                x = "log2FoldChange",
+                y = "padj",
+                xlim = c(xmin, xmax),
+                ylim = c(0, ymax),
+                hlineCol = 'black',
+                vlineCol = 'black',
+                colAlpha = 0.5,
+                pointSize = 0.5,
+                FCcutoff = 1,
+                pCutoff = 0.01,
+                col = c("grey", "grey", "grey", "#107f80"),
+                labCol = 'black',
+                labFace = 'italic',
+                cutoffLineCol = 'black',
+                border = "full",
+                legendPosition = "NA"
+                )
+}
+```
+```{r}
+volcano_hne4h_v_unt4h <- makevol(vol_df_hne4h_v_unt4h, vol_df_hne4h_v_unt4h$siggenes, -3, 3, 30)
+volcano_hne4h_v_unt4h
+ggsave("../figures/Volcano/volcano_hne4h_v_unt4h.pdf", width=4, height=6)
+
+volcano_hne16h_v_unt16h <- makevol(vol_df_hne16h_v_unt16h, vol_df_hne16h_v_unt16h$siggenes, -3, 3, 30)
+volcano_hne16h_v_unt16h
+ggsave("../figures/Volcano/volcano_hne16h_v_unt16h.pdf", width=4, height=6)
+
+volcano_ana4h_v_unt4h <- makevol(vol_df_ana4h_v_unt4h, vol_df_ana4h_v_unt4h$siggenes, -7, 7, 250)
+volcano_ana4h_v_unt4h
+ggsave("../figures/Volcano/volcano_ana4h_v_unt4h.png", width=4, height=6)
+
+volcano_ana16h_v_ana4h <- makevol(vol_df_ana16h_v_ana4h, vol_df_ana16h_v_ana4h$siggenes, -7, 10, 350)
+volcano_ana16h_v_ana4h 
+ggsave("../figures/Volcano/volcano_ana16h_v_ana4h.png", width=4, height=6)
+
+
+```
+```{r}
+# Clean up PCA plot for paper
+pcaData$treat <- factor(pcaData$treat, levels = c("unt", "hne", "ana"))
+pcaData$time <- factor(pcaData$time, levels = c("4", "16"))
+
+sample_PCA <- ggplot(pcaData, aes(PC1, PC2)) +
+  geom_point(aes(shape=time, fill=treat),
+             size=4.5, stroke=1.5) +
+  scale_shape_manual(values=c(21,24), labels=(c("4h", "16h"))) +
+  scale_fill_manual(values = alpha(c("grey", "#dc267f", "#648fff"), 0.8), labels = c("Untreated", "NE", "AMDC")) +
+  xlab(paste0("PC1: ",percentVar[1],"%")) +
+  ylab(paste0("PC2: ",percentVar[2],"%")) +
+  guides(fill = guide_legend(override.aes = list(color = alpha(c("grey", "#dc267f", "#648fff"), 0.8))),
+       color = guide_legend(override.aes = list(shape = 21))) +
+  theme_prism() +
+  theme(legend.background = element_rect(fill = "whitesmoke", color="NA"),
+        legend.title = element_text(color="black")) +
+  labs(fill = "Treatment", shape = "Time") +
+  xlim(-50,50) +
+  ylim(-18,18) 
+
+pcaData <- plotPCA(rld, intgroup=c("treat", "sample"), returnData=TRUE)
+percentVar <- round(100 * attr(pcaData, "percentVar"))
+pcaData$time <-  ifelse(grepl("4", pcaData$sample), "4", "16")
+
+sample_PCA
+        
+  
+```
+
+```{r}
+# Plot volcano
+volcano_hne4h_v_unt4h <- EnhancedVolcano(vol_df_hne4h_v_unt4h,
+                lab = NA,
+                labSize = 3,
+                boxedLabels = FALSE,
+                drawConnectors = TRUE,
+                widthConnectors = 0.05,
+                colConnectors = "grey30",
+                typeConnectors = "closed",
+                endsConnectors = "first",
+                lengthConnectors = unit(10e-5, 'npc'),
+                x = "log2FoldChange",
+                y = "padj",
+                xlim = c(-10, 10),
+                ylim = c(0, 250),
+                hlineCol = 'black',
+                vlineCol = 'black',
+                colAlpha = 0.5,
+                pointSize = 2,
+                FCcutoff = 1,
+                pCutoff = 0.01,
+                col = c("grey", "grey", "grey", "#dc267f"),
+                labCol = 'black',
+                labFace = 'italic',
+                cutoffLineCol = 'black',
+                border = "full",
+                legendPosition = "NA",
+                title = NULL,
+                subtitle = NULL,
+                caption=NULL
+                ) + theme_prism() +
+  ggtitle("4h: NE v. Untreated") +
+  theme(legend.position = "none",
+        axis.title = element_blank(),
+        plot.title = element_text(size = 15))
+volcano_hne4h_v_unt4h
+#ggsave("../figures/volcano_hne4h_v_unt4h.pdf", height = 5, width = 3)
+
+```
+```{r}
+# Plot volcano
+volcano_hne16h_v_unt16h <- EnhancedVolcano(vol_df_hne16h_v_unt16h,
+                lab = NA,
+                labSize = 3,
+                boxedLabels = FALSE,
+                drawConnectors = TRUE,
+                widthConnectors = 0.05,
+                colConnectors = "grey30",
+                typeConnectors = "closed",
+                endsConnectors = "first",
+                lengthConnectors = unit(10e-5, 'npc'),
+                x = "log2FoldChange",
+                y = "padj",
+                xlim = c(-6, 6),
+                ylim = c(0, 100),
+                hlineCol = 'black',
+                vlineCol = 'black',
+                colAlpha = 0.5,
+                pointSize = 2,
+                FCcutoff = 1,
+                pCutoff = 0.01,
+                col = c("grey", "grey", "grey", "#dc267f"),
+                labCol = 'black',
+                labFace = 'italic',
+                cutoffLineCol = 'black',
+                border = "full",
+                legendPosition = "NA",
+                title = NULL,
+                subtitle = NULL,
+                caption=NULL
+                ) + theme_prism() +
+  ggtitle("16h: NE v. Untreated") +
+  theme(legend.position = "none",
+        axis.title = element_blank(),
+        plot.title = element_text(size = 15))
+      
+volcano_hne16h_v_unt16h
+#ggsave("../figures/volcano_hne16h_v_unt16h.pdf", height = 5, width = 3)
+```
+```{r}
+# Plot volcano
+volcano_ana4h_v_unt4h <- EnhancedVolcano(vol_df_ana4h_v_unt4h,
+                lab = NA,
+                labSize = 3,
+                boxedLabels = FALSE,
+                drawConnectors = TRUE,
+                widthConnectors = 0.05,
+                colConnectors = "grey30",
+                typeConnectors = "closed",
+                endsConnectors = "first",
+                lengthConnectors = unit(10e-5, 'npc'),
+                x = "log2FoldChange",
+                y = "padj",
+                xlim = c(-10, 10),
+                ylim = c(0, 250),
+                hlineCol = 'black',
+                vlineCol = 'black',
+                colAlpha = 0.5,
+                pointSize = 2,
+                FCcutoff = 1,
+                pCutoff = 0.01,
+                col = c("grey", "grey", "grey", "#648fff"),
+                labCol = 'black',
+                labFace = 'italic',
+                cutoffLineCol = 'black',
+                border = "full",
+                legendPosition = "NA",
+                title = NULL,
+                subtitle = NULL,
+                caption=NULL
+                ) + theme_prism() +
+  ggtitle("4h: AMDC v. Untreated") +
+  theme(legend.position = "none",
+        axis.title = element_blank(),
+        plot.title = element_text(size = 15))
+volcano_ana4h_v_unt4h
+#ggsave("../figures/volcano_ana4h_v_unt4h.pdf", height = 5, width = 3)
+
+```
+```{r}
+# Plot volcano
+volcano_ana16h_v_unt16h <- EnhancedVolcano(vol_df_ana16h_v_unt16h,
+               lab = NA,
+                labSize = 3,
+                boxedLabels = FALSE,
+                drawConnectors = TRUE,
+                widthConnectors = 0.05,
+                colConnectors = "grey30",
+                typeConnectors = "closed",
+                endsConnectors = "first",
+                lengthConnectors = unit(10e-5, 'npc'),
+                x = "log2FoldChange",
+                y = "padj",
+                xlim = c(-6, 6),
+                ylim = c(0, 100),
+                hlineCol = 'black',
+                vlineCol = 'black',
+                colAlpha = 0.5,
+                pointSize = 2,
+                FCcutoff = 1,
+                pCutoff = 0.01,
+                col = c("grey", "grey", "grey", "#648fff"),
+                labCol = 'black',
+                labFace = 'italic',
+                cutoffLineCol = 'black',
+                border = "full",
+                legendPosition = "NA",
+                title = NULL,
+                subtitle = NULL,
+                caption=NULL
+                ) + theme_prism() +
+  ggtitle("16h: AMDC v. Untreated") +
+  theme(legend.position = "none",
+        axis.title = element_blank(),
+        plot.title = element_text(size = 15))
+volcano_ana16h_v_unt16h
+#ggsave("../figures/volcano_ana16h_v_unt16h.pdf", height = 5, width = 3)
+
+```
+```{r}
+library(ggpubr)
+vols <- ggarrange(volcano_hne4h_v_unt4h, volcano_ana4h_v_unt4h, volcano_hne16h_v_unt16h, volcano_ana16h_v_unt16h, nrow=2, ncol=2)
+vols
+```
+```{r}
+pca_vols <- ggarrange(sample_PCA, NULL, vols, nrow=1, ncol=3, widths=c(0.45,0.05, 0.45))
+pca_vols
+```
+
+
+
+
+

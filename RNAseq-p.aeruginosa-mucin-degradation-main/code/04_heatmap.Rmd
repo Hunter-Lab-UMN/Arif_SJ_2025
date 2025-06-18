@@ -1,0 +1,431 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(DESeq2)
+library(pheatmap)
+library(RColorBrewer)
+```
+
+# Data Import
+## Gene Annotation
+Gene specific info from pseduomonas.com: https://pseudomonas.com/primarySequenceFeature/list?strain_ids=109&term=Pseudomonas+aeruginosa+UCBPP-PA14&c1=name&v1=&e1=1&assembly=complete
+This step imports gene annotations and compiles into a concise data frame.
+Account for discrepancy in NCBI locus tag names by adding in new column. 
+```{r}
+pacomGenes <- read_tsv("../docs/features.txt")
+pacomGenesAbbr <- select(pacomGenes, GeneID = "Locus Tag", GeneName = "Gene Name", Desc = "Product Description")
+
+fcannotation <- read.csv("../data/subread/annotation.csv")
+pacomGenesAbbr$NCBI_GeneID <- fcannotation$GeneID[match(pacomGenesAbbr$GeneID, fcannotation$Old_GeneID)] 
+
+pacomGenesAbbr$NCBI_GeneID <- fcannotation$GeneID[match(pacomGenesAbbr$GeneID, fcannotation$Old_GeneID)]
+
+```
+## RSubread Count Data
+```{r}
+counts <- readRDS("../data/subread/counts.rds")
+counts4h <- subset(counts, select = -c(
+  ana.16h.1.S16.R1.001.fastq.gz.subread.BAM,
+  ana.16h.2.S17.R1.001.fastq.gz.subread.BAM,
+  ana.16h.3.S18.R1.001.fastq.gz.subread.BAM,
+  hne.16h.1.S10.R1.001.fastq.gz.subread.BAM,
+  hne.16h.2.S11.R1.001.fastq.gz.subread.BAM,
+  hne.16h.3.S12.R1.001.fastq.gz.subread.BAM,
+  unt.16h.1.S4.R1.001.fastq.gz.subread.BAM,
+  unt.16h.2.S5.R1.001.fastq.gz.subread.BAM,
+  unt.16h.3.S6.R1.001.fastq.gz.subread.BAM
+  ))
+counts16h <- subset(counts, select = c(
+  ana.4h.1.S13.R1.001.fastq.gz.subread.BAM,
+  ana.4h.2.S14.R1.001.fastq.gz.subread.BAM,
+  ana.4h.3.S15.R1.001.fastq.gz.subread.BAM,
+  ana.16h.1.S16.R1.001.fastq.gz.subread.BAM,
+  ana.16h.2.S17.R1.001.fastq.gz.subread.BAM,
+  ana.16h.3.S18.R1.001.fastq.gz.subread.BAM
+  ))
+```
+## Sample Data
+```{r}
+coldata <- read_csv("../data/meta/meta.csv") # Sample data
+coldata4h <- subset(coldata, time==4)
+coldata16h <- subset(coldata, treat=="ana")
+```
+## Data Tidying
+Make rownames in coldata and colnames in counts match. 
+```{r}
+colnames(counts) <- unique(coldata$id)
+```
+# Differential Abundance: Group
+## Run DESeq2 function on dataset using "sample" as the design factor. Sample specifies the mucin-degrader (untreated, hne, ana) AND the timepoint (4hr, 16hr)
+Format our data into a DESeqDataSet object using treatment as the design factor
+```{r}
+# make DESeq2 object
+ddsSE <- DESeqDataSetFromMatrix(
+  countData = counts,
+  colData = coldata,
+  design= ~ sample)
+class(ddsSE)
+```
+Minimal filtering of low counts before any analysis.
+```{r}
+keep <- rowSums(counts(ddsSE)) >= 10
+ddsSE <- ddsSE[keep,]
+```
+Run the DESeq 
+```{r}
+dds <- DESeq(ddsSE, betaPrior = FALSE)
+```
+List the different comparisons based on the "sample" design factor.
+```{r}
+resultsNames(dds)
+```
+
+#### Heat map 
+
+#################################dds
+```{r}
+ddsLRT_samples <- DESeq(dds, test = "LRT", reduced = ~1)
+resLRT_samples <- results(ddsLRT_samples)
+
+summary(resLRT_samples)
+resLRT_samples_df <- data.frame(resLRT_samples) %>% rownames_to_column("gene")
+
+padj.cutoff <- 1e-10
+# Subset the LRT results to return genes with padj < 0.05
+sig_res_LRT_samples <- resLRT_samples %>%
+               data.frame() %>%
+               rownames_to_column(var="gene") %>% 
+               as_tibble() %>% 
+               filter(padj < padj.cutoff) %>%
+  dplyr::rename(GeneID=gene) %>%
+  left_join(pacomGenesAbbr, by=c("GeneID"="NCBI_GeneID"))
+
+# Filter significance table to only include log2fc 
+sig_res_LRT_samples_lfc1 <- filter(sig_res_LRT_samples, !between(log2FoldChange, -1, 1))
+```
+## rLog transform
+The function rlog returns a SummarizedExperiment object which contains the rlog-transformed values in its assay slot:
+```{r}
+rld_samples <- rlog(ddsLRT_samples)
+head(assay(rld_samples))
+```
+
+
+
+
+Now filter, the rlog transformed dataset to only include those genes in the sig_res_LRT list.
+```{r}
+# pull geneIDs from the filtered results table
+LRT_samples_geneID <- sig_res_LRT_samples_lfc1 %>% pull(GeneID)
+# filter the rld transformed count matrix by those geneIDs
+matLRTsamplesGeneID <- assay(rld_samples)[ LRT_samples_geneID, ]
+```
+## Top 100 variable genes within the LRT genes
+```{r}
+topVarGenesSamples <- head(order(-rowVars(matLRTsamplesGeneID)),1000)
+matLRTsamplesGeneIDvar <- matLRTsamplesGeneID[ topVarGenesSamples, ]
+```
+The heatmap becomes more interesting if we do not look at absolute expression strength but rather at the amount by which each gene deviates in a specific sample from the gene's average across all samples. Hence, we center each genes' values across samples, and plot a heatmap. We provide the column side colors to help identify the treated samples (in blue) from the untreated samples (in grey).
+```{r}
+matLRTsamplesGeneIDvarMinusMean <- matLRTsamplesGeneIDvar - rowMeans(matLRTsamplesGeneIDvar)
+```
+
+```{r}
+# make a table of gene labels to plot with
+geneLabelsSamplesLRTvarMinusMean <- as.data.frame(rownames(matLRTsamplesGeneIDvarMinusMean)) %>%
+  dplyr::rename(GeneID = "rownames(matLRTsamplesGeneIDvarMinusMean)") %>%
+  left_join(pacomGenesAbbr, by=c("GeneID"="NCBI_GeneID")) %>%
+  mutate(GeneName = as.character(GeneName)) %>%
+  replace_na(list(GeneName = "-")) %>%
+  mutate(labels = ifelse(GeneName == "-", GeneID.y, GeneName)) 
+rownames(geneLabelsSamplesLRTvarMinusMean) = geneLabelsSamplesLRTvarMinusMean$GeneID
+# make a table 
+sampleLabels <- coldata %>% 
+  mutate(shortGroupNameBioRep = paste0(id)) %>%
+  select(sample, shortGroupNameBioRep)
+
+```
+
+
+```{r}
+heatmapLRTVarSamples <- pheatmap(matLRTsamplesGeneIDvarMinusMean,
+                    labels_col = sampleLabels$shortGroupNameBioRep,
+                    labels_row = geneLabelsSamplesLRTvarMinusMean$labels,
+                    legend = FALSE,
+                    annotation_legend=FALSE,
+                    fontsize=10)
+
+pdf("../figures/Heatmap/top100.pdf", width=10, height=100)
+print(heatmapLRTVarSamples)
+dev.off()
+
+
+```
+
+
+A heatmap with just the genes that we mention in paper:
+Note - agrD or the autoinducing peptide is in the aureowikiGenes but is not present in the Count file, meaning it wasn't observed in the dataset at all, or didn't align to the genome, or was filtered out for some reason (alignment minimum size filtering was set to 50bp which I don't think would filter out this transcript (gene size = 141bp))
+```{r}
+pubGenes <- c(
+              "PA14_RS25560", #cbrB ## CcrB story
+              "PA14_RS18085", #anr
+              "PA14_RS18010", #cbb3-1
+              "PA14_RS18015", #cbb3-2
+              "PA14_RS18025", #cbb3-3
+              "PA14_RS19170", #cyoE
+              "PA14_RS19175", #cyoD
+              "PA14_RS19180", #cyoC
+              "PA14_RS19185", #cyoB
+              "PA14_RS19190", #cyoA
+              "PA14_RS05545", #narG
+              "PA14_RS05550", #narH
+              "PA14_RS05555", #narJ
+              "PA14_RS05560", #narI
+              "PA14_RS02660", #nirN
+              "PA14_RS02665", #nirE
+              "PA14_RS02670", #nirJ
+              "PA14_RS02675", #nirH
+              "PA14_RS02680", #nirG
+              "PA14_RS02685", #nirL
+              "PA14_RS02695", #nirF
+              "PA14_RS02700", #nirC
+              "PA14_RS02705", #nirM
+              "PA14_RS02710", #nirS
+              "PA14_RS16850", #nirD
+              "PA14_RS27850", #arcD
+              "PA14_RS27855", #arcA
+              "PA14_RS27860", #arcB
+              "PA14_RS27865", #arcC
+              "PA14_RS04135", #adh
+              "PA14_RS29170" #adhA
+            ) 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+Central carbon genes from Dolan 2020
+```{r}
+cc_genes <- read.csv("../docs/centralcarbon_pa_version2.csv")
+cc_genes <- left_join(cc_genes, pacomGenesAbbr, by="GeneName")
+# Subset genes that I have seen produce the most dramatic heatmap
+cc_select <- subset(cc_genes, select==1)
+cc_IDs <- as.list(cc_select$NCBI_GeneID)
+```
+ETC genes from Dolan 2020
+```{r}
+etc_genes <- read.csv("../docs/ETC_pa.csv")
+etc_genes <- left_join(etc_genes, pacomGenesAbbr, by="GeneName")
+etc_select <- subset(etc_genes, select==1)
+etc_IDs <- as.list(etc_select$NCBI_GeneID)
+```
+Filter from matrix of LRT genes
+Now filter, the rlog transformed dataset to only include those genes in the sig_res_LRT list.
+```{r}
+# cc_genes
+# pull geneIDs from the filtered results table
+cc_LRT_samples_pubID <- sig_res_LRT_samples %>% 
+  filter(GeneID %in% cc_IDs) %>%
+  pull(GeneID)
+# filter the rld transformed count matrix by those geneIDs
+cc_matLRTsamplesPubID <- assay(rld_samples)[ cc_LRT_samples_pubID, ]
+# Center each gene's values across samples instead of absolute expression
+cc_matLRTsamplesPubIDMinusMean <- cc_matLRTsamplesPubID - rowMeans(cc_matLRTsamplesPubID)
+#cc_matLRTsamplesPubIDMinusMean$GeneName = cc_groups$cc_group2[match(cc_matLRTsamplesPubIDMinusMean$Name,cc_groups$Name)]
+
+
+# etc_genes
+etc_LRT_samples_pubID <- sig_res_LRT_samples %>% 
+  filter(GeneID %in% etc_IDs) %>%
+  pull(GeneID)
+etc_matLRTsamplesPubID <- assay(rld_samples)[ etc_LRT_samples_pubID, ]
+etc_matLRTsamplesPubIDMinusMean <- etc_matLRTsamplesPubID - rowMeans(etc_matLRTsamplesPubID)
+```
+
+Set up labels for heatmap
+```{r}
+# cc_genes
+cc_geneLabelsSamplesLRTMinusMean <- as.data.frame(rownames(cc_matLRTsamplesPubIDMinusMean)) %>%
+  dplyr::rename(GeneID = "rownames(cc_matLRTsamplesPubIDMinusMean)") %>%
+  left_join(pacomGenesAbbr, by=c("GeneID"="NCBI_GeneID")) %>%
+  mutate(GeneName = as.character(GeneName)) %>%
+  replace_na(list(GeneName = "-")) %>%
+  mutate(labels = ifelse(GeneName == "-", GeneID, GeneName))
+rownames(cc_geneLabelsSamplesLRTMinusMean) = cc_geneLabelsSamplesLRTMinusMean$GeneID
+#cc_geneLabelsSamplesLRTMinusMean[order(cc_geneLabelsSamplesLRTMinusMean[,cc_groups$NCBI_GeneID,drop=FALSE])]
+
+# make a table 
+cc_sampleLabels <- coldata %>% 
+ mutate(shortGroupNameBioRep = paste0(id)) %>%
+  select(sample, shortGroupNameBioRep)
+
+# etc_genes
+etc_geneLabelsSamplesLRTMinusMean <- as.data.frame(rownames(etc_matLRTsamplesPubIDMinusMean)) %>%
+  dplyr::rename(GeneID = "rownames(etc_matLRTsamplesPubIDMinusMean)") %>%
+  left_join(pacomGenesAbbr, by=c("GeneID"="NCBI_GeneID")) %>%
+  mutate(GeneName = as.character(GeneName)) %>%
+  replace_na(list(GeneName = "-")) %>%
+  mutate(labels = ifelse(GeneName == "-", GeneID, GeneName))
+rownames(etc_geneLabelsSamplesLRTMinusMean) = etc_geneLabelsSamplesLRTMinusMean$GeneID
+# make a table 
+etc_sampleLabels <- coldata %>% 
+ mutate(shortGroupNameBioRep = paste0(id)) %>%
+  select(sample, shortGroupNameBioRep)
+```
+Aesthetics 
+```{r}
+cc_paletteLength <- 30
+etc_paletteLength <- 30
+cc_myColor <- colorRampPalette(c("blue4", "dodgerblue", "skyblue", "seashell", "red", "red4", "coral4"))(cc_paletteLength)
+etc_myColor <- colorRampPalette(c("dodgerblue", "skyblue", "seashell", "red", "red4"))(etc_paletteLength)
+#length(breaks) == length(paletteLength) + 1
+# use floor and ceiling to deal with even/odd length pallettelengths
+
+#myBreaks <- c(seq(min(test), 0, length.out=ceiling(paletteLength/2) + 1), 
+              #seq(max(test)/paletteLength, max(test), #length.out=floor(paletteLength/2)))
+
+cc_brks <- seq(-6,6,length.out=cc_paletteLength)
+etc_brks <- seq(-3,3,length.out=etc_paletteLength) 
+
+col.order<-c(
+  "unt_4h_1",
+  "unt_4h_2",
+  "unt_4h_3",
+  "hne_4h_1",
+  "hne_4h_2",
+  "hne_4h_3",
+  "ana_4h_1",
+  "ana_4h_2",
+  "ana_4h_3",
+  "unt_16h_1",
+  "unt_16h_2",
+  "unt_16h_3",
+  "hne_16h_1",
+  "hne_16h_2",
+  "hne_16h_3",
+  "ana_16h_1",
+  "ana_16h_2",
+  "ana_16h_3")
+```
+Ordering for plot
+```{r}
+# cc_genes
+# annotation sorting
+cc_groups <- cc_select %>%
+  select("NCBI_GeneID", "cc_group2")
+cc_groups <- cc_groups[complete.cases(cc_groups), ]
+cc_groups <- with(cc_groups,  cc_groups[order(cc_group2) , ])
+rownames(cc_groups) <- cc_groups[,1]
+cc_groups_list <- as.list(cc_groups$NCBI_GeneID)
+# Column sorting
+cc_matLRTsamplesPubIDMinusMean_order <- cc_matLRTsamplesPubIDMinusMean[,col.order,drop=FALSE]
+# gene label rowname sorting
+cc_geneLabels_ordered <- cc_geneLabelsSamplesLRTMinusMean[rownames(cc_groups),]
+# sample label ordering
+cc_sampleLabels_order <- sampleLabels[match(col.order, cc_sampleLabels$shortGroupNameBioRep),]
+
+
+# etc_genes
+etc_matLRTsamplesPubIDMinusMean_order <- etc_matLRTsamplesPubIDMinusMean[,col.order,drop=FALSE]
+etc_sampleLabels_order <- sampleLabels[match(col.order, etc_sampleLabels$shortGroupNameBioRep),]
+```
+
+cc_genes heatmap
+```{r}
+select_heatmap <- pheatmap(cc_matLRTsamplesPubIDMinusMean_order,
+                    labels_col = cc_sampleLabels_order$shortGroupNameBioRep,
+                    labels_row = cc_geneLabelsSamplesLRTMinusMean$labels,
+                    color = cc_myColor,
+                    breaks=cc_brks,
+                    cellheight = 8,
+                    cellwidth = 3,
+                    legend = TRUE,
+                    #annotation_row = cc_groups,
+                    #annotation_legend=FALSE,
+                    treeheight_row = 10,
+                    treeheight_col = 10,
+                    angle_col = 90,
+                    border_color = "grey",
+                    cluster_cols = F,
+                    cluster_rows = F,
+                    gaps_col = c(3, 6, 9, 12, 15),
+                    cutree_rows = 3,
+                    fontsize=10)
+pdf("../figures/Heatmap/cc_select_heatmap.pdf")
+select_heatmap
+dev.off()
+```
+etc_genes heatmap
+```{r}
+select_heatmap <- pheatmap(etc_matLRTsamplesPubIDMinusMean_order,
+                    labels_col = etc_sampleLabels_order$shortGroupNameBioRep,
+                    labels_row = etc_geneLabelsSamplesLRTMinusMean$labels,
+                    #annotation_row = etc_genes3,
+                    color = etc_myColor,
+                    breaks=etc_brks,
+                    cellheight = 8,
+                    cellwidth = 3,
+                    legend = TRUE,
+                    #annotation_legend=TRUE,
+                    treeheight_row = 10,
+                    treeheight_col = 10,
+                    angle_col = 90,
+                    border_color = "grey",
+                    cluster_cols = F,
+                    gaps_col = c(3, 6, 9, 12, 15),
+                    cutree_rows = 1,
+                    fontsize=10)
+pdf("../figures/Heatmap/etc_select_heatmap.pdf")
+select_heatmap
+dev.off()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+cc_genes2 <- cc_genes
+cc_genes2 <- cc_genes2 %>% na.omit(cc_genes2$NCBI_GeneID)
+rownames(cc_genes2) <- cc_genes2$NCBI_GeneID
+cc_genes3 <- cc_genes2["cc_group"]
+head(cc_genes3)
+
+etc_genes2 <- etc_genes
+etc_genes2 <- etc_genes2 %>% na.omit(etc_genes2$NCBI_GeneID)
+rownames(etc_genes2) <- etc_genes2$NCBI_GeneID
+etc_genes3 <- etc_genes2["ETC"]
+head(etc_genes3)
+```
+

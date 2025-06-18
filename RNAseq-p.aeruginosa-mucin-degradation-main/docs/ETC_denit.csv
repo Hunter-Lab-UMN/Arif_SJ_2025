@@ -1,0 +1,17 @@
+GeneName,group,group2,group3,desc
+narI,denitrification,NAR,a,nitrate reductase
+narJ,denitrification,NAR,a,nitrate reductase
+narH,denitrification,NAR,a,nitrate reductase
+narG,denitrification,NAR,a,nitrate reductase
+narK2,denitrification,NAR,a,nitrate reductase
+narK1,denitrification,NAR,a,nitrate reductase
+narL,denitrification,NAR,a,nitrate reductase
+nirL,denitrification,NIR,a,nitrite reductase
+nirG,denitrification,NIR,a,nitrite reductase
+nirJ,denitrification,NIR,a,nitrite reductase
+nirH,denitrification,NIR,a,nitrite reductase
+nirM,denitrification,NIR,a,nitrite reductase
+nirF,denitrification,NIR,a,nitrite reductase
+nirS,denitrification,NIR,a,nitrite reductase
+nirE,denitrification,NIR,a,nitrite reductase
+nirN,denitrification,NIR,a,nitrite reductase

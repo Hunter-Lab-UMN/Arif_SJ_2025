@@ -1,0 +1,80 @@
+ETC,GeneName,select
+Global_Regulators,anr,1
+Global Regulators,dnr,1
+Global Regulators,roxR,1
+Global Regulators,roxS,1
+Global Regulators,soxR,1
+Transhydrogenases,sth,0
+Transhydrogenases,pntAA,1
+Transhydrogenases,pntAB,1
+Transhydrogenases,pntB,0
+Cco1,ccoP1,1
+Cco1,ccoO1,1
+Cco1,ccoN1,1
+Cco1,ccoP2,1
+Cco1,ccoO2,1
+Cco1,ccoN2,1
+Cox,coxB,0
+Cox,coxA,0
+Cox,PA0107,1
+Cox,coIII,0
+Cio,cioB,0
+Cio,cioA,0
+Cyo,cyoA,1
+Cyo,cyoB,1
+Cyo,cyoD,1
+Cyo,cyoC,1
+Cyo,cyoE,1
+NIR,nirL,1
+NIR,nirG,1
+NIR,nirJ,1
+NIR,nirH,1
+NIR,nirD,1
+NIR,nirM,1
+NIR,nirC,1
+NIR,nirF,1
+NIR,nirS,1
+NIR,nirQ,0
+NIR,nirB,0
+NIR,nirE,1
+NIR,nirN,1
+NOR,norC,1
+NOR,norB,1
+NOR,norM,1
+NAR,narI,1
+NAR,narJ,1
+NAR,narH,1
+NAR,narG,1
+NAR,narK2,1
+NAR,narK1,1
+NAR,narX,0
+NAR,narL,1
+NOS,nosR,1
+NOS,nosZ,1
+NOS,nosD,0
+NOS,nosY,0
+NOS,nosF,1
+NOS,nosL,0
+NAP,napC,1
+NAP,napB,0
+NAP,napA,0
+NAP,napD,0
+NAP,napF,0
+NAP,napE,0
+ComplexIII,PA4430,1
+ComplexIII,PA4429,1
+ComplexIII,PA4431,1
+NDH-1 ,nuoA,0
+NDH-1 ,nuoB,0
+NDH-1 ,nuoD,0
+NDH-1 ,nuoE,0
+NDH-1 ,nuoF,0
+NDH-1 ,nuoG,0
+NDH-1 ,nuoH,0
+NDH-2,ndh,0
+Nqr,nqrF,0
+Nqr,nqrE,0
+Nqr,nqrD,0
+Nqr,nqrB,0
+Nqr,nqrC,0
+Nqr,nqrA,0
